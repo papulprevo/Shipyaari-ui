@@ -59,7 +59,6 @@ import { ViewPickupAddComponent } from './address-book/view-pickup-add/view-pick
 import { ViewDelAddComponent } from './address-book/view-del-add/view-del-add.component';
 import { EditDelAddComponent } from './address-book/edit-del-add/edit-del-add.component';
 import { AddDelAddComponent } from './address-book/add-del-add/add-del-add.component';
-import { ProfileComponent } from './profile/profile.component';
 import { SignupComponent } from './signup/signup.component';
 import { LoginComponent } from './login/login.component';
 import { ForgotPassComponent } from './forgot-pass/forgot-pass.component';
@@ -117,7 +116,6 @@ import { ForgotPassComponent } from './forgot-pass/forgot-pass.component';
     ViewDelAddComponent,
     EditDelAddComponent,
     AddDelAddComponent,
-    ProfileComponent,
     SignupComponent,
     LoginComponent,
     ForgotPassComponent,
