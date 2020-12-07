@@ -1,0 +1,100 @@
+<body>
+    <div id="app">
+      <div class="main-wrapper main-wrapper-1">
+        <div class="navbar-bg"></div>
+      <!--   navbar here -->
+        <app-navbar></app-navbar>
+        <!-- Sidebar Here -->
+        <app-sidebar></app-sidebar>
+        <!-- Main Content -->
+        <div class="main-content">
+          <section class="section">
+            <div class="row">
+              <div class="col-12 col-sm-12 col-lg-12 p-0 ">
+                <div class="">
+                  <div class="d-flex space-between">
+                    <div class="">
+                      <h4>Feedback</h4>
+                      <ol class="breadcrumb pl-0 pt-0">
+                      <li class="breadcrumb-item"><a href="#">Help</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">Feedback</li>
+                    </ol>
+                    </div>
+                  </div>
+                  <!-- card here -->
+                  <div class="card box_div card_orderre border-bottom addorder-margin">
+                    <div class="card-header box_shadow_none ">
+                        <h4>Please provide your feedback below</h4>
+                      </div>
+                      <div class="card-body">
+                        <form [formGroup]="feedbackForm" (ngSubmit)="onSubmit()">
+                        <div class="row rowmargin">
+                          <div class="col-3">
+                            <a *ngFor="let item of starList; let i=index " (click)="setStar(i)">  
+                              <i class="fa fa-2x ngb-rating" [ngClass]="{'fa-star-o':item,'fa-star':!item}"></i>   
+                             </a>  
+                            <br>  
+                            <h5>Rating : {{rating}} </h5>  
+                          </div>
+                          <!-- <div class="col-3 text-center " style="padding: 5px;">
+                            <p class="text-center" style="color: #FFD700;">
+                              <i class="fa fa-star fa-2x"></i>
+                              <i class="fa fa-star fa-2x"></i>
+                              <i class="fa fa-star fa-2x"></i>
+                              <i class="fa fa-star fa-2x"></i>
+                              <i class="fa fa-star fa-2x"></i>
+                            </p> 
+                          </div> -->
+                        </div>
+                        <div class="row rowmargin">
+                          <div class="col-6">
+                            <div class="form-group">
+                              <textarea class="form-control" rows="3" formControlName="comments" placeholder="Comments Here..."></textarea>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row rowmargin">
+                          <div class="col-3">
+                            <div class="form-group">
+                              <input type="text" class="form-control" placeholder="Name" formControlName="name">
+                            </div>
+                          </div>
+                            <div class="col-3">
+                            <div class="form-group">
+                              <input type="text" class="form-control" placeholder="Email" formControlName="email">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row rowmargin">
+                          <div class="col-3">
+                            <div class="form-group">
+                              <input type="submit" class="btn btn-primary" Value="Post" style="width: 100%;">
+                            </div>
+                          </div>  
+                        </div>
+                      </form>
+                      </div>
+                   </div>
+                </div>
+              </div>
+            </div>
+
+            
+      
+          
+
+
+
+
+
+
+          </section>
+        </div>
+        <!-- footer Here -->
+        <app-footer></app-footer>
+      </div>
+    </div>
+  <!-- General JS Scripts -->  
+</body>
+  
+  

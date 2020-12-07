@@ -1,0 +1,118 @@
+<body>
+    <div id="app">
+      <div class="main-wrapper main-wrapper-1">
+        <div class="navbar-bg"></div>
+      <!--   navbar here -->
+        <app-navbar></app-navbar>
+        <!-- Sidebar Here -->
+        <app-sidebar></app-sidebar>
+        <!-- Main Content -->
+        <div class="main-content">
+          <section class="section">
+            <div class="row">
+              <div class="col-12 col-sm-12 col-lg-12 p-0 ">
+                <div class="">
+                  <div class="d-flex space-between">
+                    <div class="">
+                      <h4>Change Password</h4>
+                      <ol class="breadcrumb pl-0 pt-0">
+                      <li class="breadcrumb-item"><a href="#">Setting</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">Change Password</li>
+                    </ol>
+                    </div>
+                  </div>
+                  <!-- card here -->
+                  <div class="card box_div card_orderre border-bottom addorder-margin">
+                    <div class="card-header box_shadow_none ">
+                        <h4>Change Password</h4>
+                      </div>
+                      <div class="card-body">
+                        <form [formGroup]="change_pass_Form" (ngSubmit)="onSubmit()" autocomplete="off">
+                        <div class="row rowmargin">
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label>Current Password</label>
+                                    <input type="password" class="form-control" placeholder="Current Password" formControlName="curre_pass" [ngClass]="{'is-invalid':change_pass_Form.get('curre_pass').touched && change_pass_Form.get('curre_pass').invalid}">
+                                    <div class="invalid-feedback">
+                                     Current Password required!!
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="row rowmargin">
+                            <div class="col-3">
+                                <div class="form-group">
+                                    <label>New Password</label>
+                                    <input type="password" class="form-control" placeholder="New Password" formControlName="new_pass" >
+                                    <div class="invalid-feedback">
+                                      {{
+                                        change_pass_Form.get("new_pass").hasError("required")
+                                          ? " Name is required"
+                                          : ""
+                                      }}
+                                      {{
+                                        change_pass_Form.get("new_pass").hasError("minlength")
+                                          ? " 8 letters required"
+                                          : ""
+                                      }}
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="form-group">
+                                    <label>Re-type New Password</label>
+                                    <input type="password" class="form-control" placeholder="Re-type New Password" formControlName="re_new_pass" 
+                                    [ngClass]="
+                                      (change_pass_Form.get('re_new_pass').touched ||
+                                      change_pass_Form.get('re_new_pass').dirty) &&
+                                      change_pass_Form.get('re_new_pass').hasError('required')
+                                        ? 'is-invalid'
+                                        : '' || change_pass_Form.get('re_new_pass').hasError('minlength')
+                                        ? 'is-invalid'
+                                        : '' ||
+                                          ((change_pass_Form.get('re_new_pass').touched ||
+                                          change_pass_Form.get('re_new_pass').dirty) &&
+                                            !change_pass_Form.get('re_new_pass').invalid)
+                                        ? ''
+                                        : ''
+                                    " > 
+                                    <div class="invalid-feedback">
+                                      {{
+                                        change_pass_Form.get("re_new_pass").hasError("required")
+                                          ? " Name is required"
+                                          : ""
+                                      }}
+                                      {{
+                                        change_pass_Form.get("re_new_pass").hasError("minlength")
+                                          ? " 8 letters required"
+                                          : ""
+                                      }}
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="row rowmargin">
+                           <div class="col-3">
+                               <input type="submit" class="btn btn-success" value="Submit" style="width: 100%;" 
+                               [disabled]="change_pass_Form.invalid">
+                           </div>
+                           <div class="col-3"> 
+                            <input type="reset" class="btn btn-warning" value="Clear" style="width: 100%;">
+                           </div> 
+                        </div>
+                      </form>
+                      </div>
+                   </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <!-- footer Here -->
+        <app-footer></app-footer>
+      </div>
+    </div>
+  <!-- General JS Scripts -->  
+</body>
+  
+  

@@ -1,0 +1,108 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+
+
+.addorder-margin{
+    margin-left: -34px;
+    margin-top: -17px;
+    margin-right: -17px;
+}
+.rowmargin
+{
+    margin-left: -4px;
+    margin-top: 8px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.cardheadcolor
+{
+    background-image: linear-gradient(to right, #077bd470 , #ffff0000);
+}
+.span_w100{
+     border: 1px solid #767676;
+    border-right: none;
+}
+.d-flex{
+    display: flex;
+
+}
+.input_field{
+    width: 129px;
+
+}
+.p5{
+    padding: 5px;
+}
+.pl-0{
+    padding-left: 0;
+}
+.pr-0{
+    padding-right: 0;
+}
+.p11{
+    padding: 11px;
+
+}
+.select_pkg{
+    width: 100%;
+    border-radius: 0px;
+    padding: 3px;
+
+}
+.eye_plus{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3px;
+}
+.eye_plus i{
+    color: #077bd4;
+
+}
+.w100{
+    width: 100%;
+}
+.space_between{
+    justify-content: space-between;
+}
+.checkbox12{
+    font-size: 15px;
+}
+
+/* body{
+    font-family: 'Source Sans Pro', sans-serif !important;
+} */
+
+
+.mb-bottom
+{
+    margin-bottom: -12px;
+}
+
+
+.new_dropdow:after{
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 9px solid #00000003;
+    border-right: 9px solid #980a0a00;
+    left: 21px;
+    top: -9px;
+    position: absolute;
+    border-bottom: 9px solid #aba1a1;
+
+
+
+}
+
+body{
+    color: black;
+    font-family: 'Source Sans Pro', sans-serif !important;
+   
+}
+
+/* .card{
+    box-shadow: 0px 0px 10px #ccc;
+    border-radius: 4px;
+} */

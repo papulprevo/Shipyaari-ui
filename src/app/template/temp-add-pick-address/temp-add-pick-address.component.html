@@ -1,0 +1,92 @@
+<h5 class="text-center">Add Template</h5>
+<div class="pickup_modal">
+  <!-- <h6>Personal Details</h6> -->
+  <form [formGroup]="addTemplate" (ngSubmit)="onSubmit()">
+  <div class="row">
+    <div class="col-sm-3">
+      <div class="form-group">
+        <span>Template Name	</span> <br>
+        <input type="text" class="form-control" name="" value="" placeholder="" formControlName="template_name"
+        [ngClass]="{'is-invalid':addTemplate.get('template_name').touched && addTemplate.get('template_name').invalid}">
+        <div class="invalid-feedback">
+          Please provide Temp. Name
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="form-group">
+        <span>Product Description</span> <br>
+        <input type="text" class="form-control" name="" value="" placeholder="" formControlName="product_description"
+        [ngClass]="{'is-invalid':addTemplate.get('product_description').touched && addTemplate.get('product_description').invalid}">
+        <div class="invalid-feedback">
+          Please provide Prod. Desc.
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="form-group">
+        <span>SKU</span> <br>
+        <input type="text" class="form-control" name="" value="" placeholder="" formControlName="sku"
+        [ngClass]="{'is-invalid':addTemplate.get('sku').touched && addTemplate.get('sku').invalid}">
+        <div class="invalid-feedback">
+          Please provide SKU
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="form-group">
+        <span>HSN</span> <br>
+        <input type="text" class="form-control" name="" value="" placeholder="" formControlName="hsn"
+        [ngClass]="{'is-invalid':addTemplate.get('hsn').touched && addTemplate.get('hsn').invalid}">
+        <div class="invalid-feedback">
+          Please provide HSN
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="form-group">
+        <span>Price</span> <br>
+        <input type="text" class="form-control" name="" value="" placeholder="" formControlName="price"
+        [ngClass]="{'is-invalid':addTemplate.get('price').touched && addTemplate.get('price').invalid}">
+        <div class="invalid-feedback">
+          Please provide Price
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="form-group">
+        <span>Quantity</span> <br>
+        <input type="text" class="form-control" name="" value="" placeholder="" formControlName="quantity"
+        [ngClass]="{'is-invalid':addTemplate.get('quantity').touched && addTemplate.get('quantity').invalid}">
+        <div class="invalid-feedback">
+          Please provide Quantity
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="form-group">
+        <span>Tax(%)</span> <br>
+        <input type="text" class="form-control" name="" value="" placeholder="" formControlName="tax"
+        [ngClass]="{'is-invalid':addTemplate.get('tax').touched && addTemplate.get('tax').invalid}">
+        <div class="invalid-feedback">
+          Please provide Tax(%)
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="form-group">
+        <span>Weight(KG's)	</span> <br>
+        <input type="text" class="form-control" name="" value="" placeholder="" formControlName="weight"
+        [ngClass]="{'is-invalid':addTemplate.get('weight').touched && addTemplate.get('weight').invalid}">
+        <div class="invalid-feedback">
+          Please provide Weight
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="">
+    <button type="submit"  class="btn btn-primary btn-sm" style="float: left;">Submit</button>
+    <button type="reset"   class="btn btn-warning btn-sm" style="float: right;">Clear</button>
+  </div>
+</form>
+</div>

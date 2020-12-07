@@ -1,0 +1,798 @@
+<body>
+  <div id="app">
+    <div class="main-wrapper main-wrapper-1">
+      <div class="navbar-bg"></div>
+    <!--   navbar here -->
+      <app-navbar></app-navbar>
+      <!-- Sidebar Here -->
+      <app-sidebar></app-sidebar>
+      <!-- Main Content -->
+      <div class="main-content">
+        <section class="section">
+          <div class="row">
+            <div class="col-12 col-sm-12 col-lg-12 p-0 ">
+              <div class="">
+                <div class="d-flex space-between">
+                  <div class="">
+                    <h4>All Invoices</h4>
+                    <ol class="breadcrumb pl-0 pt-0">
+                    <li class="breadcrumb-item"><a href="#">Billing</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">All Invoices</li>
+                    </ol>
+                  </div>
+                </div>
+                  <div class="col-sm-12 bg-white-card">
+                    <div class="d-flex space-between">
+                      <div>
+                      <h5>Invoice Details</h5>
+                      </div>
+                      <div>
+                        <!-- <button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" style="margin-right: 15px;">COD report</button> -->
+                      </div>
+                    </div> <hr>
+                    <div class="">
+                      <nav>
+                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                          <a class="nav-item nav-link active " id="nav-home-tab" data-toggle="tab" href="#nav-shipping-charges" role="tab" aria-controls="nav-home" aria-selected="true">Shipping Charges
+                            <span class="badge badge-pill badge-primary">0</span>
+                          </a>
+                          <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-weight-reconciliation" role="tab" aria-controls="nav-profile" aria-selected="false">Weight Reconciliation
+                            <span class="badge badge-pill badge-primary">0</span>
+                          </a>
+                          <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-recharge-payment-log" role="tab" aria-controls="nav-contact" aria-selected="false">Recharge & Payment Log 
+                            <span class="badge badge-pill badge-primary">0</span>
+                          </a>
+                          <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-Invoices" role="tab" aria-controls="nav-contact" aria-selected="false">Invoices 
+                            <span class="badge badge-pill badge-primary">0</span>
+                          </a>
+                          <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-credit-note" role="tab" aria-controls="nav-contact" aria-selected="false">Credit Notes 
+                            <span class="badge badge-pill badge-primary">0</span>
+                          </a>
+                        </div>
+                      </nav>
+                      <div class="tab-content" id="nav-tabContent">
+                        <!-- shipping charges tab -->
+                          <div class="tab-pane fade show active" id="nav-shipping-charges" role="tabpanel" aria-labelledby="nav-home-tab">
+                            <app-shipping-charges></app-shipping-charges>
+                          </div>
+                        <!-- End here -->
+                         <!-- Weight Recinciliation tab -->
+                         <div class="tab-pane fade" id="nav-weight-reconciliation" role="tabpanel" aria-labelledby="nav-profile-tab">
+                         <app-weight-reconciliation></app-weight-reconciliation>
+                        </div>
+                        <!-- End here -->
+                         <!-- techarge and payment log tab -->
+                        <div class="tab-pane fade" id="nav-recharge-payment-log" role="tabpanel" aria-labelledby="nav-contact-tab">
+                        <app-recharge></app-recharge>  
+                        </div>
+                          <!-- End here -->
+                           <!-- Invoices tab -->
+                        <div class="tab-pane fade" id="nav-Invoices" role="tabpanel" aria-labelledby="nav-home-tab">
+                          <app-invoice></app-invoice>
+                        </div>
+                          <!-- End here -->
+                          <!-- credit note tab -->
+                        <div class="tab-pane fade" id="nav-credit-note" role="tabpanel" aria-labelledby="nav-home-tab">
+                          <app-creditnote></app-creditnote>
+                        </div>
+                         <!-- End here -->
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- footer Here -->
+      <app-footer></app-footer>
+    </div>
+  </div>
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel" style="text-align: center; width: 100%"> Billing Report</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="">
+          <div class="form-group">
+            <label>From Date</label>
+            <input type="date" class="form-control">
+          </div>
+          <div class="form-group">
+            <label>To Date</label>
+            <input type="date" class="form-control">
+          </div>
+          <div class="" style="padding-top: 10px;">
+          <button class="btn btn-primary" type="" >Download Report</button>
+          </div>
+          </div>
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="exampleModalsc" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-xl">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Shipyaari ID Details
+          </h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-sm-6 ">
+              <div class="border_sm6">
+                <div class="acc_one"  data-toggle="collapse" data-target="#my_data">
+                  <h3>Client Details</h3>
+                </div>
+                <div class="row  collapse show" id="my_data">
+                  <div class=" col-xl-12 col-md-12 col-lg-12 h250px" style="padding: 12px;">
+                      <ul class="list-unstyled mb-0 new_modal_li" style="border: 1px solid #e3e3f7">
+                          <li class="row m-0">
+                              <div class="col-sm-6 text-muted">AVN Shipping ID</div>
+                              <div class="col-sm-6">
+                                  SHIPYAARI-1642485 </div>
+                          </li>
+                          <li class=" row m-0">
+                              <div class="col-sm-6 text-muted">Client name</div>
+                              <div class="col-sm-6">
+                                  Wholesome Habits Pvt Ltd  </div>
+                          </li>
+                          <li class="p-b-20 m-0 row">
+                              <div class="col-sm-6 text-muted">Order ID</div>
+                              <div class="col-sm-6">
+                                  875650499224340  </div>
+                          </li>
+                          <li class="p-b-20 m-0 row">
+                              <div class="col-sm-6 text-muted">Name</div>
+                              <div class="col-sm-6">
+                                  Wholesome Habits Pvt Ltd</div>
+                          </li>
+                          <li class="p-b-20 m-0 row">
+                              <div class="col-sm-6 text-muted">Email</div>
+                              <div class="col-sm-6">prafullanathile@gmail.com</div>
+                          </li>
+                          <li class="p-b-20 m-0 row">
+                              <div class="col-sm-6 text-muted">Contact</div>
+                              <div class="col-sm-6">
+                                  9029004529 </div>
+                          </li>
+                          <li class="p-b-20 m-0 row">
+                              <div class="col-sm-6 text-muted">Landmark</div>
+                              <div class="col-sm-6">
+                                  Blue Dart Office                                        </div>
+                          </li>
+                          <li class="p-b-20 m-0 row">
+                              <div class="col-sm-6 text-muted">Address 1</div>
+                              <div class="col-sm-6">
+                                  C-109, Hind Saurashtra Industrial Estate,                                        </div>
+                          </li>
+                          <li class="p-b-20 m-0 row mb-0">
+                              <div class="col-sm-6 text-muted">Address 2</div>
+                              <div class="col-sm-6">
+                                  Near Marol Naka Metro Station,                                         </div>
+                          </li>
+                          <li class="m-0 row" style="margin: 0px;">
+                              <div class="col-sm-6 text-muted">City</div>
+                              <div class="col-sm-6">
+                                  Mumbai                                        </div>
+                          </li>
+                          <li class="m-0 row">
+                              <div class="col-sm-6 text-muted">State</div>
+                              <div class="col-sm-6">
+                                  MAHARASHTRA                                        </div>
+                          </li>
+                          <li class="m-0 row">
+                              <div class="col-sm-6 text-muted">Country</div>
+                              <div class="col-sm-6">
+                                  India                                        </div>
+                          </li>
+                          <li class="m-0 row">
+                              <div class="col-sm-6 text-muted">Pincode</div>
+                              <div class="col-sm-6">
+                                  400059                                        </div>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+              </div>
+                
+            </div>
+            <div class="col-sm-6 ">
+              <div class="border_sm6">
+                <div class="acc_one" data-toggle="collapse" data-target="#my_data2">
+                  <h3>Delivery Details</h3>
+                </div>
+                <div class="row collapse show" id="my_data2">
+                  <div class=" col-xl-12 col-md-12 col-lg-12 h250px" style="padding: 12px;">
+                      <ul class="list-unstyled mb-0 new_modal_li" style="border: 1px solid #e3e3f7">
+                          <li class="row m-0">
+                              <div class="col-sm-6 text-muted">AVN Shipping ID</div>
+                              <div class="col-sm-6">
+                                  SHIPYAARI-1642485                                        </div>
+                          </li>
+                          <li class=" row m-0">
+                              <div class="col-sm-6 text-muted">Client name</div>
+                              <div class="col-sm-6">
+                                  Wholesome Habits Pvt Ltd                                        </div>
+                          </li>
+                          <li class="p-b-20 m-0 row">
+                              <div class="col-sm-6 text-muted">Order ID</div>
+                              <div class="col-sm-6">
+                                  875650499224340                                        </div>
+                          </li>
+                          <li class="p-b-20 m-0 row">
+                              <div class="col-sm-6 text-muted">Name</div>
+                              <div class="col-sm-6">
+                                  Wholesome Habits Pvt Ltd                                        </div>
+                          </li>
+                          <li class="p-b-20 m-0 row">
+                              <div class="col-sm-6 text-muted">Email</div>
+                              <div class="col-sm-6">prafullanathile@gmail.com</div>
+                          </li>
+                          <li class="p-b-20 m-0 row">
+                              <div class="col-sm-6 text-muted">Contact</div>
+                              <div class="col-sm-6">
+                                  9029004529                                        </div>
+                          </li>
+                          <li class="p-b-20 m-0 row">
+                              <div class="col-sm-6 text-muted">Landmark</div>
+                              <div class="col-sm-6">
+                                  Blue Dart Office                                        </div>
+                          </li>
+                          <li class="p-b-20 m-0 row">
+                              <div class="col-sm-6 text-muted">Address 1</div>
+                              <div class="col-sm-6">
+                                  C-109, Hind Saurashtra Industrial Estate,                                        </div>
+                          </li>
+                          <li class="p-b-20 m-0 row mb-0">
+                              <div class="col-sm-6 text-muted">Address 2</div>
+                              <div class="col-sm-6">
+                                  Near Marol Naka Metro Station,                                         </div>
+                          </li>
+                          <li class="m-0 row" style="margin: 0px;">
+                              <div class="col-sm-6 text-muted">City</div>
+                              <div class="col-sm-6">
+                                  Mumbai                                        </div>
+                          </li>
+                          <li class="m-0 row">
+                              <div class="col-sm-6 text-muted">State</div>
+                              <div class="col-sm-6">
+                                  MAHARASHTRA                                        </div>
+                          </li>
+                          <li class="m-0 row">
+                              <div class="col-sm-6 text-muted">Country</div>
+                              <div class="col-sm-6">
+                                  India                                        </div>
+                          </li>
+                          <li class="m-0 row">
+                              <div class="col-sm-6 text-muted">Pincode</div>
+                              <div class="col-sm-6">
+                                  400059                                        </div>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+              </div>
+                
+            </div>
+          </div>
+          <div class="row mt25">
+            <div class="col-sm-6 ">
+              <div class="border_sm6">
+                <div class="acc_one" data-toggle="collapse" data-target="#my_data3">
+                  <h3>Client Details</h3>
+                </div>
+                <div class="row collapse" id="my_data3">
+                  <div class=" col-xl-12 col-md-12 col-lg-12 h250px" style="padding: 12px;">
+                      <ul class="list-unstyled mb-0 new_modal_li" style="border: 1px solid #e3e3f7">
+                          <li class="row m-0">
+                              <div class="col-sm-6 text-muted">AVN Shipping ID</div>
+                              <div class="col-sm-6">
+                                  SHIPYAARI-1642485                                        </div>
+                          </li>
+                          <li class=" row m-0">
+                              <div class="col-sm-6 text-muted">Client name</div>
+                              <div class="col-sm-6">
+                                  Wholesome Habits Pvt Ltd                                        </div>
+                          </li>
+                          <li class="p-b-20 m-0 row">
+                              <div class="col-sm-6 text-muted">Order ID</div>
+                              <div class="col-sm-6">
+                                  875650499224340                                        </div>
+                          </li>
+                          <li class="p-b-20 m-0 row">
+                              <div class="col-sm-6 text-muted">Name</div>
+                              <div class="col-sm-6">
+                                  Wholesome Habits Pvt Ltd                                        </div>
+                          </li>
+                          <li class="p-b-20 m-0 row">
+                              <div class="col-sm-6 text-muted">Email</div>
+                              <div class="col-sm-6">prafullanathile@gmail.com</div>
+                          </li>
+                          <li class="p-b-20 m-0 row">
+                              <div class="col-sm-6 text-muted">Contact</div>
+                              <div class="col-sm-6">
+                                  9029004529                                        </div>
+                          </li>
+                          <li class="p-b-20 m-0 row">
+                              <div class="col-sm-6 text-muted">Landmark</div>
+                              <div class="col-sm-6">
+                                  Blue Dart Office                                        </div>
+                          </li>
+                          <li class="p-b-20 m-0 row">
+                              <div class="col-sm-6 text-muted">Address 1</div>
+                              <div class="col-sm-6">
+                                  C-109, Hind Saurashtra Industrial Estate,                                        </div>
+                          </li>
+                          <li class="p-b-20 m-0 row mb-0">
+                              <div class="col-sm-6 text-muted">Address 2</div>
+                              <div class="col-sm-6">
+                                  Near Marol Naka Metro Station,                                         </div>
+                          </li>
+                          <li class="m-0 row" style="margin: 0px;">
+                              <div class="col-sm-6 text-muted">City</div>
+                              <div class="col-sm-6">
+                                  Mumbai                                        </div>
+                          </li>
+                          <li class="m-0 row">
+                              <div class="col-sm-6 text-muted">State</div>
+                              <div class="col-sm-6">
+                                  MAHARASHTRA                                        </div>
+                          </li>
+                          <li class="m-0 row">
+                              <div class="col-sm-6 text-muted">Country</div>
+                              <div class="col-sm-6">
+                                  India                                        </div>
+                          </li>
+                          <li class="m-0 row">
+                              <div class="col-sm-6 text-muted">Pincode</div>
+                              <div class="col-sm-6">
+                                  400059                                        </div>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+              </div>
+                
+            </div>
+            <div class="col-sm-6 ">
+              <div class="border_sm6">
+                <div class="acc_one" data-toggle="collapse" data-target="#my_data4">
+                  <h3>Client Details</h3>
+                </div>
+                <div class="row collapse" id="my_data4">
+                  <div class=" col-xl-12 col-md-12 col-lg-12 h250px" style="padding: 12px;">
+                      <ul class="list-unstyled mb-0 new_modal_li" style="border: 1px solid #e3e3f7">
+                          <li class="row m-0">
+                              <div class="col-sm-6 text-muted">AVN Shipping ID</div>
+                              <div class="col-sm-6">
+                                  SHIPYAARI-1642485                                        </div>
+                          </li>
+                          <li class=" row m-0">
+                              <div class="col-sm-6 text-muted">Client name</div>
+                              <div class="col-sm-6">
+                                  Wholesome Habits Pvt Ltd                                        </div>
+                          </li>
+                          <li class="p-b-20 m-0 row">
+                              <div class="col-sm-6 text-muted">Order ID</div>
+                              <div class="col-sm-6">
+                                  875650499224340                                        </div>
+                          </li>
+                          <li class="p-b-20 m-0 row">
+                              <div class="col-sm-6 text-muted">Name</div>
+                              <div class="col-sm-6">
+                                  Wholesome Habits Pvt Ltd                                        </div>
+                          </li>
+                          <li class="p-b-20 m-0 row">
+                              <div class="col-sm-6 text-muted">Email</div>
+                              <div class="col-sm-6">prafullanathile@gmail.com</div>
+                          </li>
+                          <li class="p-b-20 m-0 row">
+                              <div class="col-sm-6 text-muted">Contact</div>
+                              <div class="col-sm-6">
+                                  9029004529                                        </div>
+                          </li>
+                          <li class="p-b-20 m-0 row">
+                              <div class="col-sm-6 text-muted">Landmark</div>
+                              <div class="col-sm-6">
+                                  Blue Dart Office                                        </div>
+                          </li>
+                          <li class="p-b-20 m-0 row">
+                              <div class="col-sm-6 text-muted">Address 1</div>
+                              <div class="col-sm-6">
+                                  C-109, Hind Saurashtra Industrial Estate,                                        </div>
+                          </li>
+                          <li class="p-b-20 m-0 row mb-0">
+                              <div class="col-sm-6 text-muted">Address 2</div>
+                              <div class="col-sm-6">
+                                  Near Marol Naka Metro Station,                                         </div>
+                          </li>
+                          <li class="m-0 row" style="margin: 0px;">
+                              <div class="col-sm-6 text-muted">City</div>
+                              <div class="col-sm-6">
+                                  Mumbai                                        </div>
+                          </li>
+                          <li class="m-0 row">
+                              <div class="col-sm-6 text-muted">State</div>
+                              <div class="col-sm-6">
+                                  MAHARASHTRA                                        </div>
+                          </li>
+                          <li class="m-0 row">
+                              <div class="col-sm-6 text-muted">Country</div>
+                              <div class="col-sm-6">
+                                  India                                        </div>
+                          </li>
+                          <li class="m-0 row">
+                              <div class="col-sm-6 text-muted">Pincode</div>
+                              <div class="col-sm-6">
+                                  400059                                        </div>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+              </div>
+                
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+
+
+
+  <div id="exampleModalwr" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-xl">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Shipyaari ID Details
+          </h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-sm-6 ">
+              <div class="border_sm6">
+                <div class="acc_one"  data-toggle="collapse" data-target="#my_data">
+                  <h3>Client Details</h3>
+                </div>
+                <div class="row  collapse show" id="my_data">
+                  <div class=" col-xl-12 col-md-12 col-lg-12 h250px" style="padding: 12px;">
+                      <ul class="list-unstyled mb-0 new_modal_li" style="border: 1px solid #e3e3f7">
+                          <li class="row m-0">
+                              <div class="col-sm-6 text-muted">AVN Shipping ID</div>
+                              <div class="col-sm-6">
+                                  SHIPYAARI-1642485 </div>
+                          </li>
+                          <li class=" row m-0">
+                              <div class="col-sm-6 text-muted">Client name</div>
+                              <div class="col-sm-6">
+                                  Wholesome Habits Pvt Ltd  </div>
+                          </li>
+                          <li class="p-b-20 m-0 row">
+                              <div class="col-sm-6 text-muted">Order ID</div>
+                              <div class="col-sm-6">
+                                  875650499224340  </div>
+                          </li>
+                          <li class="p-b-20 m-0 row">
+                              <div class="col-sm-6 text-muted">Name</div>
+                              <div class="col-sm-6">
+                                  Wholesome Habits Pvt Ltd</div>
+                          </li>
+                          <li class="p-b-20 m-0 row">
+                              <div class="col-sm-6 text-muted">Email</div>
+                              <div class="col-sm-6">prafullanathile@gmail.com</div>
+                          </li>
+                          <li class="p-b-20 m-0 row">
+                              <div class="col-sm-6 text-muted">Contact</div>
+                              <div class="col-sm-6">
+                                  9029004529 </div>
+                          </li>
+                          <li class="p-b-20 m-0 row">
+                              <div class="col-sm-6 text-muted">Landmark</div>
+                              <div class="col-sm-6">
+                                  Blue Dart Office                                        </div>
+                          </li>
+                          <li class="p-b-20 m-0 row">
+                              <div class="col-sm-6 text-muted">Address 1</div>
+                              <div class="col-sm-6">
+                                  C-109, Hind Saurashtra Industrial Estate,                                        </div>
+                          </li>
+                          <li class="p-b-20 m-0 row mb-0">
+                              <div class="col-sm-6 text-muted">Address 2</div>
+                              <div class="col-sm-6">
+                                  Near Marol Naka Metro Station,                                         </div>
+                          </li>
+                          <li class="m-0 row" style="margin: 0px;">
+                              <div class="col-sm-6 text-muted">City</div>
+                              <div class="col-sm-6">
+                                  Mumbai                                        </div>
+                          </li>
+                          <li class="m-0 row">
+                              <div class="col-sm-6 text-muted">State</div>
+                              <div class="col-sm-6">
+                                  MAHARASHTRA                                        </div>
+                          </li>
+                          <li class="m-0 row">
+                              <div class="col-sm-6 text-muted">Country</div>
+                              <div class="col-sm-6">
+                                  India                                        </div>
+                          </li>
+                          <li class="m-0 row">
+                              <div class="col-sm-6 text-muted">Pincode</div>
+                              <div class="col-sm-6">
+                                  400059                                        </div>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+              </div>
+                
+            </div>
+            <div class="col-sm-6 ">
+              <div class="border_sm6">
+                <div class="acc_one" data-toggle="collapse" data-target="#my_data2">
+                  <h3>Delivery Details</h3>
+                </div>
+                <div class="row collapse show" id="my_data2">
+                  <div class=" col-xl-12 col-md-12 col-lg-12 h250px" style="padding: 12px;">
+                      <ul class="list-unstyled mb-0 new_modal_li" style="border: 1px solid #e3e3f7">
+                          <li class="row m-0">
+                              <div class="col-sm-6 text-muted">AVN Shipping ID</div>
+                              <div class="col-sm-6">
+                                  SHIPYAARI-1642485                                        </div>
+                          </li>
+                          <li class=" row m-0">
+                              <div class="col-sm-6 text-muted">Client name</div>
+                              <div class="col-sm-6">
+                                  Wholesome Habits Pvt Ltd                                        </div>
+                          </li>
+                          <li class="p-b-20 m-0 row">
+                              <div class="col-sm-6 text-muted">Order ID</div>
+                              <div class="col-sm-6">
+                                  875650499224340                                        </div>
+                          </li>
+                          <li class="p-b-20 m-0 row">
+                              <div class="col-sm-6 text-muted">Name</div>
+                              <div class="col-sm-6">
+                                  Wholesome Habits Pvt Ltd                                        </div>
+                          </li>
+                          <li class="p-b-20 m-0 row">
+                              <div class="col-sm-6 text-muted">Email</div>
+                              <div class="col-sm-6">prafullanathile@gmail.com</div>
+                          </li>
+                          <li class="p-b-20 m-0 row">
+                              <div class="col-sm-6 text-muted">Contact</div>
+                              <div class="col-sm-6">
+                                  9029004529                                        </div>
+                          </li>
+                          <li class="p-b-20 m-0 row">
+                              <div class="col-sm-6 text-muted">Landmark</div>
+                              <div class="col-sm-6">
+                                  Blue Dart Office                                        </div>
+                          </li>
+                          <li class="p-b-20 m-0 row">
+                              <div class="col-sm-6 text-muted">Address 1</div>
+                              <div class="col-sm-6">
+                                  C-109, Hind Saurashtra Industrial Estate,                                        </div>
+                          </li>
+                          <li class="p-b-20 m-0 row mb-0">
+                              <div class="col-sm-6 text-muted">Address 2</div>
+                              <div class="col-sm-6">
+                                  Near Marol Naka Metro Station,                                         </div>
+                          </li>
+                          <li class="m-0 row" style="margin: 0px;">
+                              <div class="col-sm-6 text-muted">City</div>
+                              <div class="col-sm-6">
+                                  Mumbai                                        </div>
+                          </li>
+                          <li class="m-0 row">
+                              <div class="col-sm-6 text-muted">State</div>
+                              <div class="col-sm-6">
+                                  MAHARASHTRA                                        </div>
+                          </li>
+                          <li class="m-0 row">
+                              <div class="col-sm-6 text-muted">Country</div>
+                              <div class="col-sm-6">
+                                  India                                        </div>
+                          </li>
+                          <li class="m-0 row">
+                              <div class="col-sm-6 text-muted">Pincode</div>
+                              <div class="col-sm-6">
+                                  400059                                        </div>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+              </div>
+                
+            </div>
+          </div>
+          <div class="row mt25">
+            <div class="col-sm-6 ">
+              <div class="border_sm6">
+                <div class="acc_one" data-toggle="collapse" data-target="#my_data3">
+                  <h3>Client Details</h3>
+                </div>
+                <div class="row collapse" id="my_data3">
+                  <div class=" col-xl-12 col-md-12 col-lg-12 h250px" style="padding: 12px;">
+                      <ul class="list-unstyled mb-0 new_modal_li" style="border: 1px solid #e3e3f7">
+                          <li class="row m-0">
+                              <div class="col-sm-6 text-muted">AVN Shipping ID</div>
+                              <div class="col-sm-6">
+                                  SHIPYAARI-1642485                                        </div>
+                          </li>
+                          <li class=" row m-0">
+                              <div class="col-sm-6 text-muted">Client name</div>
+                              <div class="col-sm-6">
+                                  Wholesome Habits Pvt Ltd                                        </div>
+                          </li>
+                          <li class="p-b-20 m-0 row">
+                              <div class="col-sm-6 text-muted">Order ID</div>
+                              <div class="col-sm-6">
+                                  875650499224340                                        </div>
+                          </li>
+                          <li class="p-b-20 m-0 row">
+                              <div class="col-sm-6 text-muted">Name</div>
+                              <div class="col-sm-6">
+                                  Wholesome Habits Pvt Ltd                                        </div>
+                          </li>
+                          <li class="p-b-20 m-0 row">
+                              <div class="col-sm-6 text-muted">Email</div>
+                              <div class="col-sm-6">prafullanathile@gmail.com</div>
+                          </li>
+                          <li class="p-b-20 m-0 row">
+                              <div class="col-sm-6 text-muted">Contact</div>
+                              <div class="col-sm-6">
+                                  9029004529                                        </div>
+                          </li>
+                          <li class="p-b-20 m-0 row">
+                              <div class="col-sm-6 text-muted">Landmark</div>
+                              <div class="col-sm-6">
+                                  Blue Dart Office                                        </div>
+                          </li>
+                          <li class="p-b-20 m-0 row">
+                              <div class="col-sm-6 text-muted">Address 1</div>
+                              <div class="col-sm-6">
+                                  C-109, Hind Saurashtra Industrial Estate,                                        </div>
+                          </li>
+                          <li class="p-b-20 m-0 row mb-0">
+                              <div class="col-sm-6 text-muted">Address 2</div>
+                              <div class="col-sm-6">
+                                  Near Marol Naka Metro Station,                                         </div>
+                          </li>
+                          <li class="m-0 row" style="margin: 0px;">
+                              <div class="col-sm-6 text-muted">City</div>
+                              <div class="col-sm-6">
+                                  Mumbai                                        </div>
+                          </li>
+                          <li class="m-0 row">
+                              <div class="col-sm-6 text-muted">State</div>
+                              <div class="col-sm-6">
+                                  MAHARASHTRA                                        </div>
+                          </li>
+                          <li class="m-0 row">
+                              <div class="col-sm-6 text-muted">Country</div>
+                              <div class="col-sm-6">
+                                  India                                        </div>
+                          </li>
+                          <li class="m-0 row">
+                              <div class="col-sm-6 text-muted">Pincode</div>
+                              <div class="col-sm-6">
+                                  400059                                        </div>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+              </div>
+                
+            </div>
+            <div class="col-sm-6 ">
+              <div class="border_sm6">
+                <div class="acc_one" data-toggle="collapse" data-target="#my_data4">
+                  <h3>Client Details</h3>
+                </div>
+                <div class="row collapse" id="my_data4">
+                  <div class=" col-xl-12 col-md-12 col-lg-12 h250px" style="padding: 12px;">
+                      <ul class="list-unstyled mb-0 new_modal_li" style="border: 1px solid #e3e3f7">
+                          <li class="row m-0">
+                              <div class="col-sm-6 text-muted">AVN Shipping ID</div>
+                              <div class="col-sm-6">
+                                  SHIPYAARI-1642485                                        </div>
+                          </li>
+                          <li class=" row m-0">
+                              <div class="col-sm-6 text-muted">Client name</div>
+                              <div class="col-sm-6">
+                                  Wholesome Habits Pvt Ltd                                        </div>
+                          </li>
+                          <li class="p-b-20 m-0 row">
+                              <div class="col-sm-6 text-muted">Order ID</div>
+                              <div class="col-sm-6">
+                                  875650499224340                                        </div>
+                          </li>
+                          <li class="p-b-20 m-0 row">
+                              <div class="col-sm-6 text-muted">Name</div>
+                              <div class="col-sm-6">
+                                  Wholesome Habits Pvt Ltd                                        </div>
+                          </li>
+                          <li class="p-b-20 m-0 row">
+                              <div class="col-sm-6 text-muted">Email</div>
+                              <div class="col-sm-6">prafullanathile@gmail.com</div>
+                          </li>
+                          <li class="p-b-20 m-0 row">
+                              <div class="col-sm-6 text-muted">Contact</div>
+                              <div class="col-sm-6">
+                                  9029004529                                        </div>
+                          </li>
+                          <li class="p-b-20 m-0 row">
+                              <div class="col-sm-6 text-muted">Landmark</div>
+                              <div class="col-sm-6">
+                                  Blue Dart Office                                        </div>
+                          </li>
+                          <li class="p-b-20 m-0 row">
+                              <div class="col-sm-6 text-muted">Address 1</div>
+                              <div class="col-sm-6">
+                                  C-109, Hind Saurashtra Industrial Estate,                                        </div>
+                          </li>
+                          <li class="p-b-20 m-0 row mb-0">
+                              <div class="col-sm-6 text-muted">Address 2</div>
+                              <div class="col-sm-6">
+                                  Near Marol Naka Metro Station,                                         </div>
+                          </li>
+                          <li class="m-0 row" style="margin: 0px;">
+                              <div class="col-sm-6 text-muted">City</div>
+                              <div class="col-sm-6">
+                                  Mumbai                                        </div>
+                          </li>
+                          <li class="m-0 row">
+                              <div class="col-sm-6 text-muted">State</div>
+                              <div class="col-sm-6">
+                                  MAHARASHTRA                                        </div>
+                          </li>
+                          <li class="m-0 row">
+                              <div class="col-sm-6 text-muted">Country</div>
+                              <div class="col-sm-6">
+                                  India                                        </div>
+                          </li>
+                          <li class="m-0 row">
+                              <div class="col-sm-6 text-muted">Pincode</div>
+                              <div class="col-sm-6">
+                                  400059                                        </div>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+              </div>
+                
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+  
+<!-- General JS Scripts -->  
+</body>
+

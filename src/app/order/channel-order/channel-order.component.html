@@ -1,0 +1,51 @@
+<body>
+    <div id="app">
+      <div class="main-wrapper main-wrapper-1">
+        <div class="navbar-bg"></div>
+      <!--   navbar here -->
+        <app-navbar></app-navbar>
+        <!-- Sidebar Here -->
+        <app-sidebar></app-sidebar>
+        <!-- Main Content -->
+        <div class="main-content">
+          <section class="section">
+            <div class="row">
+              <div class="col-12 col-sm-12 col-lg-12 p-0 ">
+                <div class="card">
+                  <div class="d-flex space-between">
+                    <div class="">
+                      <h4>Channel Orders</h4>
+                      <ol class="breadcrumb pl-0 pt-0">
+                      <li class="breadcrumb-item"><a href="#">Orders</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">Channel Orders</li>
+                    </ol>
+                    </div>
+                    <div class=" align-right datepicker">
+                      <!-- <form [formGroup]="form"> -->
+                        <input type="text"
+                          class="form-control"
+                          formControlName="dateRange"
+                          #daterangepicker="bsDaterangepicker"
+                          bsDaterangepicker
+                          [bsConfig]="{ rangeInputFormat : 'DD/MM/YYYY', dateInputFormat: 'DD/MM/YYYY' }">
+                          
+                        <!-- </form> -->
+                      <!-- <div id="reportrange"  class="pull-left new_left" style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc;">
+                          <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>&nbsp;
+                          <span></span> <b class="caret"></b>
+                      </div> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <!-- footer Here -->
+        <app-footer></app-footer>
+      </div>
+    </div>
+  <!-- General JS Scripts -->  
+</body>
+  
+  

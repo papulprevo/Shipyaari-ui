@@ -1,0 +1,95 @@
+
+  .total h5, .total h2{
+    margin-bottom: 0 !important;
+  }
+  .arrow12{
+    float: right;
+font-size: 12px;
+font-weight: 100;
+opacity: 0.4;
+  }
+.mt21{
+  margin-top: 17px !important;
+  height: 392px;
+
+}
+.mtsellet5{
+  margin-top: 15px;
+}
+.nav-tabs .nav-item {
+    margin-bottom: -1px;
+    margin-left: -1px;
+    border: 1px solid #96a2b426;
+}
+.card_box .card{
+  margin-bottom: 0px !important;
+  height: 98px;
+  padding: 13px;
+
+}
+.courier{
+  width: 100%;
+  width: 100%;
+      border: 1px solid #f2f2f2;
+}
+.courier thead tr{
+    background: #f1f5fa;
+}
+.courier tbody tr:hover{
+    background: #f1f5fd99;
+}
+.courier thead tr th{
+  padding: 8px;
+  text-align: center;
+  border: 1px solid rgb(107 106 106 / 4%);
+}
+.courier tbody td{
+  padding: 8px;
+  text-align: center;
+  border: 1px solid rgb(107 106 106 / 4%);
+}
+.courier2{
+  width: 100%;
+  border: 1px solid #f2f2f2;
+}
+.row23{
+  display: inherit;
+}
+.tab-pane .card{
+  height: 303px;
+
+}
+@media (max-width: 767px) {
+  .col-sm-5{
+    padding: 0px !important;
+  }
+  .row23{
+    /* display: inherit; */
+    display: inline-block;
+
+  }
+
+}
+.courier2 tbody tr{
+  padding: 8px;
+  text-align: center;
+  border: 1px solid rgb(107 106 106 / 4%);
+}
+.courier2 tbody tr:hover{
+  background-color: #f1f5fd99;
+
+}
+.courier2 tr td, .courier2 tr th{
+  padding: 8px;
+  border: 1px solid #f2f2f2;
+
+
+}
+.courier2 thead tr{
+  background-color: #f1f5fd99;
+  padding: 8px;
+  text-align: center;
+}
+.courier2 tbody tr:nth-child(even){
+  background-color: #f1f5fd99;
+}

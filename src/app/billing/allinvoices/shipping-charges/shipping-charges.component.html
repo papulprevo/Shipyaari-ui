@@ -1,0 +1,223 @@
+
+    <div class="d-flex space-between">
+      <div class="form-inline">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+      </div>
+     
+      <div>
+        <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#exampleModal" style="margin-right: 15px;">Billing Report</button>
+      </div>
+    </div> 
+    <div class="table-responsive-sm" style="font-size:small; color:black; margin-top: 6px;">
+      <table class="table table-bordered table-sm">
+        <thead class="text-center">
+          <tr>
+            <th scope="col" style="width: 12%;">Shipyaari ID / Order id
+              <div class="dropdown">
+              <a class="" href="javascript:" role="" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-filter"></i>
+              </a>
+              <div class="dropdown-menu new_dropdow" aria-labelledby="dropdownMenuLink" style="width:170%;">
+               <div class="container">
+                 <div class="form-group">
+                   <label>Search By Shipyaari ID / Order ID</label>
+                   <input type="text" class="form-control">
+                 </div>
+                 <button class="btn btn-primary btn-sm" style="float: left;">Submit</button>
+                 <button class="btn btn-success btn-sm" style="float: right;" type="reset">Clear</button>
+               </div>
+              </div>
+            </div>
+            </th>
+            <th scope="col" style="width: 12%;">AWB Details / Courier Name 
+              <div class="dropdown">
+                <a class="" href="javascript:" role="" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-filter"></i>
+                </a>
+                <div class="dropdown-menu new_dropdow" aria-labelledby="dropdownMenuLink">
+                 <div class="container" style="font-size:small;">
+                  <div class="form-group">
+                    <label></label>
+                    <input type="text" class="form-control" placeholder="Tracking No.">
+                  </div>
+                  <div class="mb-bottom"><input type="checkbox" name="filter_curior_company" id="shipping_charges_awb_details_1" value="Dotzot">
+                    <label for="shipping_charges_awb_details_1">&nbsp; Dotzot</label>
+                  </div>
+                  <div  class="mb-bottom"><input type="checkbox" name="filter_curior_company" id="shipping_charges_awb_details_1" value="Delhivery">
+                    <label for="shipping_charges_awb_details_1">&nbsp; Delhivery</label>
+                  </div>
+                  <div  class="mb-bottom"><input type="checkbox" name="filter_curior_company" id="shipping_charges_awb_details_1" value="Fedex">
+                    <label for="shipping_charges_awb_details_1">&nbsp; Fedex</label>
+                  </div>
+                  <div  class="mb-bottom"><input type="checkbox" name="filter_curior_company" id="shipping_charges_awb_details_1" value="Bluedart">
+                    <label for="shipping_charges_awb_details_1">&nbsp; Bluedart</label>
+                  </div>
+                  <div  class="mb-bottom"><input type="checkbox" name="filter_curior_company" id="shipping_charges_awb_details_1" value="XpressBees">
+                    <label for="shipping_charges_awb_details_1">&nbsp; XpressBees</label>
+                  </div>
+                  <div  class="mb-bottom"><input type="checkbox" name="filter_curior_company" id="shipping_charges_awb_details_1" value="WOWExpress">
+                    <label for="shipping_charges_awb_details_1">&nbsp; WOW Express</label>
+                  </div>
+                  <div  class="mb-bottom"><input type="checkbox" name="filter_curior_company" id="shipping_charges_awb_details_1" value="Shadowfax_Reverse">
+                    <label for="shipping_charges_awb_details_1">&nbsp; Shadowfax_Reverse</label>
+                  </div>
+                  <div  class="mb-bottom"><input type="checkbox" name="filter_curior_company" id="shipping_charges_awb_details_1" value="DelhiveryB2B">
+                    <label for="shipping_charges_awb_details_1">&nbsp; Delhivery B2B</label>
+                  </div>
+                  <div  class="mb-bottom"><input type="checkbox" name="filter_curior_company" id="shipping_charges_awb_details_1" value="Shadowfax">
+                    <label for="shipping_charges_awb_details_1">&nbsp; Shadowfax</label>
+                  </div>
+                  <div  class="mb-bottom"><input type="checkbox" name="filter_curior_company" id="shipping_charges_awb_details_1" value="ERunnerz">
+                    <label for="shipping_charges_awb_details_1">&nbsp; ERunnerz</label>
+                  </div>
+                  <div  class="mb-bottom"><input type="checkbox" name="filter_curior_company" id="shipping_charges_awb_details_1" value="Delhivery_Reverse">
+                    <label for="shipping_charges_awb_details_1">&nbsp; Delhivery_Reverse</label>
+                  </div>
+                  <div  class="mb-bottom"><input type="checkbox" name="filter_curior_company" id="shipping_charges_awb_details_1" value="SpiceJet - Air Cargo">
+                    <label for="shipping_charges_awb_details_1">&nbsp; SpiceJet - Air Cargo</label>
+                  </div>
+                  <button class="btn btn-primary btn-sm" style="float: left;">Submit</button>
+                  <button class="btn btn-success btn-sm" style="float: right;" type="reset">Clear</button>
+                 </div>
+                </div>
+              </div>
+            </th>
+            <th scope="col">Shipment Status 
+              <div class="dropdown">
+                <a class="" href="javascript:" role="" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-filter"></i>
+                </a>
+                <div class="dropdown-menu new_dropdow" aria-labelledby="dropdownMenuLink">
+                 <div class="container" style="font-size:small;">
+                  <div class="mb-bottom"><input type="checkbox" name="filter_status" id="shipping_charges_shipment_status_1" value="Not Picked">
+                    <label for="shipping_charges_shipment_status_1">&nbsp;Not Picked</label>
+                  </div>
+                  <div class="mb-bottom"><input type="checkbox" name="filter_status" id="shipping_charges_shipment_status_1" value="In Transit">
+                    <label for="shipping_charges_shipment_status_1">&nbsp;In Transit</label>
+                  </div>
+                  <div class="mb-bottom"><input type="checkbox" name="filter_status" id="shipping_charges_shipment_status_1" value="Out For Delivery">
+                    <label for="shipping_charges_shipment_status_1">&nbsp;Out For Delivery</label>
+                  </div>
+                  <div class="mb-bottom"><input type="checkbox" name="filter_status" id="shipping_charges_shipment_status_1" value="Delivered">
+                    <label for="shipping_charges_shipment_status_1">&nbsp;Delivered</label>
+                  </div>
+                  <div class="mb-bottom"><input type="checkbox" name="filter_status" id="shipping_charges_shipment_status_1" value="RTO In Transit">
+                    <label for="shipping_charges_shipment_status_1">&nbsp;RTO In Transit</label>
+                  </div>
+                  <div class="mb-bottom"><input type="checkbox" name="filter_status" id="shipping_charges_shipment_status_1" value="RTO Delivered">
+                    <label for="shipping_charges_shipment_status_1">&nbsp;RTO Delivered</label>
+                  </div>
+                  <div class="mb-bottom"><input type="checkbox" name="filter_status" id="shipping_charges_shipment_status_1" value="Exception">
+                    <label for="shipping_charges_shipment_status_1">&nbsp;Exception</label>
+                  </div>
+                  <div class="mb-bottom"><input type="checkbox" name="filter_status" id="shipping_charges_shipment_status_1" value="Lost/Damage">
+                    <label for="shipping_charges_shipment_status_1">&nbsp;Lost/Damage</label>
+                  </div>
+                  <div class="mb-bottom"><input type="checkbox" name="filter_status" id="shipping_charges_shipment_status_1" value="Reverse Delivered">
+                    <label for="shipping_charges_shipment_status_1">&nbsp;Reverse Delivered</label>
+                  </div>
+                  <div class="mb-bottom"><input type="checkbox" name="filter_status" id="shipping_charges_shipment_status_1" value="RTO Exception">
+                    <label for="shipping_charges_shipment_status_1">&nbsp;RTO Exception</label>
+                  </div>
+                  <div class="mb-bottom"><input type="checkbox" name="filter_status" id="shipping_charges_shipment_status_1" value="RTO Created">
+                    <label for="shipping_charges_shipment_status_1">&nbsp;RTO Created</label>
+                  </div>
+                  <div class="mb-bottom"><input type="checkbox" name="filter_status" id="shipping_charges_shipment_status_1" value="RTO Out For Delivery">
+                    <label for="shipping_charges_shipment_status_1">&nbsp;RTO Out For Delivery</label>
+                  </div>
+                  <div class="mb-bottom"><input type="checkbox" name="filter_status" id="shipping_charges_shipment_status_1" value="Reached Destination">
+                    <label for="shipping_charges_shipment_status_1">&nbsp;Reached Destination</label>
+                  </div>
+                  <div class="mb-bottom"><input type="checkbox" name="filter_status" id="shipping_charges_shipment_status_1" value="Reverse In Transit">
+                    <label for="shipping_charges_shipment_status_1">&nbsp;Reverse In Transit</label>
+                  </div>
+                  <div class="mb-bottom"><input type="checkbox" name="filter_status" id="shipping_charges_shipment_status_1" value="Reverse Exception">
+                    <label for="shipping_charges_shipment_status_1">&nbsp;Reverse Exception</label>
+                  </div>
+                  <div class="mb-bottom"><input type="checkbox" name="filter_status" id="shipping_charges_shipment_status_1" value="Reverse Out For Deli">
+                    <label for="shipping_charges_shipment_status_1">&nbsp;Reverse Out For Deli</label>
+                  </div>
+                  <div class="mb-bottom"><input type="checkbox" name="filter_status" id="shipping_charges_shipment_status_1" value="Cancelled">
+                    <label for="shipping_charges_shipment_status_1">&nbsp;Cancelled</label>
+                  </div>
+                  
+                  <button class="btn btn-primary btn-sm" style="float: left;">Submit</button>
+                  <button class="btn btn-success btn-sm" style="float: right;" type="reset">Clear</button>
+                 </div>
+                </div>
+              </div>
+            </th>
+            <th scope="col">Zone / Service 
+              <div class="dropdown">
+                <a class="" href="javascript:" role="" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-filter"></i>
+                </a>
+                <div class="dropdown-menu new_dropdow" aria-labelledby="dropdownMenuLink">
+                 <div class="container" style="font-size:small;">
+                  <div class="mb-bottom"><input type="checkbox" name="shipservice" id="shipping_charges_zone_1" value="Priority" >
+                    <label for="shipping_charges_zone_1">&nbsp; Priority</label>
+                  </div>
+                  <div class="mb-bottom"><input type="checkbox" name="shipservice" id="shipping_charges_zone_1" value="Standard" >
+                    <label for="shipping_charges_zone_1">&nbsp; Standard</label>
+                  </div>
+                  <div class="mb-bottom"><input type="checkbox" name="shipservice" id="shipping_charges_zone_1" value="Economy" >
+                    <label for="shipping_charges_zone_1">&nbsp; Economy</label>
+                  </div>
+                  <div class="mb-bottom"><input type="checkbox" name="shipservice" id="shipping_charges_zone_1" value="Economy 2Kgs" >
+                    <label for="shipping_charges_zone_1">&nbsp; Economy 2Kgs</label>
+                  </div>
+                  <div class="mb-bottom"><input type="checkbox" name="shipservice" id="shipping_charges_zone_1" value="Economy 5kgs" >
+                    <label for="shipping_charges_zone_1">&nbsp; Economy 5kgs</label>
+                  </div>
+                  <div class="mb-bottom"><input type="checkbox" name="shipservice" id="shipping_charges_zone_1" value="Economy 1kg" >
+                    <label for="shipping_charges_zone_1">&nbsp; Economy 1kg</label>
+                  </div>
+                  <div class="mb-bottom"><input type="checkbox" name="shipservice" id="shipping_charges_zone_1" value=" Economy 0.5kg" >
+                    <label for="shipping_charges_zone_1">&nbsp;  Economy 0.5kg</label>
+                  </div>
+                  <div class="mb-bottom"><input type="checkbox" name="shipservice" id="shipping_charges_zone_1" value="Economy B2B" >
+                    <label for="shipping_charges_zone_1">&nbsp; Economy B2B</label>
+                  </div>
+                  <div class="mb-bottom"><input type="checkbox" name="shipservice" id="shipping_charges_zone_1" value="Reverse" >
+                    <label for="shipping_charges_zone_1">&nbsp; Reverse</label>
+                  </div>
+                  <button class="btn btn-primary btn-sm" style="float: left;">Submit</button>
+                  <button class="btn btn-success btn-sm" style="float: right;" type="reset">Clear</button>
+                 </div>
+                </div>
+              </div>
+            </th>
+            <th scope="col">Forward Amount	</th>
+            <th scope="col">RTO Amount	</th>
+            <th scope="col">Cod Charges	</th>
+            <th scope="col">Other Charges	</th>
+            <th scope="col">Total Amount	</th>
+            <th scope="col">Final Weight	</th>
+            <th scope="col">Excess Forward Amount	</th>
+            <th scope="col">Excess RTO Amount	</th>
+            <th scope="col">Grand Total	</th>
+            <th scope="col">GST Total	</th>
+            <th scope="col">Billing Invoice Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr >
+            <td><a href="javascript:" data-toggle="modal" data-target="#exampleModalsc"><p style="color: #077bd4;"><b>SHIPYAARI-123456789</b></p></a><p style="color: green;">D13233</p></td>
+            <td><p style="color: green;"><i class="fas fa-road"></i> 123456789101112</p><p style="color: #fc7303;"><i class="fa fa-truck" aria-hidden="true"></i> Express-Courier -Fedex</p></td>
+            <td><p class="text-center">RTO In Transit</p></td>
+            <td><p style="color: green;">Zone 4</p><p>Economy 0.5kg</p></td>
+            <td><p class="text-center">49</p></td>
+            <td><p class="text-center">0</p></td>
+            <td><p class="text-center">0</p></td>
+            <td><p class="text-center">4.90</p></td>
+            <td><p class="text-center">54</p></td>
+            <td><p class="text-center">0.5</p></td>
+            <td><p class="text-center">0.00</p></td>
+            <td><p class="text-center">0</p></td>
+            <td><p class="text-center">53.90</p></td>
+            <td><p class="text-center">9.70	</p></td>
+            <td><p class="text-center">63.60</p></td>  
+          </tr>
+      </table>
+    </div>

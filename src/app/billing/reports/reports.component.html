@@ -1,0 +1,84 @@
+<body>
+    <div id="app">
+      <div class="main-wrapper main-wrapper-1">
+        <div class="navbar-bg"></div>
+      <!--   navbar here -->
+        <app-navbar></app-navbar>
+        <!-- Sidebar Here -->
+        <app-sidebar></app-sidebar>
+        <!-- Main Content -->
+        <div class="main-content">
+          <section class="section">
+            <div class="row">
+              <div class="col-12 col-sm-12 col-lg-12 p-0 ">
+                <div class="">
+                  <div class="d-flex space-between">
+                    <div class="">
+                      <h4>Reports</h4>
+                      <ol class="breadcrumb pl-0 pt-0">
+                      <li class="breadcrumb-item"><a href="#">Billing</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">Reports</li>
+                      </ol>
+                    </div>
+                  </div>
+                 
+                  <div class="card box_div card_orderre border-bottom addorder-margin">
+                    <div class="card-header box_shadow_none ">
+                      <h4>Report Details</h4>
+                    </div>
+                      <div class="card-body">
+                        <form [formGroup]="reportForm" (ngSubmit)="onSubmit()" autocomplete="off">
+                        <div class="row rowmargin">
+                          <div class="col-6">
+                            <div class="form-group">
+                              <label>Select Report Type</label>
+                              <select class="form-control" formControlName="report_type"
+                              [ngClass]="{'is-invalid':reportForm.get('report_type').touched && reportForm.get('report_type').invalid}">
+                                <option value="Shipment Status Report">Shipment Status Report</option>
+                                <option value="COD Report">COD Report</option>
+                              </select>
+                              <div id="validationServer03Feedback" class="invalid-feedback">
+                                Please provide a valid Selection
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                          <div class="row rowmargin">
+                            <div class="col-6">
+                              <div class="form-group">
+                                <label>Select Date Range</label>
+                                  <div class="input-group">
+                                    <div class="input-group-prepend">
+                                      <div class="input-group-text">
+                                        <i class="fas fa-calendar"></i>
+                                      </div>
+                                    </div>
+                                    <input type="text" class="form-control daterange-cus reportrange" formControlName="date_range">
+                                  </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row rowmargin">
+                            <div class="col-3">
+                              <input type="submit" class="btn btn-primary" value="Download Report" style="width: 100%;">
+                            </div>
+                            <div class="col-3">
+                              <input type="reset" class="btn btn-warning" value="Cancel" style="width: 100%;">
+                            </div>
+                          </div>
+                          </form>
+                      </div>
+                   </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <!-- footer Here -->
+        <app-footer></app-footer>
+      </div>
+    </div>
+  <!-- General JS Scripts -->  
+</body>
+  
+  

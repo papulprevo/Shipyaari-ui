@@ -1,0 +1,75 @@
+<body>
+    <div id="app">
+      <div class="main-wrapper main-wrapper-1">
+        <div class="navbar-bg"></div>
+      <!--   navbar here -->
+        <app-navbar></app-navbar>
+        <!-- Sidebar Here -->
+        <app-sidebar></app-sidebar>
+        <!-- Main Content -->
+        <div class="main-content">
+          <section class="section">
+            <div class="row">
+              <div class="col-12 col-sm-12 col-lg-12 p-0 ">
+                <div class="">
+                  <div class="d-flex space-between">
+                    <div class="">
+                      <h4>Label Option</h4>
+                      <ol class="breadcrumb pl-0 pt-0">
+                      <li class="breadcrumb-item"><a href="#">Setting</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">Label Setting</li>
+                    </ol>
+                    </div>
+                  </div>
+                  <!-- card here -->
+                  <div class="card box_div card_orderre border-bottom addorder-margin">
+                    <div class="card-header box_shadow_none ">
+                        <h4>Select options from label you want to show</h4>
+                      </div>
+                      <div class="card-body">
+                        <form [formGroup]="labelForm" (ngSubmit)="onSubmit()">
+                        <div class="row rowmargin">
+                            <div class="col">
+                            <div class="form-group">
+                                <div class="form-check form-check-inline">
+                                  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="Pickup Address">
+                                  <label class="form-check-label" for="inlineCheckbox1">Pickup Address</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="Pickup Phone number">
+                                  <label class="form-check-label" for="inlineCheckbox2">Pickup Phone number</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                  <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="GST No">
+                                  <label class="form-check-label" for="inlineCheckbox3">GST No</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="Return Address">
+                                    <label class="form-check-label" for="inlineCheckbox4">Return Address</label>
+                                  </div>
+                                  <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="Return Phone Number">
+                                    <label class="form-check-label" for="inlineCheckbox5">Return Phone Number</label>
+                                  </div>
+                                  <div class="form-check form-check-inline">
+                                   <input type="submit" class="btn btn-primary" value="Save" style="width: 100px;"> 
+                                  </div>
+                              </div>
+                            </div>  
+                        </div>
+                        </form>
+                      </div>
+                   </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <!-- footer Here -->
+        <app-footer></app-footer>
+      </div>
+    </div>
+  <!-- General JS Scripts -->  
+</body>
+  
+  

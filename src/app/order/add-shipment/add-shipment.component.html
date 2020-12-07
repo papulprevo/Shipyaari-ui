@@ -1,0 +1,641 @@
+<body>
+    <div id="app">
+      <div class="main-wrapper main-wrapper-1">
+        <div class="navbar-bg"></div>
+      <!--   navbar here -->
+        <app-navbar></app-navbar>
+        <!-- Sidebar Here -->
+        <app-sidebar></app-sidebar>
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="col-sm-12 card p-0 col-sm-12 bg-white-card">
+                <form [formGroup]="add_shipment" (ngSubmit)="onSubmit_shipment()">
+                <h4 class="h4_details">Delivery Details  </h4> <hr>
+                <div class="row new_row">
+                    <div class="col-lg-3 col-xl-2 col-md-3">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <select name="" id="" class="form-control">
+                                    <option value="">
+                                         <div class="form-group">
+                                            <input type="text" class="form-control valid_data" 
+                                            name="f_name" formControlName="delivery_details" 
+                                            data-toggle="tooltip" title="" data-original-title="First Name" 
+                                            placeholder="First Name" aria-describedby="tooltip27502">
+                                        </div> 
+                                    </option>
+                                    <option value="Nagpur">Nagpur</option>
+                                    <option value="Nagpur">Nagpur</option>
+                                    <option value="Nagpur">Nagpur</option>
+                                    <option value="Nagpur">Nagpur</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-xl-2 col-md-3">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-append" style="border: 1px solid #96a2b45c; border-right: none;"> 
+                                    <button class="btn btn-default" type="button" style="line-height: 14px;">+91</button> 
+                                </span>
+                                <input type="text" class="form-control Number" 
+                                data-toggle="tooltip" title="" data-original-title="Phone Number" 
+                                name="phone_no" formControlName="phone_no"  
+                                placeholder="Phone Number" required
+                                [ngClass]="{'is-invalid':add_shipment.get('phone_no').touched && add_shipment.get('phone_no').invalid}">
+                                <div class="invalid-feedback">
+                                    Please Enter 10 digit number 
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-xl-2 col-md-3">
+                        <div class="form-group">
+                            <input type="text" class="form-control error_msg" name="client_order_id" 
+                            data-toggle="tooltip" title="" data-original-title="Order ID" 
+                            formControlName="client_order_id" placeholder="Order ID"  
+                            [ngClass]="{'is-invalid':add_shipment.get('client_order_id').touched && add_shipment.get('client_order_id').invalid}">
+                            <div id="" class="invalid-feedback">
+                                Please Enter Order Id
+                              </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-xl-2 col-md-3">
+                        <div class="form-group">
+                            <input type="text" class="form-control valid_data" 
+                            name="f_name" formControlName="d_f_name" 
+                            data-toggle="tooltip" title="" data-original-title="First Name" 
+                            placeholder="First Name" aria-describedby="tooltip27502"
+                            [ngClass]="{'is-invalid':add_shipment.get('d_f_name').touched && add_shipment.get('d_f_name').invalid}">
+                            <div id="" class="invalid-feedback">
+                                Please Enter First Name
+                              </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-xl-2 col-md-3">
+                        <div class="form-group">
+                            <input type="text" class="form-control" 
+                            name="l_name" formControlName="l_name" 
+                            data-toggle="tooltip" title="" data-original-title="Last Name" 
+                            placeholder="Last Name">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-xl-2 col-md-3">
+                        <div class="form-group">
+                            <input type="text" class="form-control" 
+                            name="email" formControlName="email" data-toggle="tooltip" 
+                            title="" data-original-title="Email Address" 
+                            placeholder="Email Address">
+                            <span id="" style="color: red;font-size:12px"></span>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-xl-2 col-md-3">
+                        <div class="form-group">
+                            <input type="text" class="form-control" 
+                            name="d_landmark" formControlName="d_landmark" 
+                            data-toggle="tooltip" data-original-title="Landmark" 
+                            placeholder="Landmark">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-xl-2 col-md-3">
+                        <div class="form-group">
+                            <input type="text" class="form-control" 
+                            name="address1" formControlName="address1" 
+                            data-toggle="tooltip" data-original-title="Address 1" 
+                            placeholder="Address 1" >
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-xl-2 col-md-3">
+                        <div class="form-group">
+                            <input type="text" class="form-control" 
+                            name="address2" formControlName="address2" 
+                            data-toggle="tooltip" data-original-title="Address 2" 
+                            placeholder="Address 2">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-xl-2 col-md-3">
+                        <div class="form-group">
+                            <input type="text" class="form-control Number error_msg" 
+                            formControlName="d_pincode" 
+                            data-toggle="tooltip" title="" data-original-title="Delivery Pincode" 
+                            placeholder="Delivery Pincode"
+                            [ngClass]="{'is-invalid':add_shipment.get('d_pincode').touched && add_shipment.get('d_pincode').invalid}">
+                             <div id="" class="invalid-feedback">
+                                Please provide valid Pincode
+                              </div>
+                         </div>
+                    </div>
+                    <div class="col-lg-3 col-xl-2 col-md-3">
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="City" 
+                            data-toggle="tooltip" title="" data-original-title="City" 
+                            formControlName="City" placeholder="City" readonly="">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-xl-2 col-md-3">
+                        <div class="form-group">
+                            <input type="text" class="form-control" 
+                            name="State" data-toggle="tooltip" title="" 
+                            data-original-title="State" formControlName="State" 
+                            placeholder="State" readonly>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-xl-2 col-md-3">
+                        <div class="form-group">
+                            <input type="text" class="form-control" 
+                            name="country" data-toggle="tooltip" 
+                            data-original-title="Country" 
+                            formControlName="Country" 
+                            placeholder="Country" readonly>
+                        </div>
+                    </div>
+                </div>
+                <div class="row new_row">
+                    <div class="col-lg-5 col-xl-5 col-md-5 p-0">
+                        <h4 class="h4_details">Pickup Details</h4> <hr>
+                        <div class="row ">
+                            <div class="col-lg-5 col-xl-5 col-md-5">
+                                <div class="input-group">
+                                    <div id=" pick_addr_block" style="width: 100%;">
+                                        <select name="" formControlName="pick_address" class="form-control selectpicker">
+                                            <option value=""> Yup1 </option>
+                                            <option value=""> Yup2 </option>
+                                            <option value=""> Yup3 </option>
+                                            <option value=""> Yup4 </option>
+                                            <option value=""> Yup5 </option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-xl-2 col-md-2" style="display: flex; justify-content: center; align-items: center;"   >
+                                <div class="form-group" style="margin-top: 3%;font-size: 12px;">
+                                  <a href="javascript:" style="color: #077bd4;font-weight: 500;font-size:14px;" id="view_address" data-toggle="modal" data-target=".bd-example1-modal-lg"><i class="fa fa-eye" data-toggle="tooltip" title="" data-original-title="View Address"></i></a>
+                                    &nbsp; OR &nbsp; <a href="#" style="color: #077bd4;font-size:14px;font-weight: 500;" data-toggle="modal" data-target=".bd-example-modal-lg" >  <i class="fa fa-plus-circle" data-toggle="tooltip" title="" data-original-title="Add New Address"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-xl-5 col-md-5">
+                                <div class="input-group">
+                                    <input class="form-control " type="text" 
+                                    formControlName="gst" data-toggle="tooltip" 
+                                    data-original-title="GST Number" placeholder="GST Number" 
+                                    value="125478521475532" name="gst_number" readonly>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-xl-7 col-md-7">
+                        <h4 class="h4_details">Package Details</h4> <hr>
+                        <div class="row">
+                        <div class="col-lg-3 col-xl-3 col-md-3 p-0">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text " style="background-color: white !important;"> <i class="fa fa-calendar tx-16 lh-0 op-6"></i> </div>
+                                </div>
+                                <input class="form-control datepicker hasDatepicker" type="text" formControlName="ship_date" title=""
+                                 placeholder="Ship Date" name="ship_date" readonly="true" required
+                                 [ngClass]="{'is-invalid':add_shipment.get('ship_date').touched && add_shipment.get('ship_date').invalid}">
+                                 <div id="" class="invalid-feedback">
+                                    Date required
+                                  </div>
+                            </div>
+                         </div>
+                         <div class="col-lg-3 col-xl-3 col-md-3">
+                            <input type="text" class="form-control Number error_msg" name="no_of_packages" (keyup)="addMainTable()"  (keydown)="remTable()" formControlName="no_of_packages" [(ngModel)]='a'
+                             maxlength="2" data-toggle="tooltip" title="" data-original-title="Number of Packages" 
+                             placeholder="Number of Packages"
+                             [ngClass]="{'is-invalid':add_shipment.get('no_of_packages').touched && add_shipment.get('no_of_packages').invalid}">
+                             <div id="" class="invalid-feedback">
+                                No. Of Package Required.
+                              </div>
+                         </div>
+                         
+                         <div class="col-lg-2 col-xl-2 col-md-3"  style="    display: flex;
+                         align-items: center;">
+                            <label class="custom-control custom-checkbox" style="margin-top: 3%;">
+                          <input type="checkbox" class="custom-control-input" 
+                          data-toggle="tooltip" data-original-title="Package Type" 
+                          name="package_type" value="identical" formControlname="identical" (click)="remTable()" > 
+                          <span class="custom-control-label">Identical</span> </label>
+                         </div>
+                         <div class="col-lg-2 col-xl-2 col-md-3"  style="    display: flex;
+                         align-items: center;">
+                            <label class="custom-control custom-checkbox" style="margin-top: 3%;">
+                          <input type="checkbox" class="custom-control-input" 
+                          data-toggle="tooltip" data-original-title="Package Type" 
+                          name="package_type" value="Insurance" id="Insurance" > 
+                          <span class="custom-control-label">Insurance</span> </label>
+                         </div>
+                         <div class="col-lg-2 col-xl-2 col-md-3" style="    display: flex;
+                         align-items: center;">
+                            <label class="custom-control custom-checkbox" style="margin-top: 3%;">
+                          <input type="checkbox" class="custom-control-input" 
+                          data-toggle="tooltip" data-original-title="Package Type" 
+                          name="package_type" value="COD" id="COD" > 
+                          <span class="custom-control-label">COD</span> </label>
+                         </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <button class="btn btn-primary" (click)="addMainTable()">add table</button> -->
+                <h4 class="h4_details">Product Details</h4> <hr>
+                <div class="table-responsive">
+                    <table id="product_table_package1" class="table fixed_headers table-striped table-bordered" style="width:100%" *ngFor="let main of mainTable; let i = index">
+                        <thead class="font-color">
+                            <tr>
+                                <th width="33%">Package {{i+1}} Product Details</th>
+                                <th width="10%">SKU</th>
+                                <th width="10%">HSN</th>
+                                <th width="5%">Weight</th>
+                                <th width="5%">Qty</th>
+                                <th width="5%">Tax(%)</th>
+                                <th width="8%">Price<b>(₹)</b></th>
+                                <th width="8%">Discount<b>(₹)</b></th>
+                                <th width="8%">Total</th>
+                                <th width="7%">Action &nbsp;</th>         <!--   <i *ngIf="i!=0" (click)="removeMainTable(i)" class="fa fa-trash fa-lg" aria-hidden="true" style="color: #ebae15;"></i> -->
+                            </tr>
+                        </thead>
+                        <tbody id="table_append_package1">
+                            <tr id="row_1" *ngFor="let child of main.childArr; let j = index">
+                                <td>
+                                    <div class="row new_row">
+                                         <div class="col-lg-6 col-xl-6">
+                                            <div class="input-group">
+                                                <select class="form-control" formControlName="producttablepackage_11" name="table_append_package1">
+                                                <option value="">--Select Template--</option>
+                                                <option value="Option 1">Option 1</option>
+                                                <option value="Option 2">Option 2</option>
+                                                <option value="Option 3">Option 3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                <div class="col-lg-6 col-xl-6">
+                                    <input type="text" class="form-control" 
+                                    name="prod_name1[]" formControlName="prod_name11">
+                                </div>
+                                </div>
+                                </td>
+                                <td>
+                                    <input type="text" class="form-control" 
+                                    name="prod_sku1[]" formControlName="prod_sku11">
+                                </td>
+                                <td>
+                                    <input type="text" class="form-control" 
+                                    name="prod_hsn1[]" formControlName="prod_hsn11">
+                                </td>
+                                <td>
+                                    <input type="text" class="form-control Number" 
+                                    name="prod_weight1[]" maxlength="5" 
+                                    formControlName="prod_weight11" placeholder="Kgs">
+                                </td>
+                                <td>
+                                    <input type="text" class="form-control Number" 
+                                    name="prod_qty1[]" formControlName="prod_qty11" maxlength="2">
+                                </td>
+                                <td>
+                                    <input type="text" class="form-control Number" 
+                                    name="prod_tax1[]" formControlName="prod_tax11" placeholder="%">
+                                </td>
+                                <td>
+                                    <input type="text" class="form-control Number" 
+                                    name="prod_price1[]" formControlName="prod_price11" >
+                                </td>
+                                <td>
+                                    <input type="text" class="form-control Number" 
+                                    name="prod_disc1[]" formControlName="prod_disc11" placeholder="Rs.">
+                                </td>
+                                <td>
+                                    <input type="text" formControlName="total11" name="total1[]" 
+                                    class="form-control" value="0" readonly="">
+                                </td>
+                                <td align="center">
+                                    <a href="javascript:" data-toggle="tooltip" title="" data-original-title="Add New Product" ><i (click)="addChildTable(i)" class="fa fa-plus-circle" style="font-size: 17px;color: #4ab81f;font-weight: 400;"></i></a>
+                                    <a href="javascript:" class=" ml-2" data-toggle="tooltip" title="" data-original-title="Delete / Clear"><i *ngIf="j!=0" (click)="removeChildTable(i,j)" class="fa fa-minus-circle" style="font-size: 17px;color: #e81538;font-weight: 400;"></i></a>
+                                    <a href="javascript:" class=" ml-2" data-toggle="tooltip" title="" data-original-title="Save Product"><i class="fa fa-save" style="font-size: 17px;color: #4a1fb8;font-weight: 400;"></i></a>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot id="pro_daimention_details">
+                            <tr>
+                                <td colspan="10">
+                                    <div class="row new_row">
+                                    <div class="offset-xl-2 col-xl-2 text-right" style="padding-top:0.5%;">
+                                        <label>Dimension (CM)</label>
+                                        </div>
+                                        <div class="col-xl-3">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control Number" name="length[]" maxlength="3" formControlName="length1" placeholder="L">&nbsp;
+                                                <input type="text" class="form-control Number" name="width[]" maxlength="3" formControlName="width1" placeholder="W">&nbsp;
+                                                <input type="text" class="form-control Number" name="height[]" maxlength="3" formControlName="height1" placeholder="H">
+                                            </div>
+                                        </div> 
+                                        <div class="col-xl-1"> 
+                                            <div class="input-group"> 
+                                            <input type="text" class="form-control" 
+                                            data-toggle="tooltip" title="" data-original-title="Product Weight" 
+                                            name="package_weight[]" formControlName="package_weight1" value="0">
+                                        </div>
+                                        </div>
+                                        <div class="col-xl-1"> 
+                                            <div class="input-group"> 
+                                            <input type="text" class="form-control" data-toggle="tooltip" 
+                                            data-original-title="Billable Weight" name="package_weight[]" 
+                                            formControlName="package_weight2" value="0" readonly>
+                                        </div>
+                                        </div>
+                                        <div class="col-xl-1"> 
+                                            <div class="input-group"> 
+                                                <input type="text" class="form-control" 
+                                                data-toggle="tooltip" title="" data-original-title="Total" 
+                                                name="package_weight[]" formControlName="package_weight3" 
+                                                value="0" readonly>
+                                                </div>
+                                           </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                      <span id="package_table_error1" class="error_msg"></span>
+                </div>
+                <h4 class="h4_details">Grand Total</h4> <hr>
+                <div class="row new_row">
+                    <div class="col-lg-3 col-xl-2 col-md-3">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input type="text" name="grand_total" formControlName="grand_total" data-toggle="tooltip"
+                                 data-original-title="Grand Total" value="0" class="form-control"
+                                  readonly>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h4 class="h4_details">Other Details</h4> <hr>
+                <div class="row new_row">
+                    <div class="col-lg-3 col-xl-2 col-md-3">
+                        <div class="input-group"> 
+                             <input type="text" name="other_pick_up_name" 
+                             formControlName="other_pick_up_name" 
+                             placeholder="Other Pickup Name" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-xl-2 col-md-3">
+                        <div class="input-group"> 
+                             <input type="text" name="gst_no" 
+                             formControlName="gst_no" placeholder="GST No" 
+                             class="form-control">
+                        </div>
+
+                    </div>
+                    <div class="col-lg-3 col-xl-2 col-md-3">
+                        <div class="input-group"> 
+                             <input type="text" name="eway_bill_no" 
+                             formControlName="eway_bill_no" placeholder="Eway Bill No." 
+                             class="form-control">
+                       </div>
+                    </div>
+                </div>
+                <h4 class="h4_details">Choose Service Type *</h4> <hr>
+                <div class="row new_row">
+                    <div class="col-lg-12 col-xl-12 col-md-12">
+                        <input type="hidden" name="service_type_selection" id="service_type_selection">
+                        <div class="custom-controls-stacke label_choose" style="display: flex; ">
+                            <label class="custom-control custom-radio">
+                            <input type="radio" class="custom-control-input ser_type" name="service_type" id="service_type_cheapest" value="cheapest" disabled> <span class="custom-control-label">Cheapest</span> </label>
+                              <label class="custom-control custom-radio">
+                             <input type="radio" class="custom-control-input ser_type" name="service_type" id="service_type_bestservice" value="bestservice" disabled> <span class="custom-control-label">Best Service</span> </label>
+                               <label class="custom-control custom-radio">
+                            <input type="radio" class="custom-control-input ser_type" name="service_type" id="service_type_service" value="service" disabled> <span class="custom-control-label"> Service</span> </label>
+                             <label class="custom-control custom-radio">
+                            <input type="radio" class="custom-control-input ser_type" name="service_type" id="service_type_partner" value="Courier" disabled> <span class="custom-control-label"> Courier</span> </label>
+                             <label class="custom-control custom-radio courier_service" id="">
+                            <input type="radio" class="custom-control-input ser_type " name="service_type" id="service_type_service_partner" value="Courier_services" (click)="toggleShow()"> <span class="custom-control-label">Courier + Services</span> </label>
+                        </div>
+                    </div>
+                </div>
+               
+                <div *ngIf="isShown" class="show_courier show_courier" id="divshow">
+                    <!-- <div style="margin-left: 13px;"></div> -->
+                    <div class="row new_row">
+                        
+                        <div class="col-lg-3 col-xl-3 col-md-3">
+                            <div class="input-group">
+                                <div id=" pick_addr_block" style="width: 100%;">
+                                    <label>Select Services</label>
+                                    <select name="" formControlName="service_name" class="form-control selectpicker">
+                                        <option value="Priority" ng-reflect-value=""> Priority </option>
+                                        <option value="Standard" ng-reflect-value=""> Standard </option>
+                                        <option value="Economy" ng-reflect-value=""> Economy </option>
+                                        <option value="Economy2Kg." ng-reflect-value=""> Economy 2 Kg. </option>
+                                        <option value="Economy5Kg." ng-reflect-value=""> Economy 5 Kg. </option>
+                                        <option value="Economy0.5Kg." ng-reflect-value=""> Economy 0.5 Kg. </option>
+                                        <option value="Reverse" ng-reflect-value=""> Reverse </option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-xl-3 col-md-3">
+                            <div class="input-group">
+                                <div id=" " style="width: 100%;">
+                                    <label>Select Services</label>
+                                    <select name="" formControlName="Courier_name" class="form-control selectpicker">
+                                        <option value="DotZot" ng-reflect-value=""> DotZot </option>
+                                        <option value="Delhivery" ng-reflect-value=""> Delhivery </option>
+                                        <option value="FedEx" ng-reflect-value=""> FedEx </option>
+                                        <option value="BlueDart" ng-reflect-value=""> BlueDart </option>
+                                        <option value="ExpressBees" ng-reflect-value=""> ExpressBees </option>
+                                        <option value="WOW_Express" ng-reflect-value=""> WOW Express </option>
+                                        <option value="ShadowFax_Reverse" ng-reflect-value=""> ShadowFax_Reverse </option>
+                                        <option value="ShadowFax" ng-reflect-value=""> ShadowFax </option>
+                                        <option value="Delhivery_Reverse" ng-reflect-value=""> Delhivery_Reverse </option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- <button (click)="toggle()" id="bt">
+                    {{buttonName}}
+                </button>
+                
+                <ng-container *ngIf="show">
+                    <div style="margin: 0 auto;text-align: left;">
+                        <div>
+                            <label>Name:</label>
+                            <div><input id="tbname" name="yourname" /></div>
+                        </div>
+                        <div>
+                            <label>Email Address:</label>
+                            <div><input name="email" id="email" /></div></div>
+                        <div>
+                            <label>Additional Information (optional):</label>
+                            <div><textarea rows="5" cols="46"></textarea></div>
+                        </div>
+                    </div>
+                </ng-container> -->
+                
+                <!-- Button trigger modal -->
+             
+                
+                <div class="card-footer">
+                    <button type="submit" class="btn btn-primary"  >Add Order</button>
+                    <span id="save_consignment_error" style="color: red;"></span>
+                </div>
+                </form>
+            </div>
+         </div>
+  <!-- footer Here -->
+        <app-footer></app-footer>
+      </div>
+    </div>
+
+
+   <!-- Modal Here  Add new Address-->
+   <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="myLargeModalLabel">Add New Pickup Address
+        </h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <h6><i class="fa fa-user fa-lg" aria-hidden="true" style="color: #077bd4;"></i>&nbsp;Personal Details</h6>
+            <form [formGroup]="add_new_address" (ngSubmit)="onSubmitAddress()">
+            <div class="row new_row">
+                <div class="col">
+                    <div class="form-group">
+                        <input type="text" class="form-control"  formControlName="Pickup_Name" data-toggle="tooltip" title="" data-original-title="Pickup Name"  placeholder="Pickup Name"
+                        [ngClass]="{'is-invalid':add_new_address.get('Pickup_Name').touched && add_new_address.get('Pickup_Name').invalid}" >
+                        <div class="invalid-feedback">
+                            Please Enter Pickup Name
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <input type="text" class="form-control"  formControlName="Pickup_Company_Name" data-toggle="tooltip" title="" data-original-title="Pickup Company Name"  placeholder="Pickup Company Name" 
+                        [ngClass]="{'is-invalid':add_new_address.get('Pickup_Company_Name').touched && add_new_address.get('Pickup_Company_Name').invalid}" >
+                        <div class="invalid-feedback">
+                            Please Enter Pickup Company Name
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <input type="text" class="form-control"  formControlName="Contact_Person_Name" data-toggle="tooltip" title="" data-original-title="Contact Person Name"  placeholder="Contact Person Name" 
+                        [ngClass]="{'is-invalid':add_new_address.get('Contact_Person_Name').touched && add_new_address.get('Contact_Person_Name').invalid}" >
+                        <div class="invalid-feedback">
+                            Please Enter Contact Person Name
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <input type="text" class="form-control"  formControlName="Pickup_Contact_Number" data-toggle="tooltip" title="" data-original-title="Pickup Contact Number"  placeholder="Pickup Contact Number" 
+                        [ngClass]="{'is-invalid':add_new_address.get('Pickup_Contact_Number').touched && add_new_address.get('Pickup_Contact_Number').invalid}" >
+                        <div class="invalid-feedback">
+                            Enter 10 digit Contact Number require
+                        </div>
+                    </div>
+                </div>
+          </div>
+          <hr>
+          <h6><i class="fa fa-map-marker fa-lg" aria-hidden="true" style="color: #077bd4;"></i>&nbsp; PickUp Location Details</h6>
+          <div class="row new_row">
+              <div class="col">
+                <div class="form-group">
+                    <input type="text" class="form-control"  formControlName="Pincode" data-toggle="tooltip" title="" data-original-title="Pincode"  placeholder="Pincode" 
+                    [ngClass]="{'is-invalid':add_new_address.get('Pincode').touched && add_new_address.get('Pincode').invalid}" >
+                        <div class="invalid-feedback">
+                            Please Enter 6 Digit Pincode
+                        </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="form-group">
+                    <input type="text" class="form-control"  formControlName="City" data-toggle="tooltip" title="" data-original-title="City"  placeholder="City" readonly>
+                </div>
+              </div>
+              <div class="col">
+                <div class="form-group">
+                    <input type="text" class="form-control"  formControlName="State" data-toggle="tooltip" title="" data-original-title="State"  placeholder="State" readonly>
+                </div>
+              </div>
+              <div class="col">
+                <div class="form-group">
+                    <input type="text" class="form-control"  formControlName="Country" data-toggle="tooltip" title="" data-original-title="Country"  placeholder="Country" readonly>
+                </div>
+              </div>
+          </div>
+          <div class="row new_row">
+            <div class="col">
+                <div class="form-group">
+                    <input type="text" class="form-control"  formControlName="Landmark" data-toggle="tooltip" title="" data-original-title="Landmark"  placeholder="Landmark" 
+                    [ngClass]="{'is-invalid':add_new_address.get('Landmark').touched && add_new_address.get('Landmark').invalid}" >
+                        <div class="invalid-feedback">
+                        Please Enter Landmark
+                        </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-group">
+                    <input type="text" class="form-control"  formControlName="Address1" data-toggle="tooltip" title="" data-original-title="Address1"  placeholder="Address1" 
+                    [ngClass]="{'is-invalid':add_new_address.get('Address1').touched && add_new_address.get('Address1').invalid}" >
+                        <div class="invalid-feedback">
+                            Please Enter Addresss1
+                        </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-group">
+                    <input type="text" class="form-control"  formControlName="Address2" data-toggle="tooltip" title="" data-original-title="Address2"  placeholder="Address2" >
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-group">
+                    <input type="text" class="form-control"  formControlName="GST_Number" data-toggle="tooltip" title="" data-original-title="GST Number"  placeholder="GST Number">
+                </div>
+            </div>
+        </div>
+        <div class="row new_row">
+            <div class="form-check">
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="customCheck2">
+                  <label class="custom-control-label" for="customCheck2">Mark As Default Address ?</label>
+                </div>
+            </div>
+        </div>
+        <div class="row new_row">
+            <button class="btn btn-warning" type="sumbit" [disabled]="add_new_address.invalid">Submit</button>
+        </div>
+    </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <!-- Modal Here  View Address-->
+   <div class="modal fade bd-example1-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="myLargeModalLabel">Address Details
+        </h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+  

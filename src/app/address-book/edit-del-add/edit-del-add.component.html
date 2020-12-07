@@ -1,0 +1,109 @@
+<h5 class="text-center">Edit Delivery Details</h5>
+<div class="">
+  <h6>Personal Details</h6>
+  <form [formGroup]="edit_del_Address" (ngSubmit)="onSubmit()">
+  <div class="row">
+    <div class="col-sm-3">
+      <div class="form-group">
+        <input type="text" name="" value="" class="form-control" placeholder="Delivery Name" formControlName="edit_del_name"
+        [ngClass]="{'is-invalid':edit_del_Address.get('edit_del_name').touched && edit_del_Address.get('edit_del_name').invalid}">
+        <div class="invalid-feedback">Please provide Pick Name</div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="form-group">
+        <input type="text" name="" value="" class="form-control" placeholder="Delivery Name" formControlName="edit_del_company"
+        [ngClass]="{'is-invalid':edit_del_Address.get('edit_del_company').touched && edit_del_Address.get('edit_del_company').invalid}">
+        <div class="invalid-feedback">Please provide Company</div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="form-group">
+        <input type="text" name="" value="" class="form-control" placeholder="Delivery Name" formControlName="edit_del_cont_name"
+        [ngClass]="{'is-invalid':edit_del_Address.get('edit_del_cont_name').touched && edit_del_Address.get('edit_del_cont_name').invalid}">
+        <div class="invalid-feedback">Please provide Cont. Name</div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="form-group">
+        <input type="text" name="" value="" class="form-control" placeholder="Delivery Contact Number" formControlName="edit_del_contact"
+        [ngClass]="{'is-invalid':edit_del_Address.get('edit_del_contact').touched && edit_del_Address.get('edit_del_contact').invalid}">
+        <div class="invalid-feedback">Please provide Contact</div>
+      </div>
+    </div>
+  </div>
+  <h6 class="pick_locationdetails">Delivery Location Details</h6>
+  <div class="row">
+    <div class="col-sm-3">
+      <div class="form-group textbox-botton">
+        <input type="text" name="" value="" class="form-control" placeholder="Pincode" formControlName="edit_del_pin"
+        [ngClass]="{'is-invalid':edit_del_Address.get('edit_del_pin').touched && edit_del_Address.get('edit_del_pin').invalid}">
+        <div class="invalid-feedback">Please provide Pincode</div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="form-group">
+        <input type="text" name="" value="" class="form-control" placeholder="Landmark" formControlName="edit_del_landmark"
+        [ngClass]="{'is-invalid':edit_del_Address.get('edit_del_landmark').touched && edit_del_Address.get('edit_del_landmark').invalid}">
+        <div class="invalid-feedback">Please provide Landmark</div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="form-group">
+        <input type="text" name="" value="" class="form-control" placeholder="Address1" formControlName="edit_del_address1"
+        [ngClass]="{'is-invalid':edit_del_Address.get('edit_del_address1').touched && edit_del_Address.get('edit_del_address1').invalid}">
+        <div class="invalid-feedback">Please provide Address 1</div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="form-group">
+        <input type="text" name="" value="" class="form-control" placeholder="Address2" formControlName="edit_del_address2"
+        [ngClass]="{'is-invalid':edit_del_Address.get('edit_del_address2').touched && edit_del_Address.get('edit_del_address2').invalid}">
+        <div class="invalid-feedback">Please provide Address 2</div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="form-group textbox-botton">
+        <select class="form-control" name="" formControlName="edit_del_country"
+        [ngClass]="{'is-invalid':edit_del_Address.get('edit_del_country').touched && edit_del_Address.get('edit_del_country').invalid}">
+        <div class="invalid-feedback">Please provide Country</div>
+          <option value="">-Select Country-</option>
+          <option value="India">India</option>
+          <option value="America">America</option>
+        </select>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="form-group">
+        <select class="form-control" name="" formControlName="edit_del_state"
+        [ngClass]="{'is-invalid':edit_del_Address.get('edit_del_state').touched && edit_del_Address.get('edit_del_state').invalid}">
+        <div class="invalid-feedback">Please provide State</div>
+          <option value="">-Select State-</option>
+          <option value="Maharashtra">Maharashtra</option>
+        </select>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="form-group">
+        <select class="form-control"  name="" formControlName="edit_del_city"
+        [ngClass]="{'is-invalid':edit_del_Address.get('edit_del_city').touched && edit_del_Address.get('edit_del_city').invalid}">
+        <div class="invalid-feedback">Please provide City</div>
+          <option value="">-Select City-</option>
+          <option value="Nagpur">Nagpur</option>
+        </select>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="form-group">
+        <input type="text" name="" value="" class="form-control" placeholder="GST Number" formControlName="edit_del_Gst"
+        [ngClass]="{'is-invalid':edit_del_Address.get('edit_del_Gst').touched && edit_del_Address.get('edit_del_Gst').invalid}">
+        <div class="invalid-feedback">Please provide GST No.</div>
+      </div>
+    </div>
+  </div>
+  <div class="">
+    <button type="submit" name="" class="btn btn-primary">Submit</button>
+    <button type="reset" name="" class="btn btn-warning" style="float: right;">Clear</button>
+  </div>
+</form>
+</div>

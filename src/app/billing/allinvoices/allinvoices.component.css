@@ -1,0 +1,108 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i';
+@import 'https://fonts.googleapis.com/css?family=Roboto+Mono:400,700&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese';
+.shadow-box
+{
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 10px;
+    box-shadow: 0 7 black;
+    box-shadow: 0px 0px 23px -12px rgb(46 43 44);
+}
+.icon-card
+{
+    width: 60px;
+    height: 60px;
+}
+.fs12{
+    font-size: 12px;
+    font-weight: 600;
+
+}
+.align-center{
+    align-items: center;
+}
+.card{
+    box-shadow: 0px 0px 7px #ccc;
+    }
+
+    .bg-white-card{
+        box-shadow: 0px 0px 7px #ccc;
+        background: white;
+        padding: 13px;
+    }
+
+.text-col
+{
+    color: #077bd4;
+}    
+
+
+table tr td, table tr th
+{
+color: black;
+font-family: 'Roboto Condensed', 'Roboto', sans-serif;
+   font-weight: 400;
+}
+
+table p{
+    margin-bottom: 0px;
+}
+
+.mb-bottom
+{
+    margin-bottom: -10px;
+}
+
+.trans-drop
+{
+    transform: translate3d(0px, 0px, 0px);
+}
+
+.modal-title{
+	text-align: center;
+    width: 100%;
+    color: #077bd4;
+	font-size: 17px;;
+}
+.border_sm6{
+	border: 1px solid #077bd4;
+
+}
+.modal-body{
+	padding: 0.5rem !important;
+
+}
+.mt25{
+	margin-top: 25px;
+
+}
+.h250px{
+	height: 250px;
+    overflow-y: scroll;
+}
+.h250px::-webkit-scrollbar {
+	width: 0px;
+  }
+.new_modal_li .row{
+	border-bottom: 1px solid lightgray;
+    padding: 7px;
+    font-size: 12px;
+}
+.new_modal_li .row .text-muted{
+	font-size: 12px;
+
+}
+.acc_one{
+	background-color: #077bd4;
+    border-color: #077bd4;
+    margin-bottom: 0px;
+	padding: 7px 17px;
+
+}
+.acc_one h3{
+	font-size: 14px;
+	color: white;
+	margin-bottom: 0;
+
+}
+ 

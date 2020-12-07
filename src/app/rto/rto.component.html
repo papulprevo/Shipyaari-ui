@@ -1,0 +1,436 @@
+<body>
+  <div id="app">
+    <div class="main-wrapper main-wrapper-1">
+      <div class="navbar-bg"></div>
+        <!-- navbar here -->
+        <app-navbar></app-navbar>
+        <!-- sidebar here -->
+        <app-sidebar></app-sidebar>
+      <!-- Main Content -->
+      <div class="main-content">
+        <section class="section">
+          <div class="row">
+            <div class="col-12 col-sm-12 col-lg-12 p-0 ">
+              <div class="card"  style="    background-color: #f5f8fb;
+              border: none;">
+                <div class="d-flex space-between">
+                  <div class="">
+                    <h4>Tracking</h4>
+                    <ol class="breadcrumb pl-0 pt-0">
+                      <li class="breadcrumb-item"><a href="#">Home</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">Tracking</li>
+                    </ol>
+                  </div>
+                  <div class=" align-right datepicker">
+                    <div id="reportrange"  class="pull-left new_left" style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc;">
+                        <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>&nbsp;
+                        <span></span> <b class="caret"></b>
+                    </div>
+                  </div>
+                </div>
+                <!-- not moving -->
+
+                <!-- graph Ratio -->
+                <div class="row mx-0 ">
+                  <div class="col-lg-12 p-0">
+                    <div class="row">
+                      <div class="col-sm-9 rtop-0 p-0">
+                        <div class="row">
+                          <div class="col-sm-4">
+                            <div class="bg-w rto-p5">
+                              <div class="d-flex item-center">
+                                <div class="">
+                                  <img src="assets/img/return_initiate.png" alt="">
+                                </div>
+                                <div class="">
+                                  <h2>44</h2>
+                                  <p>RTO initiated</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-4 p-0">
+                            <div class="bg-w rto-p5">
+                              <div class="d-flex item-center">
+                                <div class="">
+                                  <img src="assets/img/return_transit (1).png" alt="">
+                                </div>
+                                <div class="">
+                                  <h2>233</h2>
+                                  <p>RTO In Transit</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="bg-w rto-p5">
+                              <div class="d-flex item-center">
+                                <div class="w55">
+                                  <img src="assets/img/recurring-exception.png" alt="">
+                                </div>
+                                <div class="">
+                                  <h2>233</h2>
+                                  <p>RTO Exception</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-4 mt17">
+                            <div class="bg-w rto-p5">
+                              <div class="d-flex item-center">
+                                <div class="">
+                                  <img src="assets/img/rto-delivered.png" alt="">
+                                </div>
+                                <div class="">
+                                  <h2>255</h2>
+                                  <p>RTO Delivered</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-4 mt17 p-0">
+                            <div class="bg-w rto-p5">
+                              <div class="d-flex item-center">
+                                <div class="">
+                                  <img src="assets/img/tro-avg.png" alt="">
+                                </div>
+                                <div class="">
+                                  <h2>255</h2>
+                                  <p>Avg RTO Transit days</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-4 mt17">
+                            <div class="bg-w rto-p5">
+                              <div class="d-flex item-center">
+                                <div class="w55">
+                                  <img src="assets/img/icons8-total-sales-64.png" alt="">
+                                </div>
+                                <div class="">
+                                  <h2>255</h2>
+                                  <p>Revenue of RTO, % of Total Revenue</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class=" col-sm-3  dash1">
+                          <div class="total color-green">
+                            <h5 class="icon_new">
+                              <!-- <img src="assets/img/doller.png" alt=""> -->
+                            </h5>
+                            <p class=" mb-0 "> Total RTO</p>
+                            <h2 class="mb-2">2</h2>
+                          </div>
+
+                    		</div>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="row mx-0 mtsellet5">
+                  <div class="col-lg-6 p-0">
+                    <div class="col-sm-12 pl0 graphp0">
+                      <div class="bg-w">
+                        <div class="card-header box_shadow_none">
+                          <h4>Heading</h4>
+                        </div>
+                           <app-rto-chart1></app-rto-chart1>
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <div class="col-lg-6 p-0">
+                    <div class="col-lg-12 bg-w new_div p-0">
+                      <div class="">
+                        <ul class="nav nav-tabs nav-justified" id="myTab2" role="tablist">
+                          <li class="nav-item">
+                            <a class="nav-link active" id="home-tab2" data-toggle="tab" href="#home2" role="tab" aria-controls="home" aria-selected="false">Order Split</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" id="profile-tab2" data-toggle="tab" href="#profile2" role="tab" aria-controls="profile" aria-selected="false">Delivery Ratio</a>
+                          </li>
+                        </ul>
+                        <div class="tab-content tab-bordered" id="myTab3Content">
+                          <div class="tab-pane fade active show" id="home2" role="tabpanel" aria-labelledby="home-tab2">
+                            <div class="card">
+                              cod vs prepaid
+                            </div>
+                          </div>
+                          <div class="tab-pane fade" id="profile2" role="tabpanel" aria-labelledby="profile-tab2">
+                            <div class="card">
+                              cod vs prepaid
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </div>
+                <!-- end graph Ratio -->
+                <!-- Courier co -->
+                <div class="row mx-0 ">
+                  <div class="col-lg-12 mtsellet5 p-0">
+                    <div class="col-sm-12 box_sec2 pl0">
+                      <div class="card">
+                        <div class="card-header box_shadow_none">
+                          <h4>Heading</h4>
+                        </div>
+                        <div class="table-responsive mt21">
+                          <table class="courier" id="myTable2">
+                          <thead>
+                              <tr>
+                                  <th onclick="sortTable(00)">Reasonwise Split
+                                    <span class="arrow12">
+                                    <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                    <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                  </span>
+                                  </th>
+                                  <th onclick="sortTable(01)">Order Count
+                                    <span class="arrow12">
+                                      <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                      <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                    </span>
+                                  	</th>
+                                  <th onclick="sortTable(02)">Revenue
+                                    <span class="arrow12">
+                                    <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                    <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                  </span>
+                                  </th>
+                                  <th onclick="sortTable(03)">% of total
+                                    <span class="arrow12">
+                                    <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                    <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                    </span>
+                                  </th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1	</td>
+                              <td>0-3</td>
+                              <td>4-6	</td>
+                              <td>7-10</td>
+                            </tr>
+                            <tr>
+                              <td>1	</td>
+                              <td>0-3</td>
+                              <td>4-6	</td>
+                              <td>7-10</td>
+                            </tr>
+                            <tr>
+                              <td>1	</td>
+                              <td>0-3</td>
+                              <td>4-6	</td>
+                              <td>7-10</td>
+                            </tr>
+                            <tr>
+                              <td>1	</td>
+                              <td>0-3</td>
+                              <td>4-6	</td>
+                              <td>7-10</td>
+                            </tr>
+                            <tr>
+                              <td>1	</td>
+                              <td>0-3</td>
+                              <td>4-6	</td>
+                              <td>7-10</td>
+                            </tr>
+                            <tr>
+                              <td>1	</td>
+                              <td>0-3</td>
+                              <td>4-6	</td>
+                              <td>7-10</td>
+                            </tr>
+                            <tr>
+                              <td>1	</td>
+                              <td>0-3</td>
+                              <td>4-6	</td>
+                              <td>7-10</td>
+                            </tr>
+                            <tr>
+                              <td>1	</td>
+                              <td>0-3</td>
+                              <td>4-6	</td>
+                              <td>7-10</td>
+                            </tr>
+                            <tr>
+                              <td>1	</td>
+                              <td>0-3</td>
+                              <td>4-6	</td>
+                              <td>7-10</td>
+                            </tr>
+                            <tr>
+                              <td>1	</td>
+                              <td>0-3</td>
+                              <td>4-6	</td>
+                              <td>7-10</td>
+                            </tr>
+                            <tr>
+                              <td>1	</td>
+                              <td>0-3</td>
+                              <td>4-6	</td>
+                              <td>7-10</td>
+                            </tr>
+                            <tr>
+                              <td>1	</td>
+                              <td>0-3</td>
+                              <td>4-6	</td>
+                              <td>7-10</td>
+                            </tr>
+                          </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- top 20 rto pincode -->
+                <div class="row mx-0 ">
+                  <div class="col-lg-12 mtsellet5 p-0">
+                    <div class="col-sm-12 box_sec2 pl0">
+                      <div class="card">
+                        <div class="card-header box_shadow_none">
+                          <h4>Heading</h4>
+                        </div>
+                        <div class="table-responsive mt21">
+                          <table class="courier" id="myTable2">
+                          <thead>
+                              <tr>
+                                  <th onclick="sortTable(00)">Top 20 RTO Pincode
+                                    <span class="arrow12">
+                                    <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                    <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                  </span>
+                                  </th>
+                                  <th onclick="sortTable(01)">City
+                                    <span class="arrow12">
+                                      <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                      <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                    </span>
+                                  	</th>
+                                  <th onclick="sortTable(02)">Count
+                                    <span class="arrow12">
+                                    <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                    <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                  </span>
+                                  </th>
+                                  <th onclick="sortTable(03)">Revenue
+                                    <span class="arrow12">
+                                    <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                    <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                    </span>
+                                  </th>
+                                  <th onclick="sortTable(03)">% of Total RTO
+                                    <span class="arrow12">
+                                    <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                    <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                    </span>
+                                  </th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1	</td>
+                              <td>loream</td>
+                              <td>20776	</td>
+                              <td>20776	</td>
+                              <td>Detail</td>
+                            </tr>
+                            <tr>
+                              <td>1	</td>
+                              <td>loream</td>
+                              <td>20776	</td>
+                              <td>20776	</td>
+                              <td>Detail</td>
+                            </tr>
+                            <tr>
+                              <td>1	</td>
+                              <td>loream</td>
+                              <td>20776	</td>
+                              <td>20776	</td>
+                              <td>Detail</td>
+                            </tr>
+                            <tr>
+                              <td>1	</td>
+                              <td>loream</td>
+                              <td>20776	</td>
+                              <td>20776	</td>
+                              <td>Detail</td>
+                            </tr>
+                            <tr>
+                              <td>1	</td>
+                              <td>loream</td>
+                              <td>20776	</td>
+                              <td>20776	</td>
+                              <td>Detail</td>
+                            </tr>
+                            <tr>
+                              <td>1	</td>
+                              <td>loream</td>
+                              <td>20776	</td>
+                              <td>20776	</td>
+                              <td>Detail</td>
+                            </tr>
+                            <tr>
+                              <td>1	</td>
+                              <td>loream</td>
+                              <td>20776	</td>
+                              <td>20776	</td>
+                              <td>Detail</td>
+                            </tr>
+                            <tr>
+                              <td>1	</td>
+                              <td>loream</td>
+                              <td>20776	</td>
+                              <td>20776	</td>
+                              <td>Detail</td>
+                            </tr>
+                            <tr>
+                              <td>1	</td>
+                              <td>loream</td>
+                              <td>20776	</td>
+                              <td>20776	</td>
+                              <td>Detail</td>
+                            </tr>
+                            <tr>
+                              <td>1	</td>
+                              <td>loream</td>
+                              <td>20776	</td>
+                              <td>20776	</td>
+                              <td>Detail</td>
+                            </tr>
+                            <tr>
+                              <td>1	</td>
+                              <td>loream loream</td>
+                              <td>20776	</td>
+                              <td>20776	</td>
+                              <td>Detail</td>
+                            </tr>
+                          </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+            </div>
+          </div>
+    
+      </section>
+    </div>
+<app-footer></app-footer>
+</div>
+</div>
+
+
+</body>

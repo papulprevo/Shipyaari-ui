@@ -1,0 +1,283 @@
+<body>
+  <div id="app">
+    <div class="main-wrapper main-wrapper-1">
+      <div class="navbar-bg"></div>
+        <!-- navbar here -->
+        <app-navbar></app-navbar>
+        <!-- sidebar here -->
+        <app-sidebar></app-sidebar>
+      <!-- Main Content -->
+      <div class="main-content">
+        <section class="section">
+          <div class="row">
+            <div class="col-12 col-sm-12 col-lg-12 p-0 ">
+              <div class="">
+                <div class="d-flex space-between">
+                  <div class="">
+                    <h4>Address Details</h4>
+                    <ol class="breadcrumb pl-0 pt-0">
+                    <li class="breadcrumb-item"><a href="#">Smart Shipyaari</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Address Details</li>
+                  </ol>
+                  </div>
+                  <div class=" align-right datepicker">
+                    <div id="reportrange"  class="pull-left new_left" style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc;">
+                        <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>&nbsp;
+                        <span></span> <b class="caret"></b>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-12 bg-w new_div p-0">
+                  <div class="">
+                    <div class="h41">
+                      <ul class="nav nav-tabs nav-justified w200" id="myTab2" role="tablist">
+                        <li class="nav-item">
+                          <a class="nav-link active" id="home-tab2" data-toggle="tab" href="#home2" role="tab" aria-controls="home" aria-selected="false">Pickup</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" id="profile-tab2" data-toggle="tab" href="#profile2" role="tab" aria-controls="profile" aria-selected="false">Delivery</a>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="tab-content tab-bordered" id="myTab3Content">
+                      <div class="tab-pane fade active show" id="home2" role="tabpanel" aria-labelledby="home-tab2">
+                        <div class="">
+                          <div class="d-flex space-between">
+                    				<div class="form-group "> 	<!--		Show Numbers Of Rows 		-->
+                    			 		<select class  ="form-control dis_none" name="state" id="maxRows">
+                    						 <option value="5000">Show ALL Rows</option>
+                                 <option value="5"></option>
+                    						 <option value="10" selected>10</option>
+                    						 <option value="20">20</option>
+                    						 <option value="30">30</option>
+                    						 <option value="40">40</option>
+                    						 <option value="70">70</option>
+                    						 <option value="100">100</option>
+                    						</select>
+
+                    			  	</div>
+                              <div class="">
+                                <button type="" class="btn btn-primary btn-sm" name="" data-toggle="modal" data-target="#AddpickAddress">+ Add</button>
+                              </div>
+                            </div>
+                        <div class="table-responsive p-0">
+                          <table class="table table-striped table-class table_fas_icon" id= "table-id">
+                          	<tr>
+                          		<th>Name</th>
+                          		<th>Mobile</th>
+                          		<th>Address 1	</th>
+                              <th>Address 2	</th>
+                              <th>Landmark	</th>
+                              <th> City</th>
+                              <th>State</th>
+                              <th>Pincode	</th>
+                          		<th>Action	</th>
+                          	</tr>
+                          	<tr>
+                          		<td>Rajah Armstrong</td>
+                          		<td>1-636-140-1210</td>
+                          		<td>Parsodi	</td>
+                          		<td>Trimurti nagar	</td>
+                              <td>Trimurti nagar	</td>
+                              <td>Nagpur	</td>
+                              <td>Maharashtra</td>
+                              <td>441912</td>
+                              <td>
+                                <div class="">
+                                 <span data-target="#view_pickup_add" data-toggle="modal"> <i class="fas fa-eye"></i> </span>&nbsp; 
+                                  <span data-target="#edit_pickup_add" data-toggle="modal"><i class="fas fa-pencil-alt"></i></span>&nbsp;
+                                  <i class="fas fa-ban"></i>
+                                </div>
+                              </td>
+
+                          </table>
+                        </div>
+
+                    <!--		Start Pagination -->
+                    			<div class='pagination-container' >
+                    				<nav>
+                    				  <ul class="pagination pagi1">
+
+                                <li data-page="prev" class="pagi_li">
+                    								     <span> <i class="fa fa-angle-left fa-lg"></i> <span class="sr-only">(current)</span></span>
+                    								    </li>
+                    				   <!--	Here the JS Function Will Add the Rows -->
+                            <li data-page="next" id="prev" class="pagi_li">
+                    								       <span> <i class="fa fa-angle-right fa-lg"></i> <span class="sr-only">(current)</span></span>
+                    								    </li>
+                    				  </ul>
+                    				</nav>
+                    			</div>
+
+                    </div>
+                      </div>
+                      <div class="tab-pane fade" id="profile2" role="tabpanel" aria-labelledby="profile-tab2">
+
+                        <div class="">
+                          <div class="d-flex space-between">
+                    				<div class="form-group "> 	<!--		Show Numbers Of Rows 		-->
+                    			 		<select class  ="form-control dis_none" name="state" id="maxRows2">
+                    						 <option value="5000">Show ALL Rows</option>
+                                 <option value="5"></option>
+                    						 <option value="10" selected>10</option>
+                    						 <option value="20">20</option>
+                    						 <option value="30">30</option>
+                    						 <option value="40">40</option>
+                    						 <option value="70">70</option>
+                    						 <option value="100">100</option>
+                    						</select>
+
+                    			  	</div>
+                              <div class="">
+                                <button type="button" class="btn btn-primary" name="" data-toggle="modal" data-target="#Add_del_address">+ Add</button>
+                              </div>
+                            </div>
+
+                        <div class="table-responsive p-0">
+                          <table class="table table2 table-striped table-class table_fas_icon" id="table-id2">
+                          	<tr>
+                          		<th>Name</th>
+                          		<th>Mobile</th>
+                          		<th>Address 1	</th>
+                              <th>Address 2	</th>
+                              <th>Landmark	</th>
+                              <th> City</th>
+                              <th>State</th>
+                              <th>Pincode	</th>
+                          		<th>Action	</th>
+                          	</tr>
+                          	<tr>
+                          		<td>Rajah Armstrong</td>
+                          		<td>1-636-140-1210</td>
+                          		<td>Parsodi	</td>
+                          		<td>Trimurti nagar	</td>
+                              <td>Trimurti nagar	</td>
+                              <td>Nagpur	</td>
+                              <td>Maharashtra</td>
+                              <td>441912</td>
+                              <td>
+                                <div class="">
+                                 <span data-target="#view_delivey_add" data-toggle="modal"> <i class="fas fa-eye"></i> </span> &nbsp;
+                                  <span data-toggle="modal" data-target="#edit_delivery_add"><i class="fas fa-pencil-alt"></i></span>&nbsp;
+                                  <i class="fas fa-ban"></i>
+                                </div>
+                              </td>
+                          	</tr>
+                          </table>
+                        </div>
+
+                    <!--		Start Pagination -->
+                    			<!-- <div class='pagination-container' >
+                    				<nav>
+                    				  <ul class="pagination pagi1">
+
+                                <li data-page="prev" class="pagi_li">
+                    								     <span> < <span class="sr-only">(current)</span></span>
+                    								    </li>
+                            <li data-page="next" id="prev1" class="pagi_li">
+                    								       <span> > <span class="sr-only">(current)</span></span>
+                    								    </li>
+                    				  </ul>
+                    				</nav>
+                    			</div> -->
+                    </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+      </div>
+    </div>
+  </div>
+  
+</section>
+</div>
+<footer class="main-footer">
+  <div class="footer-left">
+    2020 Copyright ©<div class="bullet"></div>  <a href="#">Shipyaari</a> All Rights Reserved
+  </div>
+  <div class="footer-right">
+  </div>
+</footer>
+</div>
+</div>
+
+
+<!-- add pickup modal -->
+<div class="modal fade" id="AddpickAddress" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-body">
+          <app-add-pickup-add></app-add-pickup-add>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- end add pickup modal -->
+<!-- add delivery -->
+<div class="modal fade" id="Add_del_address" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-body">
+        <app-add-del-add></app-add-del-add>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end add pickup modal -->
+<!-- end add delevery -->
+
+
+<!-- edit pickup address -->
+
+<div class="modal fade" id="edit_pickup_add" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-body">
+        <app-edit-pickup-add></app-edit-pickup-add>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- edit delivey address  -->
+<div class="modal fade" id="edit_delivery_add" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-body">
+        <app-edit-del-add></app-edit-del-add>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- view pickup address details -->
+<div class="modal fade" id="view_pickup_add" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-body">
+        <app-view-pickup-add></app-view-pickup-add>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- view delivery address details -->
+<div class="modal fade" id="view_delivey_add" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-body">
+        <app-view-del-add></app-view-del-add>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+

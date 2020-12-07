@@ -1,0 +1,134 @@
+@media (max-width: 767px){
+.pl16px {
+  padding-left: 0px !important;
+}
+}
+.apexcharts-toolbar {
+  position: absolute;
+  display: none !important;
+}
+.mt21{
+margin-top: 17px !important;
+}
+#myChart-license-text{
+    opacity: 0 !important;
+}
+.new_card12 i{
+background: #d3d3d34d;
+border-radius: 50px;
+padding: 13px;
+}
+.morris-hover.morris-default-style {
+border-radius: 5px;
+padding: 10px 12px;
+background: #ffffff;
+border: none;
+font-family: "Rubik", sans-serif;
+-webkit-box-shadow: 0 5px 25px 5px rgba(0, 0, 0, 0.14);
+        box-shadow: 0 5px 25px 5px rgba(0, 0, 0, 0.14);
+}
+
+.morris-hover.morris-default-style .morris-hover-point {
+font-weight: 500;
+font-size: 16px;
+color: #2d3b48 !important;
+}
+
+.morris-hover.morris-default-style .morris-hover-row-label {
+background-color: #2d3b48;
+color: #ffffff;
+padding: 10px;
+border-radius: 5px 5px 0 0;
+margin: -10px -12px 10px;
+}
+#donutchart svg{
+width: 500px;
+
+}
+
+.pia_sec {
+margin-top: 50px;
+margin-left: 50px;
+}
+
+.pieID {
+display: inline-block;
+vertical-align: top;
+}
+
+.pie {
+height: 300px;
+width: 200px;
+position: relative;
+margin: 0 150px  30px 0;
+}
+
+.pie::before {
+content: "";
+display: block;
+position: absolute;
+z-index: 1;
+width: 100px;
+height: 100px;
+background: #EEE;
+border-radius: 50%;
+top: 50px;
+left: 50px;
+}
+
+.pie::after {
+content: "";
+display: block;
+width: 120px;
+height: 2px;
+background: rgba(0, 0, 0, 0.1);
+border-radius: 50%;
+box-shadow: 0 0 3px 4px rgba(0, 0, 0, 0.1);
+margin: 220px auto;
+}
+
+.slice {
+position: absolute;
+width: 200px;
+height: 200px;
+clip: rect(0px, 200px, 200px, 100px);
+animation: bake-pie 1s;
+}
+
+.slice span {
+display: block;
+position: absolute;
+top: 0;
+left: 0;
+background-color: black;
+width: 200px;
+height: 200px;
+border-radius: 50%;
+clip: rect(0px, 200px, 200px, 100px);
+}
+
+.legend {
+list-style-type: none;
+padding: 0;
+margin: 0;
+background: #FFF;
+padding: 15px;
+font-size: 13px;
+box-shadow: 1px 1px 0 #DDD, 2px 2px 0 #BBB;
+}
+
+.legend li {
+width: 110px;
+height: 1.25em;
+margin-bottom: 0.7em;
+padding-left: 0.5em;
+border-left: 1.25em solid black;
+}
+
+.legend em {
+font-style: normal;
+}
+
+.legend span {
+float: right;
+}

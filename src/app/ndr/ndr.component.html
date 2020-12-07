@@ -1,0 +1,1033 @@
+<body>
+  <style>
+    
+    </style>
+  <div id="app">
+    <div class="main-wrapper main-wrapper-1">
+      <div class="navbar-bg"></div>
+      <!-- havbar here  -->
+      <app-navbar></app-navbar>
+        <!-- sidebar here -->
+      <app-sidebar></app-sidebar>  
+      <!-- Main Content -->
+      <div class="main-content">
+        <section class="section">
+          <div class="row">
+            <div class="col-12 col-sm-12 col-lg-12 p-0 ">
+              <div class="card" style="    background-color: #f5f8fb;
+              border: none;">
+                <div class="d-flex space-between">
+                  <div class="">
+                    <h4>NDR</h4>
+                    <ol class="breadcrumb pl-0 pt-0">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">NDR</li>
+                  </ol>
+                  </div>
+                  <div class=" align-right datepicker">
+                    <div id="reportrange"  class="pull-left new_left" style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc;">
+                        <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>&nbsp;
+                        <span></span> <b class="caret"></b>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Courier co -->
+                <div class="row mx-0  ">
+
+                  <div class="col-lg-12 p-0">
+                    <div class="col-sm-12 box_sec2 p-0">
+                      <div class="card">
+                        <div class="card-header box_shadow_none">
+                          <h4 class="table_heading">Heading
+                            <span>
+                              <!-- <form> -->
+                                <input type="text" placeholder="Search.." name="search">
+                                <button type="submit"><i class="fa fa-search"></i></button>
+                              <!-- </form> -->
+                            </span>
+                          </h4>
+                        </div>
+                        <div class="table-responsive " style="margin: 12px 0px;">
+                          <table class="courier2 " id="myTable1">
+                        <thead>
+                            <tr>
+                                <th onclick="sortTable(0)">Courier Co
+                                  <span class="arrow12">
+                                    <i class="fa fa-arrows-v" aria-hidden="true"></i>
+                                    <i class="fa fa-arrows-v" aria-hidden="true"></i>
+                                  </span>
+                                </th>
+                                <th onclick="sortTable(1)">NDR to Delivery Days
+                                  <span class="arrow12">
+                                    <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                    <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                  </span>
+                            	  </th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>2	</td>
+                            <td>0-3 days</td>
+                            <td>4-6 days	</td>
+                            <td>7-10 days	</td>
+                            <td>10 days and above</td>
+                          </tr>
+                          <tr>
+                            <td>2	</td>
+                            <td>0-3 days</td>
+                            <td>4-6 days	</td>
+                            <td>7-12 days	</td>
+                            <td>10 days and above</td>
+                          </tr>
+                          <tr>
+                            <td>	3</td>
+                            <td>0-3 days</td>
+                            <td>4-6 days	</td>
+                            <td>7-12 days	</td>
+                            <td>10 days and above</td>
+                          </tr>
+                          <tr>
+                            <td>4	</td>
+                            <td>0-3 days</td>
+                            <td>4-6 days	</td>
+                            <td>7-13 days	</td>
+                            <td>10 days and above</td>
+                          </tr>
+                          <tr>
+                            <td>5	</td>
+                            <td>0-3 days</td>
+                            <td>4-6 days	</td>
+                            <td>7-14 days	</td>
+                            <td>10 days and above</td>
+                          </tr>
+                          <tr>
+                            <td>6	</td>
+                            <td>0-3 days</td>
+                            <td>4-6 days	</td>
+                            <td>7-15 days	</td>
+                            <td>10 days and above</td>
+                          </tr>
+                          <tr>
+                            <td>7	</td>
+                            <td>0-4 days</td>
+                            <td>4-7 days	</td>
+                            <td>7-16 days	</td>
+                            <td>10 days and above</td>
+                          </tr>
+                          <tr>
+                            <td>7	</td>
+                            <td>0-4 days</td>
+                            <td>4-7 days	</td>
+                            <td>7-16 days	</td>
+                            <td>10 days and above</td>
+                          </tr>
+                          <tr>
+                            <td>7	</td>
+                            <td>0-4 days</td>
+                            <td>4-7 days	</td>
+                            <td>7-16 days	</td>
+                            <td>10 days and above</td>
+                          </tr>
+                          <tr>
+                            <td>7	</td>
+                            <td>0-4 days</td>
+                            <td>4-7 days	</td>
+                            <td>7-16 days	</td>
+                            <td>10 days and above</td>
+                          </tr>
+                          <tr>
+                            <td>7	</td>
+                            <td>0-4 days</td>
+                            <td>4-7 days	</td>
+                            <td>7-16 days	</td>
+                            <td>10 days and above</td>
+                          </tr>
+                        </tbody>
+                        </table>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+<!-- end Courier co -->
+
+                <div class="row mx-0 mtsellet5">
+
+                  <div class="col-lg-6 p-0">
+                    <div class="col-sm-12 box_sec2 pl0">
+                      <div class="card">
+                        <div class="card-header box_shadow_none">
+                          <h4 class="table_heading">Heading
+                            <span>
+                              <!-- <form> -->
+                                <input type="text" placeholder="Search.." name="search">
+                                <button type="submit"><i class="fa fa-search"></i></button>
+                              <!-- </form> -->
+                            </span>
+                          </h4>
+                        </div>
+                        <div class="table-responsive mt21">
+                          <table class="courier" id="myTable2">
+                          <thead>
+                              <tr>
+                                  <th onclick="sortTable(00)">Particulars
+                                    <span class="arrow12">
+                                    <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                    <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                  </span>
+                                  </th>
+                                  <th onclick="sortTable(01)">Shipyaari Action Reattempt
+                                    <span class="arrow12">
+                                      <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                      <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                    </span>
+                                  	</th>
+                                  <th onclick="sortTable(02)">Delivered
+                                    <span class="arrow12">
+                                    <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                    <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                  </span>
+                                  </th>
+                                  <th onclick="sortTable(03)">Success Ratio
+                                    <span class="arrow12">
+                                    <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                    <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                  </span>
+                                  </th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td><b>Delivery</b>	</td>
+                              <td>loream1</td>
+                              <td>Detail	</td>
+                              <td>Detail	</td>
+                            </tr>
+                            <tr>
+                              <td>	</td>
+                              <td>loream1</td>
+                              <td>Detail	</td>
+                              <td>Detail	</td>
+                            </tr>
+                            <tr>
+                              <td>	</td>
+                              <td>loream1</td>
+                              <td>Detail	</td>
+                              <td>Detail	</td>
+                            </tr>
+                            <tr>
+                              <td>	</td>
+                              <td>loream1</td>
+                              <td>Detail	</td>
+                              <td>Detail2	</td>
+                            </tr>
+                            <tr>
+                              <td>	</td>
+                              <td>loream1</td>
+                              <td>Detail5	</td>
+                              <td>Detail6	</td>
+                            </tr>
+                            <tr>
+                              <td>	</td>
+                              <td>loream1</td>
+                              <td>Detail	</td>
+                              <td>Detail	</td>
+                            </tr>
+                            <tr>
+                              <td>	</td>
+                              <td>loream1</td>
+                              <td>Detail	</td>
+                              <td>Detail	</td>
+                            </tr>
+                            <tr>
+                              <td>	</td>
+                              <td>loream1</td>
+                              <td>Detail	</td>
+                              <td>Detail	</td>
+                            </tr>
+                            <tr>
+                              <td>	</td>
+                              <td>loream1</td>
+                              <td>Detail	</td>
+                              <td>Detail	</td>
+                            </tr>
+                            <tr>
+                              <td>	</td>
+                              <td>loream1</td>
+                              <td>Detail	</td>
+                              <td>Detail	</td>
+                            </tr>
+
+                          </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 p-0">
+                    <div class="col-sm-12 box_sec2 pr0 p-0">
+                      <div class="card">
+                        <div class="card-header box_shadow_none">
+                          <h4 class="table_heading">Heading
+                            <span>
+                              <!-- <form> -->
+                                <input type="text" placeholder="Search.." name="search">
+                                <button type="submit"><i class="fa fa-search"></i></button>
+                              <!-- </form> -->
+                            </span>
+                          </h4>
+                        </div>
+                        <div class="table-responsive mt21">
+                          <table class="courier" id="myTable3">
+                          <thead>
+                              <tr>
+                                  <th onclick="sortTable(10)">Particulars
+                                    <span class="arrow12">
+                                    <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                    <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                  </span>
+                                  </th>
+                                  <th onclick="sortTable(11)">Shipyaari Action Reattempt
+                                    <span class="arrow12">
+                                      <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                      <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                    </span>
+                                  	</th>
+                                  <th onclick="sortTable(12)">RTO
+                                    <span class="arrow12">
+                                    <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                    <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                  </span>
+                                  </th>
+                                  <th onclick="sortTable(13)">Success Ratio
+                                    <span class="arrow12">
+                                    <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                    <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                  </span>
+                                  </th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td><b>Delivery</b>	</td>
+                              <td>loream1</td>
+                              <td>Detail	</td>
+                              <td>Detail	</td>
+                            </tr>
+                            <tr>
+                              <td>	</td>
+                              <td>loream1</td>
+                              <td>Detail	</td>
+                              <td>Detail	</td>
+                            </tr>
+                            <tr>
+                              <td>	</td>
+                              <td>loream1</td>
+                              <td>Detail	</td>
+                              <td>Detail	</td>
+                            </tr>
+                            <tr>
+                              <td>	</td>
+                              <td>loream1</td>
+                              <td>Detail	</td>
+                              <td>Detail2	</td>
+                            </tr>
+                            <tr>
+                              <td>	</td>
+                              <td>loream1</td>
+                              <td>Detail5	</td>
+                              <td>Detail6	</td>
+                            </tr>
+                            <tr>
+                              <td>	</td>
+                              <td>loream1</td>
+                              <td>Detail	</td>
+                              <td>Detail	</td>
+                            </tr>
+                            <tr>
+                              <td>	</td>
+                              <td>loream1</td>
+                              <td>Detail	</td>
+                              <td>Detail	</td>
+                            </tr>
+                            <tr>
+                              <td>	</td>
+                              <td>loream1</td>
+                              <td>Detail	</td>
+                              <td>Detail	</td>
+                            </tr>
+                            <tr>
+                              <td>	</td>
+                              <td>loream1</td>
+                              <td>Detail	</td>
+                              <td>Detail	</td>
+                            </tr>
+                            <tr>
+                              <td>	</td>
+                              <td>loream1</td>
+                              <td>Detail	</td>
+                              <td>Detail	</td>
+                            </tr>
+
+                          </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- sellar -->
+
+                <div class="row mx-0 border-bottom mtsellet5">
+
+                  <div class="col-lg-6 p-0">
+                    <div class="col-sm-12 box_sec2 pl0">
+                      <div class="card">
+                        <div class="card-header box_shadow_none">
+                          <h4 class="table_heading">Heading
+                            <span>
+                              <!-- <form> -->
+                                <input type="text" placeholder="Search.." name="search">
+                                <button type="submit"><i class="fa fa-search"></i></button>
+                              <!-- </form> -->
+                            </span>
+                          </h4>
+                        </div>
+                        <div class="table-responsive ">
+                          <table class="courier" id="myTable4">
+                        <thead>
+                          <tr>
+                                <th onclick="sortTable(00)">Particulars
+                                  <span class="arrow12">
+                                  <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                  <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                </span>
+                                </th>
+                                <th onclick="sortTable(01)">Seller Action Reattempt
+                                  <span class="arrow12">
+                                    <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                    <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                  </span>
+                                  </th>
+                                <th onclick="sortTable(02)">Delivered
+                                  <span class="arrow12">
+                                  <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                  <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                </span>
+                                </th>
+                                <th onclick="sortTable(03)">Success Ratio
+                                  <span class="arrow12">
+                                  <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                  <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                </span>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><b>Delivery</b>	</td>
+                            <td>loream1</td>
+                            <td>Detail	</td>
+                            <td>Detail	</td>
+                          </tr>
+                          <tr>
+                            <td>	</td>
+                            <td>loream1</td>
+                            <td>Detail	</td>
+                            <td>Detail	</td>
+                          </tr>
+                          <tr>
+                            <td>	</td>
+                            <td>loream1</td>
+                            <td>Detail	</td>
+                            <td>Detail	</td>
+                          </tr>
+                          <tr>
+                            <td>	</td>
+                            <td>loream1</td>
+                            <td>Detail	</td>
+                            <td>Detail2	</td>
+                          </tr>
+                          <tr>
+                            <td>	</td>
+                            <td>loream1</td>
+                            <td>Detail5	</td>
+                            <td>Detail6	</td>
+                          </tr>
+                          <tr>
+                            <td>	</td>
+                            <td>loream1</td>
+                            <td>Detail	</td>
+                            <td>Detail	</td>
+                          </tr>
+                          <tr>
+                            <td>	</td>
+                            <td>loream1</td>
+                            <td>Detail	</td>
+                            <td>Detail	</td>
+                          </tr>
+                          <tr>
+                            <td>	</td>
+                            <td>loream1</td>
+                            <td>Detail	</td>
+                            <td>Detail	</td>
+                          </tr>
+                          <tr>
+                            <td>	</td>
+                            <td>loream1</td>
+                            <td>Detail	</td>
+                            <td>Detail	</td>
+                          </tr>
+                          <tr>
+                            <td>	</td>
+                            <td>loream1</td>
+                            <td>Detail	</td>
+                            <td>Detail	</td>
+                          </tr>
+
+                        </tbody>
+                    </table>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 p-0">
+                    <div class="col-sm-12 box_sec2 pr0 p-0">
+                      <div class="card">
+                        <div class="card-header box_shadow_none">
+                          <h4 class="table_heading">Heading
+                            <span>
+                              <!-- <form> -->
+                                <input type="text" placeholder="Search.." name="search">
+                                <button type="submit"><i class="fa fa-search"></i></button>
+                              <!-- </form> -->
+                            </span>
+                          </h4>
+                        </div>
+                        <div class="table-responsive ">
+                          <table class="courier" id="myTable6">
+                          <thead>
+                              <tr>
+                                  <th onclick="sortTable(00)">Particulars
+                                    <span class="arrow12">
+                                    <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                    <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                  </span>
+                                  </th>
+                                  <th onclick="sortTable(01)">seller Action Reattempt
+                                    <span class="arrow12">
+                                      <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                      <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                    </span>
+                                  	</th>
+                                  <th onclick="sortTable(02)">RTO
+                                    <span class="arrow12">
+                                    <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                    <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                  </span>
+                                  </th>
+                                  <th onclick="sortTable(03)">Success Ratio
+                                    <span class="arrow12">
+                                    <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                    <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                  </span>
+                                  </th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td><b>Delivery</b>	</td>
+                              <td>loream1</td>
+                              <td>Detail	</td>
+                              <td>Detail	</td>
+                            </tr>
+                            <tr>
+                              <td>	</td>
+                              <td>loream1</td>
+                              <td>Detail	</td>
+                              <td>Detail	</td>
+                            </tr>
+                            <tr>
+                              <td>	</td>
+                              <td>loream1</td>
+                              <td>Detail	</td>
+                              <td>Detail	</td>
+                            </tr>
+                            <tr>
+                              <td>	</td>
+                              <td>loream1</td>
+                              <td>Detail	</td>
+                              <td>Detail2	</td>
+                            </tr>
+                            <tr>
+                              <td>	</td>
+                              <td>loream1</td>
+                              <td>Detail5	</td>
+                              <td>Detail6	</td>
+                            </tr>
+                            <tr>
+                              <td>	</td>
+                              <td>loream1</td>
+                              <td>Detail	</td>
+                              <td>Detail	</td>
+                            </tr>
+                            <tr>
+                              <td>	</td>
+                              <td>loream1</td>
+                              <td>Detail	</td>
+                              <td>Detail	</td>
+                            </tr>
+                            <tr>
+                              <td>	</td>
+                              <td>loream1</td>
+                              <td>Detail	</td>
+                              <td>Detail	</td>
+                            </tr>
+                            <tr>
+                              <td>	</td>
+                              <td>loream1</td>
+                              <td>Detail	</td>
+                              <td>Detail	</td>
+                            </tr>
+                            <tr>
+                              <td>	</td>
+                              <td>loream1</td>
+                              <td>Detail	</td>
+                              <td>Detail	</td>
+                            </tr>
+
+                          </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- end sellar -->
+                <!-- tabs -->
+                <div class="row23">
+                  <div class="col-lg-7 bg-w new_div p-0 mtsellet5">
+                    <div class="">
+                      <ul class="nav nav-tabs nav-justified" id="myTab2" role="tablist">
+                        <li class="nav-item">
+                          <a class="nav-link active" id="home-tab2" data-toggle="tab" href="#home2" role="tab" aria-controls="home" aria-selected="false">All</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" id="profile-tab2" data-toggle="tab" href="#profile2" role="tab" aria-controls="profile" aria-selected="false">Online</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" id="contact-tab2" data-toggle="tab" href="#contact2" role="tab" aria-controls="contact" aria-selected="true">COD</a>
+                        </li>
+                      </ul>
+                      <div class="tab-content tab-bordered" id="myTab3Content">
+                        <div class="tab-pane fade active show" id="home2" role="tabpanel" aria-labelledby="home-tab2">
+                          <div class="card">
+                            <div class="table-responsive " style="padding: 0px;">
+                              <table class="courier2" id="myTable5">
+                            <thead>
+                                <tr>
+                                    <th onclick="sortTable(00)">Courier Co
+                                      <span class="arrow12">
+                                      <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                      <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                    </span>
+                                    </th>
+                                    <th onclick="sortTable(01)">NDR
+                                      <span class="arrow12">
+                                        <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                        <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                      </span>
+                                    	</th>
+                                    <th onclick="sortTable(02)">Delivered
+                                      <span class="arrow12">
+                                      <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                      <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                    </span>
+                                    </th>
+                                    <th onclick="sortTable(03)">RTO
+                                      <span class="arrow12">
+                                      <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                      <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                    </span>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>12	</td>
+                                <td>loream1</td>
+                                <td>Detail	</td>
+                                <td>Detail	</td>
+                              </tr>
+                              <tr>
+                                <td>12	</td>
+                                <td>loream1</td>
+                                <td>Detail	</td>
+                                <td>Detail	</td>
+                              </tr>
+                              <tr>
+                                <td>12	</td>
+                                <td>loream1</td>
+                                <td>Detail	</td>
+                                <td>Detail	</td>
+                              </tr>
+                              <tr>
+                                <td>16	</td>
+                                <td>loream1</td>
+                                <td>Detail	</td>
+                                <td>Detail2	</td>
+                              </tr>
+                              <tr>
+                                <td>12	</td>
+                                <td>loream1</td>
+                                <td>Detail5	</td>
+                                <td>Detail6	</td>
+                              </tr>
+                              <tr>
+                                <td>12	</td>
+                                <td>loream1</td>
+                                <td>Detail	</td>
+                                <td>Detail	</td>
+                              </tr>
+                              <tr>
+                                <td>12	</td>
+                                <td>loream1</td>
+                                <td>Detail	</td>
+                                <td>Detail	</td>
+                              </tr>
+                              <tr>
+                                <td>12	</td>
+                                <td>loream1</td>
+                                <td>Detail	</td>
+                                <td>Detail	</td>
+                              </tr>
+                              <tr>
+                                <td>12	</td>
+                                <td>loream1</td>
+                                <td>Detail	</td>
+                                <td>Detail	</td>
+                              </tr>
+                              <tr>
+                                <td>12	</td>
+                                <td>loream1</td>
+                                <td>Detail	</td>
+                                <td>Detail	</td>
+                              </tr>
+
+                            </tbody>
+                            </table>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tab-pane fade" id="profile2" role="tabpanel" aria-labelledby="profile-tab2">
+                          <div class="card">
+                            <div class="table-responsive ">
+                              <table class="courier2" id="myTable7">
+                            <thead>
+                                <tr>
+                                    <th onclick="sortTable(00)">Courier Co
+                                      <span class="arrow12">
+                                      <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                      <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                    </span>
+                                    </th>
+                                    <th onclick="sortTable(01)">NDR
+                                      <span class="arrow12">
+                                        <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                        <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                      </span>
+                                    	</th>
+                                    <th onclick="sortTable(02)">Delivered
+                                      <span class="arrow12">
+                                      <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                      <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                    </span>
+                                    </th>
+                                    <th onclick="sortTable(03)">RTO
+                                      <span class="arrow12">
+                                      <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                      <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                    </span>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>12	</td>
+                                <td>loream1</td>
+                                <td>Detail	</td>
+                                <td>Detail	</td>
+                              </tr>
+                              <tr>
+                                <td>12	</td>
+                                <td>loream1</td>
+                                <td>Detail	</td>
+                                <td>Detail	</td>
+                              </tr>
+                              <tr>
+                                <td>12	</td>
+                                <td>loream1</td>
+                                <td>Detail	</td>
+                                <td>Detail	</td>
+                              </tr>
+                              <tr>
+                                <td>16	</td>
+                                <td>loream1</td>
+                                <td>Detail	</td>
+                                <td>Detail2	</td>
+                              </tr>
+                              <tr>
+                                <td>12	</td>
+                                <td>loream1</td>
+                                <td>Detail5	</td>
+                                <td>Detail6	</td>
+                              </tr>
+                              <tr>
+                                <td>12	</td>
+                                <td>loream1</td>
+                                <td>Detail	</td>
+                                <td>Detail	</td>
+                              </tr>
+                              <tr>
+                                <td>12	</td>
+                                <td>loream1</td>
+                                <td>Detail	</td>
+                                <td>Detail	</td>
+                              </tr>
+                              <tr>
+                                <td>12	</td>
+                                <td>loream1</td>
+                                <td>Detail	</td>
+                                <td>Detail	</td>
+                              </tr>
+                              <tr>
+                                <td>12	</td>
+                                <td>loream1</td>
+                                <td>Detail	</td>
+                                <td>Detail	</td>
+                              </tr>
+                              <tr>
+                                <td>12	</td>
+                                <td>loream1</td>
+                                <td>Detail	</td>
+                                <td>Detail	</td>
+                              </tr>
+                              <tr>
+                                <td>12	</td>
+                                <td>loream1</td>
+                                <td>Detail	</td>
+                                <td>Detail	</td>
+                              </tr>
+                              <tr>
+                                <td>12	</td>
+                                <td>loream1</td>
+                                <td>Detail	</td>
+                                <td>Detail	</td>
+                              </tr>
+                              <tr>
+                                <td>12	</td>
+                                <td>loream1</td>
+                                <td>Detail	</td>
+                                <td>Detail	</td>
+                              </tr>
+                              <tr>
+                                <td>12	</td>
+                                <td>loream1</td>
+                                <td>Detail	</td>
+                                <td>Detail	</td>
+                              </tr>
+
+                            </tbody>
+                            </table>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tab-pane fade" id="contact2" role="tabpanel" aria-labelledby="contact-tab2">
+                          <div class="card">
+                            <div class="table-responsive ">
+                              <table class="courier2" id="myTable8">
+                            <thead>
+                                <tr>
+                                    <th onclick="sortTable(00)">Courier Co
+                                      <span class="arrow12">
+                                      <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                      <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                    </span>
+                                    </th>
+                                    <th onclick="sortTable(01)">NDR
+                                      <span class="arrow12">
+                                        <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                        <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                      </span>
+                                    	</th>
+                                    <th onclick="sortTable(02)">Delivered
+                                      <span class="arrow12">
+                                      <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                      <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                    </span>
+                                    </th>
+                                    <th onclick="sortTable(03)">RTO
+                                      <span class="arrow12">
+                                      <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                      <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                    </span>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>12	</td>
+                                <td>loream1</td>
+                                <td>Detail	</td>
+                                <td>Detail	</td>
+                              </tr>
+                              <tr>
+                                <td>12	</td>
+                                <td>loream1</td>
+                                <td>Detail	</td>
+                                <td>Detail	</td>
+                              </tr>
+                              <tr>
+                                <td>12	</td>
+                                <td>loream1</td>
+                                <td>Detail	</td>
+                                <td>Detail	</td>
+                              </tr>
+                              <tr>
+                                <td>16	</td>
+                                <td>loream1</td>
+                                <td>Detail	</td>
+                                <td>Detail2	</td>
+                              </tr>
+                              <tr>
+                                <td>12	</td>
+                                <td>loream1</td>
+                                <td>Detail5	</td>
+                                <td>Detail6	</td>
+                              </tr>
+                              <tr>
+                                <td>12	</td>
+                                <td>loream1</td>
+                                <td>Detail	</td>
+                                <td>Detail	</td>
+                              </tr>
+                              <tr>
+                                <td>12	</td>
+                                <td>loream1</td>
+                                <td>Detail	</td>
+                                <td>Detail	</td>
+                              </tr>
+                              <tr>
+                                <td>12	</td>
+                                <td>loream1</td>
+                                <td>Detail	</td>
+                                <td>Detail	</td>
+                              </tr>
+                              <tr>
+                                <td>12	</td>
+                                <td>loream1</td>
+                                <td>Detail	</td>
+                                <td>Detail	</td>
+                              </tr>
+                              <tr>
+                                <td>12	</td>
+                                <td>loream1</td>
+                                <td>Detail	</td>
+                                <td>Detail	</td>
+                              </tr>
+                              <tr>
+                                <td>12	</td>
+                                <td>loream1</td>
+                                <td>Detail	</td>
+                                <td>Detail	</td>
+                              </tr>
+                              <tr>
+                                <td>12	</td>
+                                <td>loream1</td>
+                                <td>Detail	</td>
+                                <td>Detail	</td>
+                              </tr>
+                              <tr>
+                                <td>12	</td>
+                                <td>loream1</td>
+                                <td>Detail	</td>
+                                <td>Detail	</td>
+                              </tr>
+                              <tr>
+                                <td>12	</td>
+                                <td>loream1</td>
+                                <td>Detail	</td>
+                                <td>Detail	</td>
+                              </tr>
+
+                            </tbody>
+                            </table>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <div class="col-sm-5">
+                    <div class="box_div mt21">
+                      <div class="row">
+                        <div class="col-xl-6 col-lg-6 col-md-6  dash1">
+                          <div class="total color-green">
+                            <h5 class="icon_new"><i class="fa fa-cog"></i></h5>
+                            <p class=" mb-0 "> Total NDR</p>
+                            <h2 class="mb-2">2</h2>
+                          </div>
+
+                    		</div>
+                        <div class="col-xl-6 col-lg-6 col-md-6  dash1">
+                          <div class="total color-org">
+                            <h5 class="icon_new"><i class='fas fa-sms'></i></h5>
+                            <p class=" mb-0 "> Total SMS sent</p>
+                            <h2 class="mb-2">2</h2>
+                          </div>
+
+                    		</div>
+                        <div class="col-xl-6 col-lg-6 col-md-6  dash1">
+                          <div class="total color-red">
+                            <h5 class="icon_new"><i class='fab fa-whatsapp'></i></h5>
+                            <p class=" mb-0 "> Total Whatsapp sent</p>
+                            <h2 class="mb-2">2</h2>
+
+                          </div>
+
+                    		</div>
+                        <div class="col-xl-6 col-lg-6 col-md-6  dash1">
+                          <div class="total">
+                            <h5 class="icon_new"><i class='fas fa-phone'></i></h5>
+                            <p class=" mb-0 "> Total Calls done</p>
+                            <h2 class="mb-2">2</h2>
+
+                          </div>
+                    		</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+      </section>
+    </div>
+<!-- footer here -->
+<app-footer></app-footer>
+</div>
+</div>
+</body>
+

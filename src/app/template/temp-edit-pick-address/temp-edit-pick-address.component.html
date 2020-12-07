@@ -1,0 +1,93 @@
+
+    <h5 class="text-center">Edit Template</h5>
+    <div class="pickup_modal">
+      <!-- <h6>Personal Details</h6> -->
+      <form [formGroup]="EditTemplate" (ngSubmit)="onSubmit()">
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="form-group">
+            <span>Template Name	</span> <br>
+            <input type="text" class="form-control" name="" value="" placeholder="" formControlName="edit_template_name"
+            [ngClass]="{'is-invalid':EditTemplate.get('edit_template_name').touched && EditTemplate.get('edit_template_name').invalid}">
+            <div class="invalid-feedback">
+              Please provide Temp. Name
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="form-group">
+            <span>Product Description</span> <br>
+            <input type="text" class="form-control" name="" value="" placeholder="" formControlName="edit_product_description"
+            [ngClass]="{'is-invalid':EditTemplate.get('edit_product_description').touched && EditTemplate.get('edit_product_description').invalid}">
+            <div class="invalid-feedback">
+              Please provide Prod. Desc.
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="form-group">
+            <span>SKU</span> <br>
+            <input type="text" class="form-control" name="" value="" placeholder="" formControlName="edit_sku"
+            [ngClass]="{'is-invalid':EditTemplate.get('edit_sku').touched && EditTemplate.get('edit_sku').invalid}">
+            <div class="invalid-feedback">
+              Please provide SKU
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="form-group">
+            <span>HSN</span> <br>
+            <input type="text" class="form-control" name="" value="" placeholder="" formControlName="edit_hsn"
+            [ngClass]="{'is-invalid':EditTemplate.get('edit_hsn').touched && EditTemplate.get('edit_hsn').invalid}">
+            <div class="invalid-feedback">
+              Please provide HSN
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="form-group">
+            <span>Price</span> <br>
+            <input type="text" class="form-control" name="" value="" placeholder="" formControlName="edit_price"
+            [ngClass]="{'is-invalid':EditTemplate.get('edit_price').touched && EditTemplate.get('edit_price').invalid}">
+            <div class="invalid-feedback">
+              Please provide Price
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="form-group">
+            <span>Quantity</span> <br>
+            <input type="text" class="form-control" name="" value="" placeholder="" formControlName="edit_quantity"
+            [ngClass]="{'is-invalid':EditTemplate.get('edit_quantity').touched && EditTemplate.get('edit_quantity').invalid}">
+            <div class="invalid-feedback">
+              Please provide Quantity
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="form-group">
+            <span>Tax(%)</span> <br>
+            <input type="text" class="form-control" name="" value="" placeholder="" formControlName="edit_tax"
+            [ngClass]="{'is-invalid':EditTemplate.get('edit_tax').touched && EditTemplate.get('edit_tax').invalid}">
+            <div class="invalid-feedback">
+              Please provide Tax(%)
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="form-group">
+            <span>Weight(KG's)	</span> <br>
+            <input type="text" class="form-control" name="" value="" placeholder="" formControlName="edit_weight"
+            [ngClass]="{'is-invalid':EditTemplate.get('edit_weight').touched && EditTemplate.get('edit_weight').invalid}">
+            <div class="invalid-feedback">
+              Please provide Weight
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="">
+        <button type="submit"  class="btn btn-primary btn-sm" style="float: left;">Update</button>
+        <button type="reset"   class="btn btn-warning btn-sm" style="float: right;">Clear</button>
+      </div>
+    </form>
+    </div>

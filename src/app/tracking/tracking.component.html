@@ -1,0 +1,1347 @@
+
+<body>
+  <div id="app">
+    <div class="main-wrapper main-wrapper-1">
+      <div class="navbar-bg"></div>
+      <!-- navbar here -->
+      <app-navbar></app-navbar>
+      <!-- sidebar here -->
+      <app-sidebar></app-sidebar>
+      
+      <!-- Main Content -->
+      <div class="main-content">
+        <section class="section">
+          <div class="row">
+            <div class="col-12 col-sm-12 col-lg-12 p-0 ">
+              <div class="card"  style="    background-color: #f5f8fb;
+              border: none;">
+                <div class="d-flex space-between">
+                  <div class="">
+                    <h4>Tracking</h4>
+                    <ol class="breadcrumb pl-0 pt-0">
+                      <li class="breadcrumb-item"><a href="#">Home</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">Tracking</li>
+                    </ol>
+                  </div>
+                  <div class=" align-right datepicker">
+                    <div class="col-xs-12 col-12 col-md-4 form-group">
+                      <input type="text"
+                      [bsConfig]="{ isAnimated: true }"
+                             class="form-control"
+                             bsDaterangepicker>
+                    </div>
+                    <!-- <div id="reportrange"  class="pull-left new_left" style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc;">
+                        <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>&nbsp;
+                        <span></span> <b class="caret"></b>
+                    </div> -->
+                  </div>
+                </div>
+                <!-- not moving -->
+                <div class="row mx-0 ">
+                  <div class="col-lg-4 p-0">
+                    <div class="bg_progress ml0">
+                      <div class="d-flex space-between">
+                        <div class="">
+                          <h3 class="mb-1 counter font-30 color_black">24</h3>
+                        </div>
+                        <div class="truck_icon">
+                          <span><i class="fas fa-truck-moving"></i></span>
+                        </div>
+                      </div>
+                      <div class="text-muted">Shipments not moved for more than 3 days</div>
+
+                    </div>
+                  </div>
+                  <div class="col-lg-4 p-0">
+                    <div class="bg_progress phone_12">
+                      <div class="d-flex space-between">
+                        <div class="">
+                          <h3 class="mb-1 counter font-30 color_black">233</h3>
+                        </div>
+                        <div class="truck_icon truck_loading">
+                          <span><i class="fas fa-truck-loading"></i></span>
+                        </div>
+                      </div>
+                      <div class="text-muted">Shipments having Delivery Problems</div>
+
+                    </div>
+                  </div>
+                  <div class="col-lg-4 p-0">
+                    <div class="bg_progress mr0">
+                      <div class="d-flex space-between">
+                        <div class="">
+                          <h3 class="mb-1 counter font-30 color_black">233</h3>
+                        </div>
+                        <div class="truck_icon rto_truck">
+                          <span><i class="fas fa-exchange-alt"></i></span>
+                        </div>
+                      </div>
+                      <div class="text-muted">RTO Shipment not delivered for more than 10 days</div>
+
+                    </div>
+                  </div>
+                </div>
+
+                <!-- graph Ratio -->
+                <div class="row mx-0 ">
+                  <div class="col-lg-6 p-0">
+                    <div class="col-sm-12 pl0">
+                      <div class="bg-w mt21">
+                        <div class="card-header box_shadow_none">
+                          <h4>Heading</h4>
+                        </div>
+                        <!-- <div id="line1" style="height: 300px; width: 100%;"></div> -->
+                        <app-track-chart1></app-track-chart1>
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <div class="col-lg-6 p-0">
+                    <div class="col-sm-12 p-0 pr0">
+                      <div class="bg-w mt21">
+                        <div class="card-header box_shadow_none">
+                          <h4>Heading</h4>
+                        </div>
+                        <!-- <div id="line2" style="height: 300px; width: 100%;"></div> -->
+                        <app-track-chart2></app-track-chart2>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="row mx-0">
+                  <div class="col-lg-6 p-0">
+                    <div class="col-sm-12 pl0">
+                      <div class="bg-w mt21">
+                        <div class="card-header box_shadow_none">
+                          <h4>Heading</h4>
+                        </div>
+                        <!-- <div id="line3" style="height: 250px; width: 100%;"></div> -->
+                        <app-track-chart3></app-track-chart3>
+                        
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <div class="col-lg-6 p-0">
+                    <div class="col-sm-12 p-0 pr0">
+                      <div class="bg-w mt21">
+                        <div class="card-header box_shadow_none">
+                          <h4>Heading</h4>
+                        </div>
+                        <!-- <canvas id="line4"></canvas> -->
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+                <!-- end graph Ratio -->
+                <!-- Courier co -->
+                <div class="row mx-0 ">
+                  <div class="col-lg-12 bg-w new_div p-0 mtsellet5">
+                    <div class="">
+                      <ul class="nav nav-tabs nav-justified" id="myTab2" role="tablist">
+                        <li class="nav-item">
+                          <a class="nav-link active" id="home-tab2" data-toggle="tab" href="#home2" role="tab" aria-controls="home" aria-selected="false">All</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" id="profile-tab2" data-toggle="tab" href="#profile2" role="tab" aria-controls="profile" aria-selected="false">Online</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" id="contact-tab2" data-toggle="tab" href="#contact2" role="tab" aria-controls="contact" aria-selected="true">COD</a>
+                        </li>
+                      </ul>
+                      <div class="tab-content tab-bordered" id="myTab3Content">
+                        <div class="tab-pane fade active show" id="home2" role="tabpanel" aria-labelledby="home-tab2">
+                          <div class="card">
+                            <div class="table-responsive p-0">
+                              <table class="courier" id="myTable4">
+                            <thead>
+                                <tr>
+                                    <th onclick="sortTable(00)">Courier Co
+                                      <span class="arrow12">
+                                      <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                      <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                    </span>
+                                    </th>
+                                    <th onclick="sortTable(01)">Not Picked
+                                      <span class="arrow12">
+                                        <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                        <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                      </span>
+                                    	</th>
+                                    <th onclick="sortTable(02)">In Transit
+                                      <span class="arrow12">
+                                      <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                      <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                    </span>
+                                    </th>
+                                    <th onclick="sortTable(03)">OFD
+                                      <span class="arrow12">
+                                      <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                      <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                    </span>
+                                    </th>
+                                    <th onclick="sortTable(03)">Deliverd
+                                      <span class="arrow12">
+                                      <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                      <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                    </span>
+                                    </th>
+                                    <th onclick="sortTable(03)">Exception
+                                      <span class="arrow12">
+                                      <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                      <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                    </span>
+                                    </th>
+                                    <th onclick="sortTable(03)">RTO
+                                      <span class="arrow12">
+                                      <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                      <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                    </span>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>12	</td>
+                                <td>loream1</td>
+                                <td>20776	</td>
+                                <td>20776	</td>
+                                <td>20776	</td>
+                                <td>20776	</td>
+                                <td>20776	</td>
+                              </tr>
+                              <tr>
+                                <td>12	</td>
+                                <td>loream1</td>
+                                <td>20776	</td>
+                                <td>20776	</td>
+                                <td>20776	</td>
+                                <td>20776	</td>
+                                <td>20776	</td>
+                              </tr>
+                              <tr>
+                                <td>12	</td>
+                                <td>loream1</td>
+                                <td>20776	</td>
+                                <td>20776	</td>
+                                <td>20776	</td>
+                                <td>20776	</td>
+                                <td>20776	</td>
+                              </tr>
+                              <tr>
+                                <td>12	</td>
+                                <td>loream1</td>
+                                <td>20776	</td>
+                                <td>20776	</td>
+                                <td>20776	</td>
+                                <td>20776	</td>
+                                <td>20776	</td>
+                              </tr>
+                              <tr>
+                                <td>12	</td>
+                                <td>loream1</td>
+                                <td>20776	</td>
+                                <td>20776	</td>
+                                <td>20776	</td>
+                                <td>20776	</td>
+                                <td>20776	</td>
+                              </tr>
+                              <tr>
+                                <td>12	</td>
+                                <td>loream1</td>
+                                <td>20776	</td>
+                                <td>20776	</td>
+                                <td>20776	</td>
+                                <td>20776	</td>
+                                <td>20776	</td>
+                              </tr>
+                              <tr>
+                                <td>12	</td>
+                                <td>loream1</td>
+                                <td>20776	</td>
+                                <td>20776	</td>
+                                <td>20776	</td>
+                                <td>20776	</td>
+                                <td>20776	</td>
+                              </tr>
+                              <tr>
+                                <td>12	</td>
+                                <td>loream1</td>
+                                <td>20776	</td>
+                                <td>20776	</td>
+                                <td>20776	</td>
+                                <td>20776	</td>
+                                <td>20776	</td>
+                              </tr>
+                            </tbody>
+                            </table>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tab-pane fade" id="profile2" role="tabpanel" aria-labelledby="profile-tab2">
+                          <div class="card">
+                            <div class="table-responsive p-0">
+                              <table class="courier" id="myTable4">
+                            <thead>
+                                <tr>
+                                    <th onclick="sortTable(00)">Courier Co
+                                      <span class="arrow12">
+                                      <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                      <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                    </span>
+                                    </th>
+                                    <th onclick="sortTable(01)">Not Picked
+                                      <span class="arrow12">
+                                        <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                        <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                      </span>
+                                    	</th>
+                                    <th onclick="sortTable(02)">In Transit
+                                      <span class="arrow12">
+                                      <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                      <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                    </span>
+                                    </th>
+                                    <th onclick="sortTable(03)">OFD
+                                      <span class="arrow12">
+                                      <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                      <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                    </span>
+                                    </th>
+                                    <th onclick="sortTable(03)">Deliverd
+                                      <span class="arrow12">
+                                      <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                      <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                    </span>
+                                    </th>
+                                    <th onclick="sortTable(03)">Exception
+                                      <span class="arrow12">
+                                      <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                      <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                    </span>
+                                    </th>
+                                    <th onclick="sortTable(03)">RTO
+                                      <span class="arrow12">
+                                      <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                      <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                    </span>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>12	</td>
+                                <td>loream1</td>
+                                <td>20776	</td>
+                                <td>20776	</td>
+                                <td>20776	</td>
+                                <td>20776	</td>
+                                <td>20776	</td>
+                              </tr>
+                              <tr>
+                                <td>12	</td>
+                                <td>loream1</td>
+                                <td>20776	</td>
+                                <td>20776	</td>
+                                <td>20776	</td>
+                                <td>20776	</td>
+                                <td>20776	</td>
+                              </tr>
+                              <tr>
+                                <td>12	</td>
+                                <td>loream1</td>
+                                <td>20776	</td>
+                                <td>20776	</td>
+                                <td>20776	</td>
+                                <td>20776	</td>
+                                <td>20776	</td>
+                              </tr>
+                              <tr>
+                                <td>12	</td>
+                                <td>loream1</td>
+                                <td>20776	</td>
+                                <td>20776	</td>
+                                <td>20776	</td>
+                                <td>20776	</td>
+                                <td>20776	</td>
+                              </tr>
+                              <tr>
+                                <td>12	</td>
+                                <td>loream1</td>
+                                <td>20776	</td>
+                                <td>20776	</td>
+                                <td>20776	</td>
+                                <td>20776	</td>
+                                <td>20776	</td>
+                              </tr>
+                              <tr>
+                                <td>12	</td>
+                                <td>loream1</td>
+                                <td>20776	</td>
+                                <td>20776	</td>
+                                <td>20776	</td>
+                                <td>20776	</td>
+                                <td>20776	</td>
+                              </tr>
+                              <tr>
+                                <td>12	</td>
+                                <td>loream1</td>
+                                <td>20776	</td>
+                                <td>20776	</td>
+                                <td>20776	</td>
+                                <td>20776	</td>
+                                <td>20776	</td>
+                              </tr>
+                              <tr>
+                                <td>12	</td>
+                                <td>loream1</td>
+                                <td>20776	</td>
+                                <td>20776	</td>
+                                <td>20776	</td>
+                                <td>20776	</td>
+                                <td>20776	</td>
+                              </tr>
+                            </tbody>
+                            </table>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tab-pane fade" id="contact2" role="tabpanel" aria-labelledby="contact-tab2">
+                          <div class="card">
+                            <div class="table-responsive p-0">
+                              <table class="courier" id="myTable4">
+                            <thead>
+                                <tr>
+                                    <th onclick="sortTable(00)">Courier Co
+                                      <span class="arrow12">
+                                      <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                      <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                    </span>
+                                    </th>
+                                    <th onclick="sortTable(01)">Not Picked
+                                      <span class="arrow12">
+                                        <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                        <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                      </span>
+                                    	</th>
+                                    <th onclick="sortTable(02)">In Transit
+                                      <span class="arrow12">
+                                      <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                      <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                    </span>
+                                    </th>
+                                    <th onclick="sortTable(03)">OFD
+                                      <span class="arrow12">
+                                      <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                      <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                    </span>
+                                    </th>
+                                    <th onclick="sortTable(03)">Deliverd
+                                      <span class="arrow12">
+                                      <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                      <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                    </span>
+                                    </th>
+                                    <th onclick="sortTable(03)">Exception
+                                      <span class="arrow12">
+                                      <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                      <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                    </span>
+                                    </th>
+                                    <th onclick="sortTable(03)">RTO
+                                      <span class="arrow12">
+                                      <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                      <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                    </span>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>12	</td>
+                                <td>loream1</td>
+                                <td>20776	</td>
+                                <td>20776	</td>
+                                <td>20776	</td>
+                                <td>20776	</td>
+                                <td>20776	</td>
+                              </tr>
+                              <tr>
+                                <td>12	</td>
+                                <td>loream1</td>
+                                <td>20776	</td>
+                                <td>20776	</td>
+                                <td>20776	</td>
+                                <td>20776	</td>
+                                <td>20776	</td>
+                              </tr>
+                              <tr>
+                                <td>12	</td>
+                                <td>loream1</td>
+                                <td>20776	</td>
+                                <td>20776	</td>
+                                <td>20776	</td>
+                                <td>20776	</td>
+                                <td>20776	</td>
+                              </tr>
+                              <tr>
+                                <td>12	</td>
+                                <td>loream1</td>
+                                <td>20776	</td>
+                                <td>20776	</td>
+                                <td>20776	</td>
+                                <td>20776	</td>
+                                <td>20776	</td>
+                              </tr>
+                              <tr>
+                                <td>12	</td>
+                                <td>loream1</td>
+                                <td>20776	</td>
+                                <td>20776	</td>
+                                <td>20776	</td>
+                                <td>20776	</td>
+                                <td>20776	</td>
+                              </tr>
+                              <tr>
+                                <td>12	</td>
+                                <td>loream1</td>
+                                <td>20776	</td>
+                                <td>20776	</td>
+                                <td>20776	</td>
+                                <td>20776	</td>
+                                <td>20776	</td>
+                              </tr>
+                              <tr>
+                                <td>12	</td>
+                                <td>loream1</td>
+                                <td>20776	</td>
+                                <td>20776	</td>
+                                <td>20776	</td>
+                                <td>20776	</td>
+                                <td>20776	</td>
+                              </tr>
+                              <tr>
+                                <td>12	</td>
+                                <td>loream1</td>
+                                <td>20776	</td>
+                                <td>20776	</td>
+                                <td>20776	</td>
+                                <td>20776	</td>
+                                <td>20776	</td>
+                              </tr>
+                            </tbody>
+                            </table>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+<!-- end Courier co -->
+
+                <div class="row mx-0 mtsellet5">
+
+                  <div class="col-lg-6 p-0">
+                    <div class="col-sm-12 box_sec2 pl0">
+                      <div class="card">
+                        <div class="card-header box_shadow_none">
+                          <h4>Heading</h4>
+                        </div>
+                        <div class="table-responsive ">
+                          <table class="courier" id="myTable2">
+                          <thead>
+                              <tr>
+                                  <th onclick="sortTable(00)">Zone
+                                    <span class="arrow12">
+                                    <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                    <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                  </span>
+                                  </th>
+                                  <th onclick="sortTable(01)">Delivery
+                                    <span class="arrow12">
+                                      <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                      <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                    </span>
+                                  	</th>
+                                  <th onclick="sortTable(02)">Days
+                                    <span class="arrow12">
+                                    <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                    <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                  </span>
+                                  </th>
+                                  <th>
+
+                                  </th>
+                                  <th >
+
+                                  </th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1	</td>
+                              <td>0-3</td>
+                              <td>4-6	</td>
+                              <td>7-10</td>
+                              <td>10 days and above</td>
+                            </tr>
+                            <tr>
+                              <td>1	</td>
+                              <td>0-3</td>
+                              <td>4-6	</td>
+                              <td>7-10</td>
+                              <td>10 days and above</td>
+                            </tr>
+                            <tr>
+                              <td>1	</td>
+                              <td>0-3</td>
+                              <td>4-6	</td>
+                              <td>7-10</td>
+                              <td>10 days and above</td>
+                            </tr>
+                            <tr>
+                              <td>1	</td>
+                              <td>0-3</td>
+                              <td>4-6	</td>
+                              <td>7-10</td>
+                              <td>10 days and above</td>
+                            </tr>
+                            <tr>
+                              <td>1	</td>
+                              <td>0-3</td>
+                              <td>4-6	</td>
+                              <td>7-10</td>
+                              <td>10 days and above</td>
+                            </tr>
+                            <tr>
+                              <td>1	</td>
+                              <td>0-3</td>
+                              <td>4-6	</td>
+                              <td>7-10</td>
+                              <td>10 days and above</td>
+                            </tr>
+                            <tr>
+                              <td>1	</td>
+                              <td>0-3</td>
+                              <td>4-6	</td>
+                              <td>7-10</td>
+                              <td>10 days and above</td>
+                            </tr>
+                            <tr>
+                              <td>1	</td>
+                              <td>0-3</td>
+                              <td>4-6	</td>
+                              <td>7-10</td>
+                              <td>10 days and above</td>
+                            </tr>
+                            <tr>
+                              <td>1	</td>
+                              <td>0-3</td>
+                              <td>4-6	</td>
+                              <td>7-10</td>
+                              <td>10 days and above</td>
+                            </tr>
+                            <tr>
+                              <td>1	</td>
+                              <td>0-3</td>
+                              <td>4-6	</td>
+                              <td>7-10</td>
+                              <td>10 days and above</td>
+                            </tr>
+                            <tr>
+                              <td>1	</td>
+                              <td>0-3</td>
+                              <td>4-6	</td>
+                              <td>7-10</td>
+                              <td>10 days and above</td>
+                            </tr>
+
+                          </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 p-0">
+                    <div class="col-sm-12 box_sec2 pr0 p-0">
+                      <div class="card">
+                        <div class="card-header box_shadow_none">
+                          <h4>Heading</h4>
+                        </div>
+                        <div class="table-responsive ">
+                          <table class="courier" id="myTable2">
+                          <thead>
+                              <tr>
+                                  <th onclick="sortTable(00)">Zone
+                                    <span class="arrow12">
+                                    <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                    <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                  </span>
+                                  </th>
+                                  <th onclick="sortTable(01)">Delivery
+                                    <span class="arrow12">
+                                      <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                      <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                    </span>
+                                  	</th>
+                                  <th onclick="sortTable(02)">Days
+                                    <span class="arrow12">
+                                    <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                    <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                  </span>
+                                  </th>
+                                  <th>
+
+                                  </th>
+                                  <th >
+
+                                  </th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1	</td>
+                              <td>0-3</td>
+                              <td>4-6	</td>
+                              <td>7-10</td>
+                              <td>10 days and above</td>
+                            </tr>
+                            <tr>
+                              <td>1	</td>
+                              <td>0-3</td>
+                              <td>4-6	</td>
+                              <td>7-10</td>
+                              <td>10 days and above</td>
+                            </tr>
+                            <tr>
+                              <td>1	</td>
+                              <td>0-3</td>
+                              <td>4-6	</td>
+                              <td>7-10</td>
+                              <td>10 days and above</td>
+                            </tr>
+                            <tr>
+                              <td>1	</td>
+                              <td>0-3</td>
+                              <td>4-6	</td>
+                              <td>7-10</td>
+                              <td>10 days and above</td>
+                            </tr>
+                            <tr>
+                              <td>1	</td>
+                              <td>0-3</td>
+                              <td>4-6	</td>
+                              <td>7-10</td>
+                              <td>10 days and above</td>
+                            </tr>
+                            <tr>
+                              <td>1	</td>
+                              <td>0-3</td>
+                              <td>4-6	</td>
+                              <td>7-10</td>
+                              <td>10 days and above</td>
+                            </tr>
+                            <tr>
+                              <td>1	</td>
+                              <td>0-3</td>
+                              <td>4-6	</td>
+                              <td>7-10</td>
+                              <td>10 days and above</td>
+                            </tr>
+                            <tr>
+                              <td>1	</td>
+                              <td>0-3</td>
+                              <td>4-6	</td>
+                              <td>7-10</td>
+                              <td>10 days and above</td>
+                            </tr>
+                            <tr>
+                              <td>1	</td>
+                              <td>0-3</td>
+                              <td>4-6	</td>
+                              <td>7-10</td>
+                              <td>10 days and above</td>
+                            </tr>
+                            <tr>
+                              <td>1	</td>
+                              <td>0-3</td>
+                              <td>4-6	</td>
+                              <td>7-10</td>
+                              <td>10 days and above</td>
+                            </tr>
+                            <tr>
+                              <td>1	</td>
+                              <td>0-3</td>
+                              <td>4-6	</td>
+                              <td>7-10</td>
+                              <td>10 days and above</td>
+                            </tr>
+
+                          </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- tabs -->
+                <div class="row mx-0 mtsellet5">
+
+                  <div class="col-lg-6 p-0">
+                    <div class="col-sm-12 box_sec2 pl0">
+                      <div class="card">
+                        <div class="card-header box_shadow_none">
+                          <h4>Heading</h4>
+                        </div>
+                        <div class="table-responsive ">
+                          <table class="courier" id="myTable2">
+                          <thead>
+                              <tr>
+                                  <th onclick="sortTable(00)">Courier Co
+                                    <span class="arrow12">
+                                    <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                    <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                  </span>
+                                  </th>
+                                  <th onclick="sortTable(01)">Pickup Range
+                                    <span class="arrow12">
+                                      <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                      <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                    </span>
+                                  	</th>
+                                  <th>
+                                  </th>
+                                  <th>
+
+                                  </th>
+                                  <th >
+
+                                  </th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1	</td>
+                              <td>0-24 hours	</td>
+                              <td>25-48 hours	</td>
+                              <td>48-72 hours	</td>
+                              <td>73 hours and above</td>
+                            </tr>
+                            <tr>
+                              <td>1	</td>
+                              <td>0-24 hours	</td>
+                              <td>25-48 hours	</td>
+                              <td>48-72 hours	</td>
+                              <td>73 hours and above</td>
+                            </tr>
+                            <tr>
+                              <td>1	</td>
+                              <td>0-24 hours	</td>
+                              <td>25-48 hours	</td>
+                              <td>48-72 hours	</td>
+                              <td>73 hours and above</td>
+                            </tr>
+                            <tr>
+                              <td>1	</td>
+                              <td>0-24 hours	</td>
+                              <td>25-48 hours	</td>
+                              <td>48-72 hours	</td>
+                              <td>73 hours and above</td>
+                            </tr>
+                            <tr>
+                              <td>1	</td>
+                              <td>0-24 hours	</td>
+                              <td>25-48 hours	</td>
+                              <td>48-72 hours	</td>
+                              <td>73 hours and above</td>
+                            </tr>
+                            <tr>
+                              <td>1	</td>
+                              <td>0-24 hours	</td>
+                              <td>25-48 hours	</td>
+                              <td>48-72 hours	</td>
+                              <td>73 hours and above</td>
+                            </tr>
+                            <tr>
+                              <td>1	</td>
+                              <td>0-24 hours	</td>
+                              <td>25-48 hours	</td>
+                              <td>48-72 hours	</td>
+                              <td>73 hours and above</td>
+                            </tr>
+                            <tr>
+                              <td>1	</td>
+                              <td>0-24 hours	</td>
+                              <td>25-48 hours	</td>
+                              <td>48-72 hours	</td>
+                              <td>73 hours and above</td>
+                            </tr>
+                            <tr>
+                              <td>1	</td>
+                              <td>0-24 hours	</td>
+                              <td>25-48 hours	</td>
+                              <td>48-72 hours	</td>
+                              <td>73 hours and above</td>
+                            </tr>
+                            <tr>
+                              <td>1	</td>
+                              <td>0-24 hours	</td>
+                              <td>25-48 hours	</td>
+                              <td>48-72 hours	</td>
+                              <td>73 hours and above</td>
+                            </tr>
+
+                          </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 p-0">
+                    <div class="col-sm-12 box_sec2 pr0 p-0">
+                      <div class="card">
+                        <div class="card-header box_shadow_none">
+                          <h4>Heading</h4>
+                        </div>
+                        <div class="table-responsive ">
+                          <table class="courier" id="myTable2">
+                          <thead>
+                              <tr>
+                                  <th onclick="sortTable(00)">Courier Co
+                                    <span class="arrow12">
+                                    <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                    <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                  </span>
+                                  </th>
+                                  <th onclick="sortTable(01)">Delivery Range
+                                    <span class="arrow12">
+                                      <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                      <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                    </span>
+                                  	</th>
+                                  <th>
+                                  </th>
+                                  <th>
+
+                                  </th>
+                                  <th >
+
+                                  </th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1	</td>
+                              <td>0-24 hours	</td>
+                              <td>25-48 hours	</td>
+                              <td>48-72 hours	</td>
+                              <td>73 hours and above</td>
+                            </tr>
+                            <tr>
+                              <td>1	</td>
+                              <td>0-24 hours	</td>
+                              <td>25-48 hours	</td>
+                              <td>48-72 hours	</td>
+                              <td>73 hours and above</td>
+                            </tr>
+                            <tr>
+                              <td>1	</td>
+                              <td>0-24 hours	</td>
+                              <td>25-48 hours	</td>
+                              <td>48-72 hours	</td>
+                              <td>73 hours and above</td>
+                            </tr>
+                            <tr>
+                              <td>1	</td>
+                              <td>0-24 hours	</td>
+                              <td>25-48 hours	</td>
+                              <td>48-72 hours	</td>
+                              <td>73 hours and above</td>
+                            </tr>
+                            <tr>
+                              <td>1	</td>
+                              <td>0-24 hours	</td>
+                              <td>25-48 hours	</td>
+                              <td>48-72 hours	</td>
+                              <td>73 hours and above</td>
+                            </tr>
+                            <tr>
+                              <td>1	</td>
+                              <td>0-24 hours	</td>
+                              <td>25-48 hours	</td>
+                              <td>48-72 hours	</td>
+                              <td>73 hours and above</td>
+                            </tr>
+                            <tr>
+                              <td>1	</td>
+                              <td>0-24 hours	</td>
+                              <td>25-48 hours	</td>
+                              <td>48-72 hours	</td>
+                              <td>73 hours and above</td>
+                            </tr>
+                            <tr>
+                              <td>1	</td>
+                              <td>0-24 hours	</td>
+                              <td>25-48 hours	</td>
+                              <td>48-72 hours	</td>
+                              <td>73 hours and above</td>
+                            </tr>
+                            <tr>
+                              <td>1	</td>
+                              <td>0-24 hours	</td>
+                              <td>25-48 hours	</td>
+                              <td>48-72 hours	</td>
+                              <td>73 hours and above</td>
+                            </tr>
+                            <tr>
+                              <td>1	</td>
+                              <td>0-24 hours	</td>
+                              <td>25-48 hours	</td>
+                              <td>48-72 hours	</td>
+                              <td>73 hours and above</td>
+                            </tr>
+
+                          </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row mx-0 mtsellet5">
+
+                  <div class="col-lg-6 p-0">
+                    <div class="col-sm-12 box_sec2 pl0">
+                      <div class="card">
+                        <div class="card-header box_shadow_none">
+                          <h4>Heading</h4>
+                        </div>
+                        <div class="table-responsive ">
+                          <table class="courier" id="myTable2">
+                          <thead>
+                              <tr>
+                                  <th onclick="sortTable(00)">Courier Co
+                                    <span class="arrow12">
+                                    <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                    <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                  </span>
+                                  </th>
+                                  <th onclick="sortTable(01)">First Attempt
+                                    <span class="arrow12">
+                                      <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                      <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                    </span>
+                                  	</th>
+                                  <th>
+                                  </th>
+                                  <th>
+
+                                  </th>
+                                  <th >
+
+                                  </th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1	</td>
+                              <td>0-3 days		</td>
+                              <td>4-6 days		</td>
+                              <td>7-10 days		</td>
+                              <td>10 days and above</td>
+                            </tr>
+                            <tr>
+                              <td>1	</td>
+                              <td>0-3 days		</td>
+                              <td>4-6 days		</td>
+                              <td>7-10 days		</td>
+                              <td>10 days and above</td>
+                            </tr>
+                            <tr>
+                              <td>1	</td>
+                              <td>0-3 days		</td>
+                              <td>4-6 days		</td>
+                              <td>7-10 days		</td>
+                              <td>10 days and above</td>
+                            </tr>
+                            <tr>
+                              <td>1	</td>
+                              <td>0-3 days		</td>
+                              <td>4-6 days		</td>
+                              <td>7-10 days		</td>
+                              <td>10 days and above</td>
+                            </tr>
+                            <tr>
+                              <td>1	</td>
+                              <td>0-3 days		</td>
+                              <td>4-6 days		</td>
+                              <td>7-10 days		</td>
+                              <td>10 days and above</td>
+                            </tr>
+                            <tr>
+                              <td>1	</td>
+                              <td>0-3 days		</td>
+                              <td>4-6 days		</td>
+                              <td>7-10 days		</td>
+                              <td>10 days and above</td>
+                            </tr>
+                            <tr>
+                              <td>1	</td>
+                              <td>0-3 days		</td>
+                              <td>4-6 days		</td>
+                              <td>7-10 days		</td>
+                              <td>10 days and above</td>
+                            </tr>
+                            <tr>
+                              <td>1	</td>
+                              <td>0-3 days		</td>
+                              <td>4-6 days		</td>
+                              <td>7-10 days		</td>
+                              <td>10 days and above</td>
+                            </tr>
+                            <tr>
+                              <td>1	</td>
+                              <td>0-3 days		</td>
+                              <td>4-6 days		</td>
+                              <td>7-10 days		</td>
+                              <td>10 days and above</td>
+                            </tr>
+                            <tr>
+                              <td>1	</td>
+                              <td>0-3 days		</td>
+                              <td>4-6 days		</td>
+                              <td>7-10 days		</td>
+                              <td>10 days and above</td>
+                            </tr>
+                            <tr>
+                              <td>1	</td>
+                              <td>0-3 days		</td>
+                              <td>4-6 days		</td>
+                              <td>7-10 days		</td>
+                              <td>10 days and above</td>
+                            </tr>
+                            <tr>
+                              <td>1	</td>
+                              <td>0-3 days		</td>
+                              <td>4-6 days		</td>
+                              <td>7-10 days		</td>
+                              <td>10 days and above</td>
+                            </tr>
+                            <tr>
+                              <td>1	</td>
+                              <td>0-3 days		</td>
+                              <td>4-6 days		</td>
+                              <td>7-10 days		</td>
+                              <td>10 days and above</td>
+                            </tr>
+                            <tr>
+                              <td>1	</td>
+                              <td>0-3 days		</td>
+                              <td>4-6 days		</td>
+                              <td>7-10 days		</td>
+                              <td>10 days and above</td>
+                            </tr>
+                            <tr>
+                              <td>1	</td>
+                              <td>0-3 days		</td>
+                              <td>4-6 days		</td>
+                              <td>7-10 days		</td>
+                              <td>10 days and above</td>
+                            </tr>
+                            <tr>
+                              <td>1	</td>
+                              <td>0-3 days		</td>
+                              <td>4-6 days		</td>
+                              <td>7-10 days		</td>
+                              <td>10 days and above</td>
+                            </tr>
+                            <tr>
+                              <td>1	</td>
+                              <td>0-3 days		</td>
+                              <td>4-6 days		</td>
+                              <td>7-10 days		</td>
+                              <td>10 days and above</td>
+                            </tr>
+                            <tr>
+                              <td>1	</td>
+                              <td>0-3 days		</td>
+                              <td>4-6 days		</td>
+                              <td>7-10 days		</td>
+                              <td>10 days and above</td>
+                            </tr>
+
+                          </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 p-0">
+                    <div class="col-sm-12 box_sec2 pr0 p-0">
+                      <div class="card">
+                        <div class="card-header box_shadow_none">
+                          <h4>Heading</h4>
+                        </div>
+                        <div class="table-responsive ">
+                          <table class="courier" id="myTable2">
+                          <thead>
+                              <tr>
+                                  <th onclick="sortTable(00)">Courier Co
+                                    <span class="arrow12">
+                                    <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                    <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                  </span>
+                                  </th>
+                                  <th onclick="sortTable(01)">Delivery Analysis
+                                    <span class="arrow12">
+                                      <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                      <i class="	fa fa-arrows-v" aria-hidden="true"></i>
+                                    </span>
+                                  	</th>
+                                  <th>
+                                  </th>
+                                  <th>
+
+                                  </th>
+                                  <th >
+
+                                  </th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1	</td>
+                              <td>1st attempt		</td>
+                              <td>2nd attempt		</td>
+                              <td>3nd attempt	</td>
+                              <td>4th attempt and above</td>
+                            </tr>
+                            <tr>
+                              <td>1	</td>
+                              <td>1st attempt		</td>
+                              <td>2nd attempt		</td>
+                              <td>3nd attempt	</td>
+                              <td>4th attempt and above</td>
+                            </tr>
+                            <tr>
+                              <td>1	</td>
+                              <td>1st attempt		</td>
+                              <td>2nd attempt		</td>
+                              <td>3nd attempt	</td>
+                              <td>4th attempt and above</td>
+                            </tr>
+                            <tr>
+                              <td>1	</td>
+                              <td>1st attempt		</td>
+                              <td>2nd attempt		</td>
+                              <td>3nd attempt	</td>
+                              <td>4th attempt and above</td>
+                            </tr>
+                            <tr>
+                              <td>1	</td>
+                              <td>1st attempt		</td>
+                              <td>2nd attempt		</td>
+                              <td>3nd attempt	</td>
+                              <td>4th attempt and above</td>
+                            </tr>
+                            <tr>
+                              <td>1	</td>
+                              <td>1st attempt		</td>
+                              <td>2nd attempt		</td>
+                              <td>3nd attempt	</td>
+                              <td>4th attempt and above</td>
+                            </tr>
+                            <tr>
+                              <td>1	</td>
+                              <td>1st attempt		</td>
+                              <td>2nd attempt		</td>
+                              <td>3nd attempt	</td>
+                              <td>4th attempt and above</td>
+                            </tr>
+                            <tr>
+                              <td>1	</td>
+                              <td>1st attempt		</td>
+                              <td>2nd attempt		</td>
+                              <td>3nd attempt	</td>
+                              <td>4th attempt and above</td>
+                            </tr>
+                            <tr>
+                              <td>1	</td>
+                              <td>1st attempt		</td>
+                              <td>2nd attempt		</td>
+                              <td>3nd attempt	</td>
+                              <td>4th attempt and above</td>
+                            </tr>
+                            <tr>
+                              <td>1	</td>
+                              <td>1st attempt		</td>
+                              <td>2nd attempt		</td>
+                              <td>3nd attempt	</td>
+                              <td>4th attempt and above</td>
+                            </tr>
+                            <tr>
+                              <td>1	</td>
+                              <td>1st attempt		</td>
+                              <td>2nd attempt		</td>
+                              <td>3nd attempt	</td>
+                              <td>4th attempt and above</td>
+                            </tr>
+                            <tr>
+                              <td>1	</td>
+                              <td>1st attempt		</td>
+                              <td>2nd attempt		</td>
+                              <td>3nd attempt	</td>
+                              <td>4th attempt and above</td>
+                            </tr>
+                            <tr>
+                              <td>1	</td>
+                              <td>1st attempt		</td>
+                              <td>2nd attempt		</td>
+                              <td>3nd attempt	</td>
+                              <td>4th attempt and above</td>
+                            </tr>
+                            <tr>
+                              <td>1	</td>
+                              <td>1st attempt		</td>
+                              <td>2nd attempt		</td>
+                              <td>3nd attempt	</td>
+                              <td>4th attempt and above</td>
+                            </tr>
+                            <tr>
+                              <td>1	</td>
+                              <td>1st attempt		</td>
+                              <td>2nd attempt		</td>
+                              <td>3nd attempt	</td>
+                              <td>4th attempt and above</td>
+                            </tr>
+
+                          </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+      
+      </section>
+    </div>
+<!-- footer here -->
+<app-footer></app-footer>
+</div>
+</div>
+
+
+</body>
+

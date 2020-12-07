@@ -1,0 +1,164 @@
+progress{
+  width: 100%;
+
+}
+a.canvasjs-chart-credit {
+    display: none;
+}
+.truck_loading i {
+  color: #03b1b9 !important;
+  border: 1px solid #03b1b9 !important;
+}
+.rto_truck i{
+  color: #ffa117 !important;
+border: 1px solid #ffa117 !important;
+}
+.truck_icon i{
+  font-size: 21px;
+background: #f2f2f270;
+border-radius: 100px;
+padding: 12px;
+width: 50px;
+height: 50px;
+display: grid;
+justify-content: center;
+align-items: center;
+/* opacity: 0.7; */
+color: #ea16a9;
+border: 1px solid #ea16a9;
+}
+.bg_progress{
+  background-color: white;
+  margin: 0 10px;
+  box-shadow: 0px 2px 12px rgb(31 30 47 / 5%);
+  padding: 9px;
+}
+
+.ml0{
+  margin-left: 0;
+}
+.mr0{
+  margin-right: 0;
+}
+.total h5, .total h2{
+  margin-bottom: 0 !important;
+}
+.arrow12{
+  float: right;
+font-size: 12px;
+font-weight: 100;
+opacity: 0.4;
+}
+.dataTable thead tr{
+  background-color: #f1f5fa !important;
+}
+.dataTable tbody tr:nth-child(even) {
+  background: #f1f5fa;
+}
+.dataTable tbody tr:nth-child(odd) {
+  background: #fff;
+}
+.apexcharts-toolbar {
+  position: absolute;
+  display: none !important;
+}
+.mt21{
+margin-top: 17px !important;
+height: 410px;
+
+}
+#line4{
+  height: 339px !important;
+
+}
+.new_card12 i{
+background: #d3d3d34d;
+border-radius: 50px;
+padding: 13px;
+}
+.mtsellet5{
+margin-top: 15px;
+}
+.nav-tabs .nav-item {
+  margin-bottom: -1px;
+  margin-left: -1px;
+  border-bottom: 1px dashed lightgray;
+}
+.card_box .card{
+margin-bottom: 0px !important;
+height: 98px;
+padding: 13px;
+
+}
+.courier{
+width: 100%;
+width: 100%;
+    border: 1px solid #f2f2f2;
+}
+.courier thead tr{
+  background: #f1f5fa;
+}
+.courier tbody tr:hover{
+  background: #f1f5fd99;
+}
+.courier thead tr th{
+padding: 8px;
+/* text-align: center; */
+border: 1px solid rgb(107 106 106 / 4%);
+}
+.courier tbody td{
+padding: 8px;
+/* text-align: center; */
+border: 1px solid rgb(107 106 106 / 4%);
+}
+.courier2{
+width: 100%;
+border: 1px solid #f2f2f2;
+}
+.row23{
+display: inherit;
+}
+.tab-pane .card{
+height: 303px;
+
+}
+@media (max-width: 767px) {
+.phone_12{
+  margin: 14px 0px !important;
+
+}
+.bg_progress{
+  margin: 0;
+}
+.col-sm-5{
+  padding: 0px !important;
+}
+.row23{
+  /* display: inherit; */
+  display: inline-block;
+
+}
+
+}
+.courier2 tbody tr{
+padding: 8px;
+text-align: center;
+border: 1px solid rgb(107 106 106 / 4%);
+}
+.courier2 tbody tr:hover{
+background-color: #f1f5fd99;
+
+}
+.courier2 tr td, .courier2 tr th{
+padding: 8px;
+border: 1px solid #f2f2f2;
+
+}
+.courier2 thead tr{
+background-color: #f1f5fd99;
+padding: 8px;
+text-align: center;
+}
+.courier2 tbody tr:nth-child(even){
+background-color: #f1f5fd99;
+}
