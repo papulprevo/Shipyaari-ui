@@ -43,7 +43,6 @@ import { B2bshipmentComponent } from './order/b2bshipment/b2bshipment.component'
 import { AddbulkComponent } from './order/addbulk/addbulk.component';
 import { AllorderComponent } from './order/allorder/allorder.component';
 import { ChannelOrderComponent } from './order/channel-order/channel-order.component';
-import { StarComponent } from './shared/star/star.component';
 import { ShippingChargesComponent } from './billing/allinvoices/shipping-charges/shipping-charges.component';
 import { WeightReconciliationComponent } from './billing/allinvoices/weight-reconciliation/weight-reconciliation.component';
 import { RechargeComponent } from './billing/allinvoices/recharge/recharge.component';
@@ -62,6 +61,7 @@ import { AddDelAddComponent } from './address-book/add-del-add/add-del-add.compo
 import { SignupComponent } from './signup/signup.component';
 import { LoginComponent } from './login/login.component';
 import { ForgotPassComponent } from './forgot-pass/forgot-pass.component';
+import { ProfileComponent } from './profile/profile.component';
 
 
 
@@ -100,7 +100,6 @@ import { ForgotPassComponent } from './forgot-pass/forgot-pass.component';
     AddbulkComponent,
     AllorderComponent,
     ChannelOrderComponent,
-    StarComponent,
     ShippingChargesComponent,
     WeightReconciliationComponent,
     RechargeComponent,
@@ -119,6 +118,7 @@ import { ForgotPassComponent } from './forgot-pass/forgot-pass.component';
     SignupComponent,
     LoginComponent,
     ForgotPassComponent,
+    ProfileComponent,
     
   ],
   imports: [
