@@ -39,7 +39,7 @@
              <div><h4  class="h4_details">Delivery details</h4></div>
              <div style="float: right;">
               <a class="" href="javascript:" data-toggle="modal" data-target="#addbulkModal">
-                <span style="float: right;">
+                <span style="float: right;" data-toggle="modal" data-target="#uploadbulk">
                   <i data-toggle="tooltip" title="" data-original-title="Add Bulk" style="color:#077bd4; margin: 10px;" class="fa fa-upload fa-lg"></i>
                 </span>
                </a>
@@ -49,10 +49,10 @@
        <div class="col-12 col-sm-12 col-lg-12 p-0 ">  
           <nav>
           <div class="nav nav-tabs tab-font-size" id="nav-tab" role="tablist">
-            <a class="nav-item nav-link active" id="nav-processingorder-tab" data-toggle="tab" href="#nav-processingorder" role="tab" aria-controls="nav-processingorder" aria-selected="true">Processing Order
+            <a class="nav-item nav-link" id="nav-processingorder-tab" data-toggle="tab" href="#nav-processingorder" role="tab" aria-controls="nav-processingorder" aria-selected="true">Processing Order
               <span class="badge badge-primary badge-size">0</span>
             </a>
-            <a class="nav-item nav-link" id="nav-ReadyToShip-tab" data-toggle="tab" href="#nav-ReadyToShip" role="tab" aria-controls="nav-ReadyToShip" aria-selected="false">Ready To Ship
+            <a class="nav-item nav-link active" id="nav-ReadyToShip-tab" data-toggle="tab" href="#nav-ReadyToShip" role="tab" aria-controls="nav-ReadyToShip" aria-selected="false">Ready To Ship
               <span class="badge badge-primary badge-size">10236</span>
             </a>
             <a class="nav-item nav-link" id="nav-ReadyToPick-tab" data-toggle="tab" href="#nav-ReadyToPick" role="tab" aria-controls="nav-ReadyToPick" aria-selected="false">Ready To Pick
@@ -73,11 +73,11 @@
           </div>
         </nav>
           <div class="tab-content" id="nav-tabContent">
-            <div class="tab-pane fade show active" id="nav-processingorder" role="tabpanel" aria-labelledby="processingorder-tab">
+            <div class="tab-pane fade" id="nav-processingorder" role="tabpanel" aria-labelledby="processingorder-tab">
               <app-processingorder></app-processingorder>
             </div>
-            <div class="tab-pane  " id="nav-ReadyToShip" role="tabpanel" aria-labelledby="ReadyToShip-tab">
-              <!-- <app-readytoship></app-readytoship> -->
+            <div class="tab-pane fade show active " id="nav-ReadyToShip" role="tabpanel" aria-labelledby="ReadyToShip-tab">
+              <app-readytoship></app-readytoship>
             </div>
             <div class="tab-pane fade " id="nav-ReadyToPick" role="tabpanel" aria-labelledby="ReadyToPick-tab">
               <!-- <app-readytopick></app-readytopick> -->
@@ -105,3 +105,36 @@
   </div>
 </body>
 
+
+<!-- modal for  -->
+<div class="modal fade" id="uploadbulk" role="dialogue">
+  <div class="modal-dialog modal-lg">
+    <!-- Modal content-->
+    <div class="modal-content"> 
+      <div class="modal-body">      
+        <h5 class="text-center">Add Bulk Consignment</h5>
+        <div class="pickup_modal">
+          <!-- <h6>Personal Details</h6> -->
+          <!-- <form [formGroup]="UploadBulkTemplate" (ngSubmit)="onSubmit()"> -->
+          <div class="row">
+            <div class="col-4">
+              <a href="assets/bulk_upload_new.xlsx" type="button" style="width: 100%;"  class="btn btn-primary  btn-sm">Download Sample Excel</a>
+            </div>
+            <div class="col1" style="padding-right: 10px; border-left: 3px solid black; height: 40px;"></div>
+            <div class="col-5">
+              <div class="form-group">
+                <input type="file" class="form-control">
+              </div>
+            </div>
+            <div class="col-2">
+              <button type="" class="btn btn-warning btn-sm" style="width: 100%;" >Upload</button>
+            </div>
+          </div>
+          <div class="">
+          </div>
+        <!-- </form> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

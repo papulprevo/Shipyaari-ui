@@ -1,0 +1,9 @@
+table tr td, table tr th
+{
+color: black;
+font-family: 'Roboto Condensed', 'Roboto', sans-serif;
+   font-weight: 400;
+}
+table p{
+    margin-bottom: 0px;
+}

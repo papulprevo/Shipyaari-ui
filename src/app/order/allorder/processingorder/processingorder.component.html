@@ -1,326 +1,56 @@
-<table class="table table-bordered table-sm">
+<div class="form-row" >
+  <div class="col-lg-7 col-md-7 col-xl-7 col-xs-7">
+    <div class="d-flex">
+    <a href="Javascript:" style="padding: 4px;" class="nav-link">Total: <span id="no_total_order" > 0</span></a>
+    &nbsp;&nbsp;
+    <a href="Javascript:" style="padding: 4px;" class="nav-link">Processing : <span id="no_process_order" > 0</span></a>
+    &nbsp;&nbsp;
+    <a href="Javascript:" style="padding: 4px;" class="nav-link">Success : <span id="no_success_order"> 0</span></a>
+    &nbsp;&nbsp;
+    <a href="Javascript:" style="padding: 4px;" class="nav-link">failed :<span id="no_faild_order" > 0</span></a>
+  </div>
+</div>
+  
+  <div class="col-auto" >
+    <button type="submit" class="btn btn-primary btn-sm mb-2 btn-color">Process</button>
+  </div>
+  <div class="col-auto">
+   <button type="submit" class="btn btn-primary btn-sm mb-2 btn-color">Next</button>
+  </div>
+  <div class="col-auto">
+    <a href="assets/consignment_error_report.xlsx" type="button" class="btn btn-primary btn-sm mb-2 btn-color">Error Sheet Download</a>
+  </div>
+  <div class="col-auto">
+    <button type="submit" class="btn btn-primary btn-sm mb-2 btn-color ">Clear</button>
+  </div>
+
+</div>
+
+<table class="table table-bordered table-sm" style="font-size:small; color:black;">
     <thead class="text-center">
       <tr>
-        <th scope="col">
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-              </div>
-        </th>
-        <th scope="col" >Shipyaari ID / Order id</th>
-        <th scope="col" >Product Details </th>
-        <th scope="col">Customer Details </th>
-        <th scope="col">nvoice Value/ Payment Mode </th>
-        <th scope="col">Date	</th>
-        <th scope="col">AWB Details	</th>
-        <th scope="col">Status 	</th>
+        <th scope="col" >Shipyaari ID / Order id</th>            
+        <th scope="col" >Payment Mode </th>
+        <th scope="col">Pickup Pincode </th>
+        <th scope="col">Delivery Pincode</th>
+        <th scope="col">Weight	</th>
+        <th scope="col">Status	</th>
+        <th scope="col">Tracking Number</th>
+        <th scope="col">Amount</th>
         <th scope="col">Action</th>
       </tr>
     </thead>
     <tbody>
       <tr >
-        <td>
-            <div class="form-check text-center">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1"></label>
-              </div>
-        </td>
-        <td><a href="javascript:" data-toggle="modal" data-target="#exampleModalsc"><p style="color: #077bd4;"><b>SHIPYAARI-123456789</b></p></a><p style="color: green;">D13233</p></td>
-        <td><p style="color: green;"><i class="fas fa-road"></i> 123456789101112</p><p style="color: #fc7303;"><i class="fa fa-truck" aria-hidden="true"></i> Express-Courier -Fedex</p></td>
-        <td><p class="text-center">RTO In Transit</p></td>
-        <td><p style="color: green;">Zone 4</p><p>Economy 0.5kg</p></td>
-        <td><p class="text-center">49</p></td>
-        <td><p class="text-center">0</p></td>
-        <td><p class="text-center">0</p></td>
-        <td><p class="text-center">4.90</p></td> 
+        
+        <td><p>123456789101112</p></td>
+        <td><p class="text-center"> Online</p></td>
+        <td><p class="text-center">440018</p></td>
+        <td><p class="text-center">440018</p></td>
+        <td><p class="text-center">50.00</p></td>
+        <td><p class="text-center">123456789101112</p></td>
+        <td><p class="text-center">123456789101112</p></td>
+        <td><p class="text-center">123456789101112</p></td> 
+        <td><p class="text-center">123456789101112</p></td>
       </tr>
   </table>
-
-  <!-- old -->
-
-        <table class="table table-bordered"  class="table table-hover">
-          <thead>
-            <tr>
-                <th><input type="checkbox" class="form-check-input" id="exampleCheck1"></th>
-              <th> 
-                <div class="dropdown">Shipyaari ID / Order ID <a href="Javascript:" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  ><i  class="fa fa-filter" aria-hidden="true"></i></a>
-                  <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                    <!-- <form> -->
-                      <div class="form-group">
-                        <label>Search By Shipyaari ID / Order Id</label>
-                        <input type="text" class="form-control">
-                        <button class="btn btn-primary" type="submit">Apply</button>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <button class="btn btn-primary" type="reset">Clear</button>
-                      </div>
-                      <!-- </form> -->
-                  </div>
-                </div>
-              </th>
-              <th>Product Details </th>
-              <th>  
-                <div class="dropdown">  Customer  Details  <a href="Javascript:" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  > <i class="fa fa-filter" aria-hidden="true"></i> </a>
-                  <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                    <!-- <form> -->
-                      <div class="form-group">
-                        <label>Search By Mobile No.</label>
-                        <input type="text" class="form-control">
-                        <button class="btn btn-primary" type="submit">Apply</button>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <button class="btn btn-primary" type="reset">Clear</button>
-                      </div>
-                      <!-- </form> -->
-                  </div>
-                </div>
-              </th>
-               
-              <th> 
-                <div class="dropdown"> Invoice Value/ Payment Mode <a href="Javascript:" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  > <i class="fa fa-filter" aria-hidden="true"></i> </a>
-                  <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                    <!-- <form> -->
-                      <div class="form-group">
-                        <label class="container">Online
-                          <input type="checkbox" checked="checked">
-                          <span class="checkmark"></span>
-                        </label>
-                        
-                        <label class="container">COD
-                          <input type="checkbox">
-                          <span class="checkmark"></span>
-                        </label>
-                        <button class="btn btn-primary" type="submit">Apply</button>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <button class="btn btn-primary" type="reset">Clear</button>
-                      </div>
-                      <!-- </form> -->
-                  </div>
-                </div>
-              </th>
-              <th> 
-                <div class="dropdown">  Date <a href="Javascript:" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  > <i class="fa fa-filter" aria-hidden="true"></i> </a>
-                  <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                    <!-- <form> -->
-                      <div class="form-group">
-                        <!-- <app-datepicker></app-datepicker> -->
-                        
-                        <button class="btn btn-primary" type="submit">Apply</button>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <button class="btn btn-primary" type="reset">Clear</button>
-                      </div>
-                      <!-- </form> -->
-                  </div>
-                </div>   
-    
-              </th>
-              <th> 
-    
-                <div class="dropdown"> AWB Details <a href="Javascript:" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  > <i class="fa fa-filter" aria-hidden="true"></i> </a>
-                  <div class="dropdown-menu"  aria-labelledby="dropdownMenu2">
-                    <!-- <form> -->
-                      <div class="form-group">
-                         
-                        <input type="text" placeholder="Tracking Number" class="form-control">
-                        
-                        
-                        <label class="container">Dotzot
-                          <input type="checkbox">
-                          <span class="checkmark"></span>
-                        </label>
-                        <label class="container">Fedex
-                          <input type="checkbox">
-                          <span class="checkmark"></span>
-                        </label>
-                        
-                        <label class="container">XpressBees
-                          <input type="checkbox">
-                          <span class="checkmark"></span>
-                        </label>
-                        <label class="container">Shadowfax_Reverse
-                          <input type="checkbox">
-                          <span class="checkmark"></span>
-                        </label>
-                        
-                        <label class="container">Shadowfax
-                          <input type="checkbox">
-                          <span class="checkmark"></span>
-                        </label>
-                        <label class="container">Delhivery_Reverse
-                          <input type="checkbox">
-                          <span class="checkmark"></span>
-                        </label>
-                        
-                        <label class="container">Delhivery
-                          <input type="checkbox">
-                          <span class="checkmark"></span>
-                        </label>
-                        <label class="container">Bluedart
-                          <input type="checkbox" >
-                          <span class="checkmark"></span>
-                        </label>
-                        
-                        <label class="container">WOW Express
-                          <input type="checkbox">
-                          <span class="checkmark"></span>
-                        </label>
-    
-                        
-                        <label class="container">Delhivery B2B
-                          <input type="checkbox">
-                          <span class="checkmark"></span>
-                        </label>
-    
-                        <label class="container">ERunnerz
-                          <input type="checkbox" >
-                          <span class="checkmark"></span>
-                        </label>
-    
-                        <button class="btn btn-primary" type="submit">Apply</button>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <button class="btn btn-primary" type="reset">Clear</button>
-                      </div>
-                      <!-- </form> -->
-                  </div>
-                </div>
-              </th>
-    
-              <th>    
-                <div class="dropdown"> Status <a href="Javascript:" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  > <i class="fa fa-filter" aria-hidden="true"></i> </a>
-                  <div class="dropdown-menu"  aria-labelledby="dropdownMenu2">
-                    <!-- <form> -->
-                      <div class="form-group">
-                         
-                         
-                        
-                        
-                        <label class="container">Not Picked
-                          <input type="checkbox">
-                          <span class="checkmark"></span>
-                        </label>
-                        <label class="container">In Transit
-                          <input type="checkbox" >
-                          <span class="checkmark"></span>
-                        </label>
-                        
-                        <label class="container">Out For Delivery
-                          <input type="checkbox">
-                          <span class="checkmark"></span>
-                        </label>
-                        <label class="container">Delivered
-                          <input type="checkbox" >
-                          <span class="checkmark"></span>
-                        </label>
-                        
-                        <label class="container">RTO In Transit
-                          <input type="checkbox">
-                          <span class="checkmark"></span>
-                        </label>
-                        <label class="container">RTO Delivered
-                          <input type="checkbox">
-                          <span class="checkmark"></span>
-                        </label>
-                        
-                        <label class="container">Exception
-                          <input type="checkbox">
-                          <span class="checkmark"></span>
-                        </label>
-                        <label class="container">Lost/Damage
-                          <input type="checkbox" >
-                          <span class="checkmark"></span>
-                        </label>
-                        
-                        <label class="container">Reverse Delivered
-                          <input type="checkbox">
-                          <span class="checkmark"></span>
-                        </label>
-    
-                        
-                        <label class="container">RTO Exception
-                          <input type="checkbox">
-                          <span class="checkmark"></span>
-                        </label>
-    
-                        <label class="container">RTO Created
-                          <input type="checkbox" >
-                          <span class="checkmark"></span>
-                        </label>
-    
-                        <label class="container">RTO Out For Delivery
-                          <input type="checkbox">
-                          <span class="checkmark"></span>
-                        </label>
-    
-                        
-                        <label class="container">Reached Destination
-                          <input type="checkbox">
-                          <span class="checkmark"></span>
-                        </label>
-    
-                        <label class="container">Reverse In Transit
-                          <input type="checkbox" >
-                          <span class="checkmark"></span>
-                        </label>
-    
-                        <label class="container">Reverse Exception
-                          <input type="checkbox">
-                          <span class="checkmark"></span>
-                        </label>
-    
-                        
-                        <label class="container">Reverse Out For Deli
-                          <input type="checkbox">
-                          <span class="checkmark"></span>
-                        </label>
-    
-                        <label class="container">Cancelled
-                          <input type="checkbox" >
-                          <span class="checkmark"></span>
-                        </label>
-    
-                        <button class="btn btn-primary" type="submit">Apply</button>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <button class="btn btn-primary" type="reset">Clear</button>
-                      </div>
-                      <!-- </form> -->
-                  </div>
-                </div>  
-              </th>
-              <th scope="col">Action</th>
-            </tr>
-          </thead>
-          <tbody>
-              
-            <tr>
-                <td><input type="checkbox" class="form-check-input" id="exampleCheck1"></td>
-              <th scope="row"  style="color:blue"><a  href="javascript:" data-toggle="modal" data-target="#allorderModal">SHIPYAARI-1704659</a>
-                <p class="text-color-green">  155</th>
-              <td ><p class="text-color-blue3" > <i class="fas fa-box"></i>&nbsp;Namess2 Namess2 Na</p>
-                <p class="text-color-red"><i class="fas fa-bezier-curve"></i> 2 (12x10x3)</td>
-              <td ><p><i class="fas fa-user-check"></i>&nbsp;name</p>
-                <p class="text-color-blue3" ><i class="fas fa-map-marker-alt"></i>&nbsp; Indore
-                  <p class="text-color-red"><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;9644180393</td>
-              <td><p><i class="fas fa-rupee-sign"></i> 99.00</p>
-                <p><i class="fas fa-wallet"></i> Cod</p></td>
-              <td > <p class="text-color-green"  ><i class="far fa-calendar-alt"></i>&nbsp; 2020-11-18
-                <p class="text-color-blue3" ><i class="fas fa-clock"></i>&nbsp; 01:38:17</td>
-              <td>Fedex
-                <p class="text-color-green"><i class="fas fa-road"></i>399069795110
-                  <p class="text-color-orange"><i class="fas fa-truck"></i>IDRA38</td>
-              <td>Not Picked</td>
-              <td>
-                <div style="font-size: 17px;" >
-                  <a class="mt-2" routerLink="/reverse" id="process" data-toggle="tooltip" title="" data-original-title="Reverse" ><i class="fas fa-redo" aria-hidden="true"></i></a>
-                  <a class="mt-2" routerLink="/duplicate" id="process" data-toggle="tooltip" title="" data-original-title="Duplicate"><i class="fas fa-clone" aria-hidden="true"></i></a>
-                  <a class="mt-2" href="Javascript:" id="process" data-toggle="tooltip" title="" data-original-title="Shipping label"><i class="fas fa-tags" aria-hidden="true"></i></a>
-                  <a class="mt-2" href="Javascript:" id="process" data-toggle="tooltip" title="" data-original-title="Cancel"><i class="fa fa-window-close" aria-hidden="true"></i></a>
-                  </div>
-              </td>
-               
-              
-            </tr>
-            
-          </tbody>
-        </table>
-      <!-- </div> -->
-          <!-- Modal -->
-    
-    
-    

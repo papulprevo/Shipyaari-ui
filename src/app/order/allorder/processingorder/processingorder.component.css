@@ -68,3 +68,13 @@ table p{
     position: absolute;
     border-bottom: 9px solid #aba1a1;
 }
+
+.btn-color
+{
+    background-color: #077bd4;
+    box-shadow: none;
+}
+btn:hover
+{
+    background-color: #077bd4;
+}

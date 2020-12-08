@@ -1,1 +1,257 @@
-<p>readytoship works!</p>
+        <div class="row">
+            <div class="col-2" style="padding: 0px;">
+                <div class="form-inline" >
+                    <input class="form-control mr-sm-2 form-control-sm" type="search" placeholder="Trk. no./Order Id" aria-label="Search" style="width: 140px;">
+                    <button class="btn btn-outline-success btn-sm my-2 my-sm-0" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                  </div>
+            </div>
+            <div class="col-2">
+                <div class="form-group">
+                    <select class=" form-control-sm" style="border-color: #e4e6fc;" >
+                        <option> All Payments Methods</option>
+                        <option value="Online">Online</option>
+                        <option value="COD">COD</option>
+                    </select>
+                </div>
+               
+            </div>
+            <div class="col-2">
+                <div class="form-group">
+                    <input type="text" class="form-control-sm" style="border-color: #e4e6fc;">
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="form-group">
+                    <select class=" form-control-sm" >
+                        <option> Select courier Service</option>
+                        <option value="Delhivery">Delhivery</option>
+                        <option value="Fedex">Fedex</option>
+                        <option value="Bluedart">Bluedart</option>
+                        <option value="XpressBees">XpressBees</option>
+                        <option value="WOW_Express">WOW Express</option>
+                        <option value="Shadowfax_Reverse">Shadowfax_Reverse</option>
+                        <option value="Delhivery_B2B">Delhivery B2B</option>
+                        <option value="Shadowfax">Shadowfax</option>
+                        <option value="eRunnerz">eRunnerz</option>
+                        <option value="Delhivery_Reverse">Delhivery_Reverse</option>
+                    </select>
+                </div>
+            </div>
+           
+            <div class="col-4" style="float: right;">
+                <button style="margin-right: 7px; " class="btn btn-primary btn-sm">Manifest</button>
+                <a  href="Javascript:"  data-toggle="tooltip"  data-original-title="Download Bulk" ><i class="fa fa-download fa-lg" aria-hidden="true" style="margin-right: 7px;"></i></a>
+                <button class="btn btn-primary btn-sm" style="margin-right: 7px;">Manifest / Labels</button>
+                <button class="btn btn-primary btn-sm">Ship Now</button>
+            </div>
+        </div>
+        <hr>
+
+
+        
+<table class="table table-bordered table-sm" style="font-size:small; color:black;">
+    <thead class="text-center">
+      <tr>
+          <th>   <input type="checkbox" checked="checked"></th>
+        <th scope="col" style="width: 15%;">
+            Shipyaari ID / Order Id
+            <div class="dropdown">
+                <a class="" href="javascript:" role="" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-filter"></i>
+                </a>
+                <div class="dropdown-menu new_dropdow" aria-labelledby="dropdownMenuLink" style="width:170%;">
+                 <div class="container">
+                   <div class="form-group">
+                     <label>Search By Shipyaari ID / Order ID</label>
+                     <input type="text" class="form-control">
+                   </div>
+                   <button class="btn btn-primary btn-sm" style="float: left;">Submit</button>
+                   <button class="btn btn-success btn-sm" style="float: right;" type="reset">Clear</button>
+                 </div>
+                </div>
+              </div>
+        </th>            
+        <th scope="col" style="width: 15%;">Product Details </th>
+        <th scope="col" style="width: 12%;">Pickup Details
+            <div class="dropdown">
+                <a class="" href="javascript:" role="" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-filter"></i>
+                </a>
+                <div class="dropdown-menu new_dropdow" aria-labelledby="dropdownMenuLink" style="width:170%;">
+                 <div class="container">
+                   <div class="form-group">
+                     <label>Search By Mobile Number</label>
+                     <input type="text" class="form-control">
+                   </div>
+                   <button class="btn btn-primary btn-sm" style="float: left;">Submit</button>
+                   <button class="btn btn-success btn-sm" style="float: right;" type="reset">Clear</button>
+                 </div>
+                </div>
+              </div>
+        </th>
+        <th scope="col" style="width: 12%;">Delivery Details
+            <div class="dropdown">
+                <a class="" href="javascript:" role="" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-filter"></i>
+                </a>
+                <div class="dropdown-menu new_dropdow" aria-labelledby="dropdownMenuLink" style="width:170%;">
+                 <div class="container">
+                   <div class="form-group">
+                     <label>Search By Mobile Number</label>
+                     <input type="text" class="form-control">
+                   </div>
+                   <button class="btn btn-primary btn-sm" style="float: left;">Submit</button>
+                   <button class="btn btn-success btn-sm" style="float: right;" type="reset">Clear</button>
+                 </div>
+                </div>
+              </div>
+        </th>
+        <th scope="col" style="width: 10%;">Invoice Value/ Payment Mode	
+            <div class="dropdown">
+                <a class="" href="javascript:" role="" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-filter"></i>
+                </a>
+                <div class="dropdown-menu new_dropdow" aria-labelledby="dropdownMenuLink" style="width:170%;">
+                 <div class="container">
+                   <div class="form-group" style="font-size: small; width: 101%;">
+                     <label>Select Mode</label><br>
+                     <input type="checkbox" > COD<br><input type="checkbox" > Online
+                   </div>
+                   <button class="btn btn-primary btn-sm" style="float: left;">Submit</button>
+                   <button class="btn btn-success btn-sm" style="float: right;" type="reset">Clear</button>
+                 </div>
+                </div>
+              </div>
+        </th>
+        <th scope="col" style="width: 10%;">Date
+            <div class="dropdown">
+                <a class="" href="javascript:" role="" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-filter"></i>
+                </a>
+                <div class="dropdown-menu new_dropdow" aria-labelledby="dropdownMenuLink" style="width:170%;">
+                 <div class="container">
+                   <div class="form-group" style="font-size: small; width: 101%;">
+                     <label>Select Date</label>
+                     <input type="text" class="form-control" > 
+                   </div>
+                   <button class="btn btn-primary btn-sm" style="float: left;">Submit</button>
+                   <button class="btn btn-success btn-sm" style="float: right;" type="reset">Clear</button>
+                 </div>
+                </div>
+              </div>
+        </th>
+        <th scope="col" style="width: 12%;">AWB Details
+            <div class="dropdown dropleft">
+                <a class="" href="javascript:" role="" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-filter"></i>
+                </a>
+                <div class="dropdown-menu " aria-labelledby="dropdownMenuLink" style="width: 290%;">
+                 <div class="container">
+                   <div class="form-group" style="font-size: small; width: 101%;">
+                     <input type="text" class="form-control" placeholder="Traking number" > 
+                   </div>
+                <div class="row" style="font-size: small;">
+                       <div class="col">
+                        <div class="mb-bottom"><input type="checkbox" name="filter_curior_company" id="shipping_charges_awb_details_1" value="Dotzot">
+                            <label for="shipping_charges_awb_details_1">&nbsp; Dotzot</label>
+                          </div>
+                          <div class="mb-bottom"><input type="checkbox" name="filter_curior_company" id="shipping_charges_awb_details_1" value="Fedex">
+                            <label for="shipping_charges_awb_details_1">&nbsp; Fedex</label>
+                          </div>
+                          <div class="mb-bottom"><input type="checkbox" name="filter_curior_company" id="shipping_charges_awb_details_1" value="XpressBees">
+                            <label for="shipping_charges_awb_details_1">&nbsp; XpressBees</label>
+                          </div>
+                          <div class="mb-bottom"><input type="checkbox" name="filter_curior_company" id="shipping_charges_awb_details_1" value="Shadowfax_Reverse">
+                            <label for="shipping_charges_awb_details_1">&nbsp; Shadowfax_Reverse</label>
+                          </div>
+                          <div class="mb-bottom"><input type="checkbox" name="filter_curior_company" id="shipping_charges_awb_details_1" value="Shadowfax">
+                            <label for="shipping_charges_awb_details_1">&nbsp; Shadowfax</label>
+                          </div>
+                          <div class="mb-bottom"><input type="checkbox" name="filter_curior_company" id="shipping_charges_awb_details_1" value="Delhivery_Reverse">
+                            <label for="shipping_charges_awb_details_1">&nbsp; Delhivery_Reverse</label>
+                          </div>
+
+                       </div>
+                       <div class="col">
+                        <div class="mb-bottom"><input type="checkbox" name="filter_curior_company" id="shipping_charges_awb_details_1" value="Delhivery">
+                            <label for="shipping_charges_awb_details_1">&nbsp; Delhivery</label>
+                          </div>
+                        <div class="mb-bottom"><input type="checkbox" name="filter_curior_company" id="shipping_charges_awb_details_1" value="Bluedart">
+                            <label for="shipping_charges_awb_details_1">&nbsp; Bluedart</label>
+                          </div>
+                          <div class="mb-bottom"><input type="checkbox" name="filter_curior_company" id="shipping_charges_awb_details_1" value="WOW_Express">
+                            <label for="shipping_charges_awb_details_1">&nbsp; WOW Express</label>
+                          </div>
+                          <div class="mb-bottom"><input type="checkbox" name="filter_curior_company" id="shipping_charges_awb_details_1" value="Delhivery_B2B">
+                            <label for="shipping_charges_awb_details_1">&nbsp; Delhivery B2B</label>
+                          </div>
+                          <div class="mb-bottom"><input type="checkbox" name="filter_curior_company" id="shipping_charges_awb_details_1" value="ERunnerz">
+                            <label for="shipping_charges_awb_details_1">&nbsp; ERunnerz</label>
+                          </div>
+                          <div class="mb-bottom"><input type="checkbox" name="filter_curior_company" id="shipping_charges_awb_details_1" value="SpiceJet">
+                            <label for="shipping_charges_awb_details_1">&nbsp; SpiceJet - Air Cargo</label>
+                          </div>
+                         
+                       </div>
+                   </div>
+                   <button class="btn btn-primary btn-sm" style="float: left;">Submit</button>
+                   <button class="btn btn-success btn-sm" style="float: right;" type="reset">Clear</button>
+                 </div>
+                </div>
+              </div>
+        </th>
+        <th scope="col" style="width: 10%;">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr >
+        <td>   <input type="checkbox" checked="checked"></td>
+        <td>
+            <p style="color: #077bd4;"><b>SHIPYAARI-123456789</b></p><p style="color: green;">&nbsp;255_Reverse_copy_copy</p>
+        </td>
+        <td>
+            <p style="color: #077bd4;"><i class="fas fa-box"></i>&nbsp;Nokia-7-Plus-64GB-Factory-Refurbished-Black-Copper</p>
+            <p style="color: red;"><i class="fas fa-bezier-curve"></i>&nbsp; 0.1 (0.1x0.1x0.1)</p>
+        </td>
+        <td>
+            <p style="color: black;"><i class="fas fa-user-check"></i>&nbsp; Xceller</p>
+            <p style="color: #077bd4;"><i class="fas fa-map-marker-alt"></i>&nbsp;Aurangabad</p>
+            <p style="color: red;"><i class="fas fa-phone"></i>&nbsp;12345678945612</p>
+        </td>
+        <td>
+            <p style="color: black;"><i class="fas fa-user-check"></i>&nbsp; Xceller</p>
+            <p style="color: #077bd4;"><i class="fas fa-map-marker-alt"></i>&nbsp;Aurangabad</p>
+            <p style="color: red;"><i class="fas fa-phone"></i>&nbsp;12345678945612</p>
+        </td>
+        <td>
+            <p style="color: black;"><i class="fas fa-rupee-sign"></i>&nbsp; <b>1500</b></p>
+            <p style="color: #077bd4;"><i class="far fa-credit-card"></i>&nbsp; Online</p>
+        </td>
+        <td>
+            <p style="color: green;"><i class="far fa-calendar-alt"></i>&nbsp; <b>12-20-2020</b></p>
+            <p style="color: #077bd4;"><i class="far fa-clock"></i>&nbsp; 12:12:12</p>
+        </td>
+        <td>
+            <p style="color: black;">&nbsp;<b>Bluedardtsad</b></p>
+            <p style="color: #077bd4;"><i class="fas fa-road"></i>&nbsp; 1234569785412</p>
+        </td>
+        <td><p class="text-center" style="color: #077bd4;">
+            <a href="#" data-toggle="tooltip" title="Reverse">
+                <i class="fas fa-undo"></i>
+            </a>&nbsp;
+            <a href="#" data-toggle="tooltip" title="Duplicate">
+            <i class="far fa-clone"></i>
+            </a>&nbsp;
+            <a href="#" data-toggle="tooltip" title="Shipping Label">
+            <i class="far fa-sticky-note"></i>
+            </a>&nbsp;
+            <a href="#" data-toggle="tooltip" title="Cancel">
+            <i class="fas fa-ban"></i>
+            </a>
+        </p></td>
+      </tr>
+  </table>
+       
+  
+  
+    <!-- </div> -->

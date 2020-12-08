@@ -1,7 +1,9 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 
-
+a{
+    color: #077bd4;
+}
 
 .addorder-margin{
     margin-left: -34px;
