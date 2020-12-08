@@ -1,0 +1,22 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i';
+@import 'https://fonts.googleapis.com/css?family=Roboto+Mono:400,700&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese';
+
+.card{
+    box-shadow: 0px 0px 7px #ccc;
+    }
+
+    .bg-white-card{
+        box-shadow: 0px 0px 7px #ccc;
+        background: white;
+        padding: 13px;
+    }
+
+.tab-font-size
+{
+    font-size: 12px;
+}   
+
+.badge-size
+{
+    padding: 4px 7px;
+}

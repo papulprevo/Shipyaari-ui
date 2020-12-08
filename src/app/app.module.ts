@@ -62,6 +62,13 @@ import { SignupComponent } from './signup/signup.component';
 import { LoginComponent } from './login/login.component';
 import { ForgotPassComponent } from './forgot-pass/forgot-pass.component';
 import { ProfileComponent } from './profile/profile.component';
+import { ProcessingorderComponent } from './order/allorder/processingorder/processingorder.component';
+import { ReadytoshipComponent } from './order/allorder/readytoship/readytoship.component';
+import { ReadytopickComponent } from './order/allorder/readytopick/readytopick.component';
+import { IntransitComponent } from './order/allorder/intransit/intransit.component';
+import { CompleteorderComponent } from './order/allorder/completeorder/completeorder.component';
+import { CancelledorderComponent } from './order/allorder/cancelledorder/cancelledorder.component';
+import { AllorderChildComponent } from './order/allorder/allorder-child/allorder-child.component';
 
 
 
@@ -119,6 +126,13 @@ import { ProfileComponent } from './profile/profile.component';
     LoginComponent,
     ForgotPassComponent,
     ProfileComponent,
+    ProcessingorderComponent,
+    ReadytoshipComponent,
+    ReadytopickComponent,
+    IntransitComponent,
+    CompleteorderComponent,
+    CancelledorderComponent,
+    AllorderChildComponent,
     
   ],
   imports: [

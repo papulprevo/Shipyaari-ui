@@ -1,51 +1,107 @@
 <body>
-    <div id="app">
-      <div class="main-wrapper main-wrapper-1">
-        <div class="navbar-bg"></div>
-      <!--   navbar here -->
-        <app-navbar></app-navbar>
-        <!-- Sidebar Here -->
-        <app-sidebar></app-sidebar>
-        <!-- Main Content -->
-        <div class="main-content">
-          <section class="section">
-            <div class="row">
-              <div class="col-12 col-sm-12 col-lg-12 p-0 ">
-                <div class="card">
-                  <div class="d-flex space-between">
-                    <div class="">
-                      <h4>All Orders</h4>
-                      <ol class="breadcrumb pl-0 pt-0">
-                      <li class="breadcrumb-item"><a href="#">Orders</a></li>
-                      <li class="breadcrumb-item active" aria-current="page">All Orders</li>
-                    </ol>
-                    </div>
-                    <div class=" align-right datepicker">
-                      <!-- <form [formGroup]="form"> -->
-                        <input type="text"
-                          class="form-control"
-                          formControlName="dateRange"
-                          #daterangepicker="bsDaterangepicker"
-                          bsDaterangepicker
-                          [bsConfig]="{ rangeInputFormat : 'DD/MM/YYYY', dateInputFormat: 'DD/MM/YYYY' }">
-                          
-                        <!-- </form> -->
-                      <!-- <div id="reportrange"  class="pull-left new_left" style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc;">
-                          <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>&nbsp;
-                          <span></span> <b class="caret"></b>
-                      </div> -->
-                    </div>
-                  </div>
-                </div>
-              </div>
+  <div id="app">
+    <div class="main-wrapper main-wrapper-1">
+      <div class="navbar-bg"></div>
+    <!--   navbar here -->
+      <app-navbar></app-navbar>
+      <!-- Sidebar Here -->
+      <app-sidebar></app-sidebar>
+      <!-- Main Content -->
+      <div class="main-content">
+        <div class="">
+          <div class="d-flex space-between">
+            <div class="">
+              <h4>All Orders</h4>
+              <ol class="breadcrumb pl-0 pt-0">
+              <li class="breadcrumb-item"><a href="#">Orders</a></li>
+              <li class="breadcrumb-item active" aria-current="page">All Orders</li>
+            </ol>
             </div>
-          </section>
+            <div class=" align-right datepicker">
+              <!-- <form [formGroup]="form"> -->
+                <!-- <input type="text"
+                  class="form-control"
+                  formControlName="dateRange"
+                  #daterangepicker="bsDaterangepicker"
+                  bsDaterangepicker
+                  [bsConfig]="{ rangeInputFormat : 'DD/MM/YYYY', dateInputFormat: 'DD/MM/YYYY' }"> -->
+                  
+                <!-- </form> -->
+              <!-- <div id="reportrange"  class="pull-left new_left" style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc;">
+                  <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>&nbsp;
+                  <span></span> <b class="caret"></b>
+              </div> -->
+            </div>
+          </div>
         </div>
-        <!-- footer Here -->
-        <app-footer></app-footer>
+          <div class="col-sm-12 card p-0 col-sm-12 bg-white-card">
+           <div class="d-flex" style="justify-content: space-between;">
+             <div><h4  class="h4_details">Delivery details</h4></div>
+             <div style="float: right;">
+              <a class="" href="javascript:" data-toggle="modal" data-target="#addbulkModal">
+                <span style="float: right;">
+                  <i data-toggle="tooltip" title="" data-original-title="Add Bulk" style="color:#077bd4; margin: 10px;" class="fa fa-upload fa-lg"></i>
+                </span>
+               </a>
+             </div> 
+          </div><hr>
+     <div class="row">
+       <div class="col-12 col-sm-12 col-lg-12 p-0 ">  
+          <nav>
+          <div class="nav nav-tabs tab-font-size" id="nav-tab" role="tablist">
+            <a class="nav-item nav-link active" id="nav-processingorder-tab" data-toggle="tab" href="#nav-processingorder" role="tab" aria-controls="nav-processingorder" aria-selected="true">Processing Order
+              <span class="badge badge-primary badge-size">0</span>
+            </a>
+            <a class="nav-item nav-link" id="nav-ReadyToShip-tab" data-toggle="tab" href="#nav-ReadyToShip" role="tab" aria-controls="nav-ReadyToShip" aria-selected="false">Ready To Ship
+              <span class="badge badge-primary badge-size">10236</span>
+            </a>
+            <a class="nav-item nav-link" id="nav-ReadyToPick-tab" data-toggle="tab" href="#nav-ReadyToPick" role="tab" aria-controls="nav-ReadyToPick" aria-selected="false">Ready To Pick
+              <span class="badge badge-primary badge-size">10</span>
+            </a>
+            <a class="nav-item nav-link" id="nav-InTransit-tab" data-toggle="tab" href="#nav-InTransit" role="tab" aria-controls="nav-InTransit" aria-selected="false">In Transit
+              <span class="badge badge-primary badge-size">0</span>
+            </a>
+            <a class="nav-item nav-link" id="nav-CompleteOrder-tab" data-toggle="tab" href="#nav-CompleteOrder" role="tab" aria-controls="nav-CompleteOrder" aria-selected="false">Complete Order
+              <span class="badge badge-primary badge-size">39</span>
+            </a>
+            <a class="nav-item nav-link" id="nav-CancelledOrder-tab" data-toggle="tab" href="#nav-CancelledOrder" role="tab" aria-controls="nav-CancelledOrder" aria-selected="false">Cancelled Order
+              <span class="badge badge-primary badge-size">1219</span>
+            </a>
+            <a class="nav-item nav-link" id="nav-AllOrder-tab" data-toggle="tab" href="#nav-AllOrder" role="tab" aria-controls="nav-AllOrder" aria-selected="false">All Order
+              <span class="badge badge-primary badge-size">11278</span>
+            </a>
+          </div>
+        </nav>
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-processingorder" role="tabpanel" aria-labelledby="processingorder-tab">
+              <app-processingorder></app-processingorder>
+            </div>
+            <div class="tab-pane  " id="nav-ReadyToShip" role="tabpanel" aria-labelledby="ReadyToShip-tab">
+              <!-- <app-readytoship></app-readytoship> -->
+            </div>
+            <div class="tab-pane fade " id="nav-ReadyToPick" role="tabpanel" aria-labelledby="ReadyToPick-tab">
+              <!-- <app-readytopick></app-readytopick> -->
+            </div>
+            <div class="tab-pane fade " id="nav-InTransit" role="tabpanel" aria-labelledby="InTransit-tab">
+              <!-- <app-intransit></app-intransit> -->
+            </div>
+            <div class="tab-pane fade " id="nav-CompleteOrder" role="tabpanel" aria-labelledby="CompleteOrder-tab">
+              <!-- <app-completeorder></app-completeorder> -->
+            </div>
+            <div class="tab-pane fade " id="nav-CancelledOrder" role="tabpanel" aria-labelledby="CancelledOrder-tab">
+              <!-- <app-cancelledorder></app-cancelledorder> -->
+            </div>
+            <div class="tab-pane fade " id="nav-AllOrder" role="tabpanel" aria-labelledby="AllOrder-tab">
+              <!-- <app-allorder></app-allorder> -->
+            </div>
+          </div> 
+        </div>
       </div>
     </div>
-  <!-- General JS Scripts -->  
+  </div>
+<!-- footer Here -->
+      <app-footer></app-footer>
+    </div>
+  </div>
 </body>
-  
-  
+
