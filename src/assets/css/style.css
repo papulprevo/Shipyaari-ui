@@ -10423,19 +10423,19 @@ body:not(.sidebar-mini) .sidebar-style-2 .sidebar-menu li.active ul.dropdown-men
 }
 
 .theme-white .btn-primary:focus {
-	background-color: #4f5ece !important
+	background-color: #077bd4!important
 }
 
 .theme-white .btn-primary:focus:active {
-	background-color: #4f5ece !important
+	background-color: #077bd4!important
 }
 
 .theme-white .btn-primary:active {
-	background-color: #4f5ece !important
+	background-color: #077bd4!important
 }
 
 .theme-white .btn-primary:hover {
-	background-color: #4f5ece !important;
+	background-color: #077bd4 !important;
 	color: #fff
 }
 
@@ -10457,12 +10457,12 @@ body:not(.sidebar-mini) .sidebar-style-2 .sidebar-menu li.active ul.dropdown-men
 }
 
 .theme-white .btn-outline-primary:focus {
-	background-color: #4f5ece !important;
+	background-color: #077bd4!important;
 	color: #fff
 }
 
 .theme-white .btn-outline-primary:focus:active {
-	background-color: #4f5ece !important;
+	background-color: #077bd4!important;
 	color: #fff
 }
 
@@ -11643,4 +11643,12 @@ body:not(.sidebar-mini) .sidebar-style-2 .sidebar-menu li.active ul.dropdown-men
 	}
   }
 
-
+  table tr td, table tr th
+  {
+  color: black;
+  font-family: 'Roboto Condensed', 'Roboto', sans-serif;
+	 font-weight: 400;
+  }
+  table p{
+	  margin-bottom: 0px;
+  }

@@ -1,6 +1,22 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 
+.btn-primary
+{
+    background-color: #077bd4 !important ; 
+    box-shadow: none;
+
+}
+.btn-primary:hover
+{
+    background-color: #077bd4 !important ; 
+    
+}
+.badge.badge-primary{
+    background-color: #077bd4 !important ; 
+
+}
+
 a{
     color: #077bd4;
 }

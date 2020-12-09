@@ -7,3 +7,8 @@ font-family: 'Roboto Condensed', 'Roboto', sans-serif;
 table p{
     margin-bottom: 0px;
 }
+
+.brdr
+{
+    border: 1px solid #e4e6fc;
+}

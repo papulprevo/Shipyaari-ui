@@ -83,10 +83,10 @@
               <app-readytopick></app-readytopick>
             </div>
             <div class="tab-pane fade " id="nav-InTransit" role="tabpanel" aria-labelledby="InTransit-tab">
-              <!-- <app-intransit></app-intransit> -->
+              <app-intransit></app-intransit>
             </div>
             <div class="tab-pane fade " id="nav-CompleteOrder" role="tabpanel" aria-labelledby="CompleteOrder-tab">
-              <!-- <app-completeorder></app-completeorder> -->
+              <app-completeorder></app-completeorder>
             </div>
             <div class="tab-pane fade " id="nav-CancelledOrder" role="tabpanel" aria-labelledby="CancelledOrder-tab">
               <!-- <app-cancelledorder></app-cancelledorder> -->
@@ -504,5 +504,90 @@
       </div>
     </div>
 
+  </div>
+</div>
+
+<!-- ready to pick modal -->
+<div class="modal fade " id="staticBackdrop"  data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+    
+      <div class="modal-body">
+       <table class="table table-bordered table-sm"  style="font-size:small; color:black;">
+    <thead class="text-center">
+      <tr>
+        <th scope="col" style="width: 15%;"> Shipyaari ID / Order ID</th>
+        <th scope="col" style="width: 15%;">Product Details</th>
+        <th scope="col" style="width: 10%;"> Pickup Details  </th>
+        <th scope="col" style="width: 10%;"> Delivery Details </th>
+        <th scope="col" style="width: 9%;"> Invoice Value/ Payment Mode</th>
+        <th scope="col" style="width: 8%;"> Date</th>
+        <th scope="col" style="width: 12%;"> AWB Details</th>
+        <th scope="col" style="width: 9%;">Status</th>
+        <th scope="col" style="width: 10%;">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <a href="javascript:" data-toggle="modal" data-target="#ShipingID">
+            <p class="blue"><b>
+              SHIPYAARI-123456789
+            </b></p></a>
+          <p class="green">155</p></td>
+        <td> 
+          <p class="blue"> 
+            <i class="fas fa-box"></i> &nbsp; Namess2 Namess2 Namess2 Namess2 Namess2 Namess2 Na
+          </p>
+          <p class="red"> 
+            <i class="fas fa-bezier-curve"></i> 0.6 (12x10x3)
+          </p>
+        </td>
+        <td> 
+          <p class=""> <i class="fas fa-user-check"></i>&nbsp;  Prevoyance</p>
+         <p class="blue"> <i class="fas fa-map-marker-alt"></i>&nbsp; Indore</p>
+         <p class="red"> <i class="fa fa-phone" aria-hidden="true"></i>&nbsp; 9644180393</p>
+        </td>
+        <td >
+          <p class=""> <i class="fas fa-user-check"></i>&nbsp;  Prevoyance</p>
+          <p class="blue"> <i class="fas fa-map-marker-alt"></i>&nbsp; Indore</p>
+          <p class="red"> <i class="fa fa-phone" aria-hidden="true"></i>&nbsp; 9644180393</p>
+        </td>
+        <td> 
+          <p> 
+            <i class="fas fa-rupee-sign"></i>  99
+          </p>
+          <i class="fas fa-wallet"></i> &nbsp;Cod
+        </td>
+        <td> 
+          <p class="green">
+            <i class="far fa-calendar-alt"></i>&nbsp;2020-11-18</p>
+          <p class="blue" > <i class="fas fa-clock"> 
+          </i>&nbsp; 01:38:17 </p>
+        </td>
+        <td>Fedex
+          <p class="green">399069795110</p></td>
+          <td><p>Picked / Not Picked</p></td>
+        <td>
+          <p class="text-center" style="color: #077bd4;">
+            <a routerLink="/addShipment" data-toggle="tooltip" title="Reverse">
+                <i class="fas fa-undo"></i>
+            </a>&nbsp;
+            <a routerLink="/addShipment" data-toggle="tooltip" title="Duplicate">
+            <i class="far fa-clone"></i>
+            </a>&nbsp;
+            <a href="#" data-toggle="tooltip" title="Shipping Label">
+            <i class="far fa-sticky-note"></i>
+            </a>&nbsp;
+            <a href="#" data-toggle="tooltip" title="Cancel">
+            <i class="fas fa-ban"></i>
+            </a>
+        </p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+      </div>
+    </div>
   </div>
 </div>
