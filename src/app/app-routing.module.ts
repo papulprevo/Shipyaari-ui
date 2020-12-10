@@ -23,6 +23,7 @@ import { ChannelOrderComponent } from './order/channel-order/channel-order.compo
 import { SignupComponent } from './signup/signup.component';
 import { LoginComponent } from './login/login.component';
 import { ForgotPassComponent } from './forgot-pass/forgot-pass.component';
+import { ProfileComponent } from './profile/profile.component';
 
 
 
@@ -52,6 +53,7 @@ const routes: Routes = [
 {path: 'signup', component:SignupComponent},
 {path: 'login', component:LoginComponent},
 {path: 'forgetpass', component:ForgotPassComponent},
+{path: 'profile', component:ProfileComponent},
 {path: '**', component: ClientDashboardComponent}
 
 
