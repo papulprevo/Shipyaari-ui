@@ -69,6 +69,8 @@ import { IntransitComponent } from './order/allorder/intransit/intransit.compone
 import { CompleteorderComponent } from './order/allorder/completeorder/completeorder.component';
 import { CancelledorderComponent } from './order/allorder/cancelledorder/cancelledorder.component';
 import { AllorderChildComponent } from './order/allorder/allorder-child/allorder-child.component';
+import { ProcessComponent } from './order/addbulk/process/process.component';
+import { SuccessComponent } from './order/addbulk/success/success.component';
 
 
 
@@ -133,6 +135,8 @@ import { AllorderChildComponent } from './order/allorder/allorder-child/allorder
     CompleteorderComponent,
     CancelledorderComponent,
     AllorderChildComponent,
+    ProcessComponent,
+    SuccessComponent,
     
   ],
   imports: [

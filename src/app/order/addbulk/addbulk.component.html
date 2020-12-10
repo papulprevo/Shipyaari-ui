@@ -1,1 +1,114 @@
-<p>addbulk works!</p>
+<body>
+    <div id="app">
+      <div class="main-wrapper main-wrapper-1">
+        <div class="navbar-bg"></div>
+      <!--   navbar here -->
+        <app-navbar></app-navbar>
+        <!-- Sidebar Here -->
+        <app-sidebar></app-sidebar>
+        <!-- Main Content -->
+        <div class="main-content">
+          <div class="">
+            <div class="d-flex space-between">
+              <div class="">
+                <h4>Bulk Shipment</h4>
+                <ol class="breadcrumb pl-0 pt-0">
+                <li class="breadcrumb-item"><a href="#">Orders</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Bulk Shipment</li>
+              </ol>
+              </div>
+              <div class=" align-right datepicker">
+                <!-- <form [formGroup]="form"> -->
+                  <!-- <input type="text"
+                    class="form-control"
+                    formControlName="dateRange"
+                    #daterangepicker="bsDaterangepicker"
+                    bsDaterangepicker
+                    [bsConfig]="{ rangeInputFormat : 'DD/MM/YYYY', dateInputFormat: 'DD/MM/YYYY' }"> -->
+                    
+                  <!-- </form> -->
+                <!-- <div id="reportrange"  class="pull-left new_left" style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc;">
+                    <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>&nbsp;
+                    <span></span> <b class="caret"></b>
+                </div> -->
+              </div>
+            </div>
+          </div>
+            <div class="col-sm-12 card p-0 col-sm-12 bg-white-card">
+             <div class="d-flex" style="justify-content: space-between;">
+               <div><h4  class="h4_details">Bulk Shipment</h4></div>
+               <div style="float: right; margin: 7px;">
+               <a href="javascript:" data-toggle="modal" data-target="#bulkadd"><i class="fa fa-upload fa-lg blue"></i></a>
+               </div> 
+            </div><hr>
+       <div class="row">
+         <div class="col-12 col-sm-12 col-lg-12 p-0 ">  
+             <nav>
+                <div class="nav nav-tabs tab-font-size" id="nav-tab" role="tablist">
+                  <a class="nav-item nav-link" id="nav-processingorder-tab" data-toggle="tab" href="#process" role="tab" aria-controls="nav-processingorder" aria-selected="true">Process</a>
+                  <a class="nav-item nav-link active" id="nav-ReadyToShip-tab" data-toggle="tab" href="#success" role="tab" aria-controls="nav-ReadyToShip" aria-selected="false">Success</a>
+                </div>
+              </nav>
+                <div class="tab-content" id="nav-tabContent">
+                  <div class="tab-pane fade" id="process" role="tabpanel" aria-labelledby="processingorder-tab">
+                   <app-process></app-process>
+                  </div>
+                  <div class="tab-pane fade show active " id="success" role="tabpanel" aria-labelledby="ReadyToShip-tab">
+                   <app-success></app-success>
+                  </div>
+                </div>
+         </div>
+        </div>
+      </div>
+    </div>
+  <!-- footer Here -->
+        <app-footer></app-footer>
+      </div>
+    </div>
+  </body>
+  
+  <div class="modal fade" id="bulkadd" role="dialogue">
+    <div class="modal-dialog modal-lg">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-body">
+          <h5 class="text-center">Add Bulk Consignment</h5>
+        <div class="pickup_modal">
+          <!-- <h6>Personal Details</h6> -->
+          <div class="row">
+            <div class="col-3">
+              <div class="form-group">
+                <label>Download Sample Excel</label>
+                <a href="assets/bulkshipment_sample_client.xlsx" type="button" style="width:80%"  class="btn btn-primary"><i class="fa fa-download fa-2x"></i></a>
+              </div>
+            </div>
+            <div class="col" style="padding-right: 10px; border-left: 3px solid black; height: 70px;"></div>
+            <div class="col-3">
+              <div class="form-group">
+                <label>Pickup Detail</label>
+                <select class="form-control">
+                  <option>Select</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="form-group">
+                <label>Upload Excel</label>
+                <input type="file" class="form-control">
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-group">
+                <label>Upload</label>
+                <button type="" class="btn btn-warning" style="width: 100%;" >Upload</button>
+              </div>
+            </div>
+          </div>
+          <div class="">
+          </div>
+      
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>

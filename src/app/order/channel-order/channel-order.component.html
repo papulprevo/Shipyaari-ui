@@ -1,51 +1,185 @@
 <body>
-    <div id="app">
-      <div class="main-wrapper main-wrapper-1">
-        <div class="navbar-bg"></div>
-      <!--   navbar here -->
-        <app-navbar></app-navbar>
-        <!-- Sidebar Here -->
-        <app-sidebar></app-sidebar>
-        <!-- Main Content -->
-        <div class="main-content">
-          <section class="section">
-            <div class="row">
-              <div class="col-12 col-sm-12 col-lg-12 p-0 ">
-                <div class="card">
-                  <div class="d-flex space-between">
-                    <div class="">
-                      <h4>Channel Orders</h4>
-                      <ol class="breadcrumb pl-0 pt-0">
-                      <li class="breadcrumb-item"><a href="#">Orders</a></li>
-                      <li class="breadcrumb-item active" aria-current="page">Channel Orders</li>
-                    </ol>
-                    </div>
-                    <div class=" align-right datepicker">
-                      <!-- <form [formGroup]="form"> -->
-                        <input type="text"
-                          class="form-control"
-                          formControlName="dateRange"
-                          #daterangepicker="bsDaterangepicker"
-                          bsDaterangepicker
-                          [bsConfig]="{ rangeInputFormat : 'DD/MM/YYYY', dateInputFormat: 'DD/MM/YYYY' }">
-                          
-                        <!-- </form> -->
-                      <!-- <div id="reportrange"  class="pull-left new_left" style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc;">
-                          <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>&nbsp;
-                          <span></span> <b class="caret"></b>
-                      </div> -->
-                    </div>
+  <div id="app">
+    <div class="main-wrapper main-wrapper-1">
+      <div class="navbar-bg"></div>
+    <!--   navbar here -->
+      <app-navbar></app-navbar>
+      <!-- Sidebar Here -->
+      <app-sidebar></app-sidebar>
+      <!-- Main Content -->
+      <div class="main-content">
+        <div class="">
+          <div class="d-flex space-between">
+            <div class="">
+              <h4>Channel Orders</h4>
+              <ol class="breadcrumb pl-0 pt-0">
+              <li class="breadcrumb-item"><a href="#">Orders</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Channel Orders</li>
+            </ol>
+            </div>
+            <div class=" align-right datepicker">
+              <!-- <form [formGroup]="form"> -->
+                <!-- <input type="text"
+                  class="form-control"
+                  formControlName="dateRange"
+                  #daterangepicker="bsDaterangepicker"
+                  bsDaterangepicker
+                  [bsConfig]="{ rangeInputFormat : 'DD/MM/YYYY', dateInputFormat: 'DD/MM/YYYY' }"> -->
+                  
+                <!-- </form> -->
+              <!-- <div id="reportrange"  class="pull-left new_left" style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc;">
+                  <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>&nbsp;
+                  <span></span> <b class="caret"></b>
+              </div> -->
+            </div>
+          </div>
+        </div>
+          <div class="col-sm-12 card p-0 col-sm-12 bg-white-card">
+           <div class="d-flex" style="justify-content: space-between;">
+             <div><h4  class="h4_details">Process Orders</h4></div>
+             <div style="float: right; margin: 5px;">
+              <button class="btn btn-primary btn-sm" style="margin-right: 5px;">Sync Orders</button>
+              <button class="btn btn-primary btn-sm" style="margin-right: 5px;">Push</button>
+              <button class="btn btn-primary btn-sm">Zoho Connect</button>
+             </div> 
+          </div><hr>
+     <div class="row">
+       <div class="col-12 col-sm-12 col-lg-12 p-0 ">  
+        <div class="row">
+          <div class="col-9 input-group mb-3">
+            <input type="text" class="form-control" placeholder="Order ID" aria-label="Recipient's username" aria-describedby="button-addon2">
+            <button class="btn btn-outline-primary" type="button" id="button-addon2"><i class="fa fa-search fa-lg"></i></button>
+          </div>
+          <div class="col-3">
+            <button class="btn btn-primary " style="margin-right: 5px;">Process Order</button>
+            <button class="btn btn-primary ">Remove Order</button>
+          </div>
+        </div>
+        <table class="table table-bordered table-sm" style="font-size:small; color:black;">
+          <thead class="text-center">
+            <tr>
+              <th><input type="checkbox" checked></th>
+              <th>Order</th>
+              <th>Channel
+                <div class="dropdown">  <a href="Javascript:" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  > <i class="fa fa-filter" aria-hidden="true"></i> </a>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenu2" style="width: 140%;">
+                    <!-- <form> -->
+                  <div class="container" style="font-size:small;">
+                      <div class="form-group">
+                        <label>Channel List </label><br>
+                        <input type="checkbox" checked> Woo Commerce <br>
+                        <input type="checkbox" checked> Magento<br> 
+                        <button class="btn btn-primary btn-sm" type="submit">Apply</button>
+                        <button class="btn btn-primary btn-sm float-right" type="reset">Clear</button>
+                      </div>
+                  </div>
+                      <!-- </form> -->
                   </div>
                 </div>
-              </div>
-            </div>
-          </section>
-        </div>
-        <!-- footer Here -->
-        <app-footer></app-footer>
+              </th>
+              <th>Customer Info</th>
+              <th>Payment Mode
+                <div class="dropdown">  <a href="Javascript:" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  > <i class="fa fa-filter" aria-hidden="true"></i> </a>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenu2" style="width: 140%;">
+                    <!-- <form> -->
+                  <div class="container" style="font-size:small;">
+                      <div class="form-group">
+                        <label>Channel List </label><br>
+                        <input type="checkbox" checked> Online  <br>
+                        <input type="checkbox" checked> COD<br> 
+                        <button class="btn btn-primary btn-sm" type="submit">Apply</button>
+                        <button class="btn btn-primary btn-sm float-right" type="reset">Clear</button>
+                      </div>
+                  </div>
+                      <!-- </form> -->
+                  </div>
+                </div>
+              </th>
+              <th>Order Status
+                <div class="dropdown">  <a href="Javascript:" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  > <i class="fa fa-filter" aria-hidden="true"></i> </a>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenu2" style="width: 140%;">
+                    <!-- <form> -->
+                  <div class="container" style="font-size:small;">
+                      <div class="form-group">
+                        <label>Search By Shipyaari ID / Order ID </label>
+                        <input type="radio"  style="margin-bottom: 5px;" value="Processing"> Processing<br>
+                        <input type="radio"  style="margin-bottom: 5px;" value="Pending"> Pending<br>
+                        <input type="radio"  style="margin-bottom: 5px;" value="Hold"> Hold<br>
+                        <input type="radio"  style="margin-bottom: 5px;" value="Complete"> Complete<br>
+                        <button class="btn btn-primary btn-sm" type="submit">Apply</button>
+                        <button class="btn btn-primary btn-sm float-right" type="reset">Clear</button>
+                      </div>
+                  </div>
+                      <!-- </form> -->
+                  </div>
+                </div>
+              </th>
+              <th>Order Date
+                <div class="dropdown">  <a href="Javascript:" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  > <i class="fa fa-filter" aria-hidden="true"></i> </a>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenu2" style="width: 140%;">
+                    <!-- <form> -->
+                  <div class="container">
+                      <div class="form-group">
+                        <label>Select Date </label>
+                        <input type="text" class="form-control" style="margin-bottom: 5px;"> 
+                        <button class="btn btn-primary btn-sm" type="submit">Apply</button>
+                        <button class="btn btn-primary btn-sm float-right" type="reset">Clear</button>
+                      </div>
+                  </div>
+                      <!-- </form> -->
+                  </div>
+                </div>
+              </th>
+              <th>Pickup Address</th>
+              <th>Delivery Address</th>
+              <th>Product details</th>
+              <th>Product Weight(KG)/Product Diamenssion(CM)</th>
+              <th>Price
+                <div class="dropdown">  <a href="Javascript:" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  > <i class="fa fa-filter" aria-hidden="true"></i> </a>
+                  <div class="dropdown-menu dropdown-left" aria-labelledby="dropdownMenu2" style="width: 140%;">
+                    <!-- <form> -->
+                  <div class="container">
+                      <div class="form-group">
+                      
+                        <input type="text" class="form-control" style="margin-bottom: 5px;"> 
+                        <button class="btn btn-primary btn-sm" type="submit">Apply</button>
+                        <button class="btn btn-primary btn-sm float-right" type="reset">Clear</button>
+                      </div>
+                  </div>
+                      <!-- </form> -->
+                  </div>
+                </div>
+              </th>
+              <th>Insurance</th>
+              <th>Action</th>
+            </tr>
+          </thead> 
+          <tbody>
+            <tr>
+              <td><input type="checkbox" checked></td>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
+            </tr>
+          </tbody> 
+        </table>
+       </div>
       </div>
     </div>
-  <!-- General JS Scripts -->  
+  </div>
+<!-- footer Here -->
+      <app-footer></app-footer>
+    </div>
+  </div>
 </body>
-  
-  
+
