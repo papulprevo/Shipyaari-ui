@@ -71,6 +71,14 @@ import { CancelledorderComponent } from './order/allorder/cancelledorder/cancell
 import { AllorderChildComponent } from './order/allorder/allorder-child/allorder-child.component';
 import { ProcessComponent } from './order/addbulk/process/process.component';
 import { SuccessComponent } from './order/addbulk/success/success.component';
+import { KycdetailsComponent } from './profile/kycdetails/kycdetails.component';
+import { BankdetailsComponent } from './profile/bankdetails/bankdetails.component';
+import { CommunicationComponent } from './profile/communication/communication.component';
+import { MarketingComponent } from './profile/marketing/marketing.component';
+import { SmstemplateComponent } from './profile/smstemplate/smstemplate.component';
+import { SubscriptionComponent } from './profile/subscription/subscription.component';
+import { RewardComponent } from './profile/reward/reward.component';
+import { CouponeComponent } from './profile/coupone/coupone.component';
 
 
 
@@ -137,6 +145,14 @@ import { SuccessComponent } from './order/addbulk/success/success.component';
     AllorderChildComponent,
     ProcessComponent,
     SuccessComponent,
+    KycdetailsComponent,
+    BankdetailsComponent,
+    CommunicationComponent,
+    MarketingComponent,
+    SmstemplateComponent,
+    SubscriptionComponent,
+    RewardComponent,
+    CouponeComponent,
     
   ],
   imports: [
