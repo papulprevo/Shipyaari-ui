@@ -6570,8 +6570,10 @@ body.sidebar-gone .main-sidebar {
 	width: 100%;
 	height: 100%;
 	z-index: 9999;
-	background: url("../img/loading.gif") 50% 50% no-repeat #f9f9f9;
+	background: url("https://seller.shipyaari.com/client/themes/assets/images/svgs/truck_loader.gif") 50% 50% no-repeat #f9f9f9;
 	opacity: 1
+
+	animation: spin 5s linear infinite;
 }
 
 .user-img-radious-style {
