@@ -107,3 +107,8 @@ table p{
 {
     margin-bottom: 5px;
 }
+
+.brdr
+{
+    border: 1px solid #e4e6fc;
+}
